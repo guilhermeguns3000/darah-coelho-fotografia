@@ -1,0 +1,69 @@
+import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import SchemaOrg from "@/components/SchemaOrg";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://darahcoelhofotografia.com.br"),
+  title: {
+    default: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
+    template: "%s | Darah Coelho Fotografia",
+  },
+  description:
+    "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante, newborn e fotografia para e-commerce. Atendimento personalizado com direção artística.",
+  keywords: [
+    "fotógrafa Goiânia",
+    "fotografia Goiânia",
+    "ensaio moda Goiânia",
+    "Darah Coelho fotografia",
+  ],
+  authors: [{ name: "Darah Coelho" }],
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://darahcoelhofotografia.com.br",
+    siteName: "Darah Coelho Fotografia",
+    title: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
+    description:
+      "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante e e-commerce. Atendimento personalizado.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Darah Coelho Fotografia" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
+    description: "Fotógrafa profissional em Goiânia especializada em moda, casamento e ensaios.",
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://darahcoelhofotografia.com.br" },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable}`}>
+      <body>
+        <SchemaOrg />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
