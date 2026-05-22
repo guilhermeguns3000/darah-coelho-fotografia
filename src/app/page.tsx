@@ -147,7 +147,7 @@ export default function HomePage() {
             { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/sem-ti-tulo-01", alt: "Book de moda Goiânia", span: "row-span-2" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/eventos%20corporativos/0x7a9837", alt: "Fotografia eventos Goiânia" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61", alt: "Ensaio gestante Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/ensaio%20pessoal/img-0725", alt: "Ensaio pessoal Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/boda%202/capa-3", alt: "Ensaio moda Goiânia" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/img-40", alt: "Ensaio moda editorial Goiânia" },
           ].map((img, i) => (
             <div
