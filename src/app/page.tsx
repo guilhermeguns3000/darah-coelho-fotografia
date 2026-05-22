@@ -59,13 +59,22 @@ export default function HomePage() {
       />
       {/* HERO */}
       <section className="relative h-screen flex items-end pb-20 overflow-hidden">
+        {/* Mobile */}
+        <Image
+          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/moda%20feminina/8e71ec4d-2844-4a7d-bcb1-8c1e813d91c5"
+          alt="Fotógrafa Darah Coelho, ensaio de moda em Goiânia"
+          fill
+          className="object-cover object-top md:hidden"
+          priority
+          fetchPriority="high"
+        />
+        {/* Desktop / tablet */}
         <Image
           src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/ensaio%20pessoal/img-0717"
           alt="Fotógrafa Darah Coelho, ensaio de moda em Goiânia"
           fill
-          className="object-cover object-[50%_20%] md:object-[50%_70%]"
+          className="object-cover object-[50%_70%] hidden md:block"
           priority
-          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-dark/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/40 to-transparent" />
