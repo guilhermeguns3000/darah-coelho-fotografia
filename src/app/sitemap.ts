@@ -62,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Posts do blog — prioridade menor, mas úteis para long-tail
   const blogSlugs = [
+    "fotografa-goias-atendimento-interior",
     "quanto-custa-ensaio-moda-goiania",
     "melhor-epoca-fotos-externas-goiania",
     "ensaio-gestante-quando-fazer",

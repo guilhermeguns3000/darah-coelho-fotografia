@@ -23,6 +23,63 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "fotografa-goias-atendimento-interior",
+    title: "Fotógrafa em Goiás: como funciona o atendimento em todo o estado",
+    metaTitle: "Fotógrafa em Goiás | Darah Coelho – Atendimento em Todo o Estado",
+    metaDescription:
+      "Fotógrafa baseada em Goiânia com atendimento em todo o estado de Goiás. Anápolis, Caldas Novas, Pirenópolis, Rio Verde e mais. Ensaios, casamentos e books. Consulte.",
+    excerpt:
+      "Baseada em Goiânia, a Darah Coelho atende ensaios, casamentos e eventos em todo o estado de Goiás. Entenda como funciona o deslocamento e como agendar.",
+    date: "2026-05-22",
+    category: "Dicas",
+    readTime: "6 min",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1200,f_auto,q_auto/darah/casamento/img_0829",
+    heroAlt: "Fotógrafa em Goiás – Darah Coelho atende em todo o estado",
+    sections: [
+      {
+        body: "A Darah Coelho é fotógrafa profissional baseada em Goiânia, mas o atendimento vai muito além da capital. Seja para um casamento em Pirenópolis, um book de moda em Anápolis ou um ensaio de gestante em Caldas Novas, a Darah leva para cada cidade o mesmo olhar artístico, a mesma direção de poses e o mesmo cuidado com o resultado. Este post explica como funciona o atendimento em todo o estado de Goiás e como agendar.",
+      },
+      {
+        heading: "Grande Goiânia: Aparecida, Trindade, Senador Canedo e região",
+        body: "As cidades da região metropolitana de Goiânia — Aparecida de Goiânia, Trindade, Senador Canedo, Goianira, Inhumas e cidades próximas — são atendidas com a mesma frequência que a capital. Não há acréscimo de deslocamento para sessões nessas localidades. Se você mora em qualquer cidade da Grande Goiânia e quer fazer um ensaio pessoal, book de moda, ensaio de gestante ou família, entre em contato normalmente: a logística é simples e o agendamento segue o mesmo processo.",
+      },
+      {
+        heading: "Anápolis: a segunda maior cidade de Goiás",
+        body: "Anápolis fica a apenas 50 quilômetros de Goiânia e é a segunda maior cidade do estado, com quase 400 mil habitantes e um mercado crescente para fotografia profissional. A Darah atende clientes em Anápolis regularmente, tanto para ensaios individuais e books de moda quanto para eventos corporativos e cobertura de casamentos. Anápolis tem locações interessantes para editoriais urbanos e também acesso fácil a parques e áreas naturais para ensaios externos.",
+      },
+      {
+        heading: "Caldas Novas e Rio Quente: o destino dos casamentos em Goiás",
+        body: "Caldas Novas e Rio Quente são destinos turísticos consolidados do cerrado goiano, conhecidos pelas águas quentes e pelos grandes resorts. Esses espaços concentram uma quantidade expressiva de casamentos, festas de 15 anos e celebrações especiais ao longo de todo o ano. A Darah Coelho já fotografou eventos nessa região e conhece bem os espaços, a luz e as particularidades de trabalhar em ambientes que vão do resort luxuoso ao jardim ao ar livre. Para casamentos e eventos em Caldas Novas, entre em contato com pelo menos 3 meses de antecedência.",
+      },
+      {
+        heading: "Pirenópolis: o cenário histórico mais bonito de Goiás",
+        body: "Pirenópolis é uma das cidades históricas mais preservadas do Brasil Central. Suas ruas de pedra, igrejas coloniais, chapadões do cerrado e fazendas históricas criam cenários únicos para casamentos ao ar livre e ensaios editoriais com personalidade. Cada vez mais casais escolhem Pirenópolis para realizar cerimônias menores e mais íntimas, e a demanda por fotógrafas que atendam a cidade com qualidade cresce na mesma proporção. A Darah atende casamentos e ensaios em Pirenópolis com orçamento personalizado que inclui deslocamento.",
+      },
+      {
+        heading: "Rio Verde, Jataí e o sudoeste goiano",
+        body: "O sudoeste de Goiás — com Rio Verde, Jataí, Mineiros e Quirinópolis — é uma das regiões de maior crescimento econômico do Brasil, impulsionado pelo agronegócio. Com o crescimento da região, cresce também a demanda por fotografia profissional: eventos corporativos de grandes empresas do setor, casamentos de famílias com alto poder aquisitivo e books para profissionais que precisam de uma presença visual forte. A Darah atende essa região mediante consulta prévia de disponibilidade e com orçamento que inclui deslocamento.",
+      },
+      {
+        heading: "Como funciona o deslocamento para outras cidades de Goiás",
+        body: "Para cidades dentro da Grande Goiânia, não há taxa de deslocamento. Para Anápolis e cidades num raio de até 80 quilômetros, o deslocamento é calculado conforme a data e a logística do projeto. Para cidades mais distantes — como Caldas Novas, Pirenópolis, Rio Verde ou Jataí — o orçamento inclui o valor de deslocamento, que varia conforme a distância e a duração do evento. Em todos os casos, a forma mais rápida de receber um orçamento completo é entrar em contato pelo WhatsApp com a data e o tipo de serviço desejado.",
+      },
+    ],
+    internalLink: {
+      href: "/servicos",
+      label: "Ver todos os serviços disponíveis em Goiás",
+      context: "Quer saber quais serviços a Darah oferece em todo o estado de Goiás?",
+    },
+    externalLink: {
+      href: "https://www.seetur.go.gov.br",
+      label: "SEETUR-GO (Secretaria de Turismo de Goiás)",
+      context: "Para descobrir os principais destinos e espaços para eventos no estado, o",
+    },
+    cta: {
+      heading: "Atendemos em todo o estado de Goiás",
+      message: "Olá, Darah! Vi que você atende em todo o Goiás. Gostaria de saber sobre disponibilidade e orçamento para minha cidade.",
+    },
+  },
+  {
     slug: "quanto-custa-ensaio-moda-goiania",
     title: "Quanto custa um ensaio de moda em Goiânia?",
     metaTitle: "Quanto custa um ensaio de moda em Goiânia? | Darah Coelho",

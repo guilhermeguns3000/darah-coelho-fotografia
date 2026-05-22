@@ -13,6 +13,15 @@ const BASE = "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar
 
 const posts = [
   {
+    slug: "fotografa-goias-atendimento-interior",
+    title: "Fotógrafa em Goiás: como funciona o atendimento em todo o estado",
+    excerpt: "Baseada em Goiânia, a Darah Coelho atende ensaios, casamentos e eventos em todo o estado de Goiás. Entenda como funciona o deslocamento e como agendar.",
+    date: "2026-05-22",
+    category: "Dicas",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_800,f_auto,q_auto/darah/casamento/img_0829",
+    heroAlt: "Fotógrafa em Goiás – Darah Coelho atende em todo o estado",
+  },
+  {
     slug: "quanto-custa-ensaio-moda-goiania",
     title: "Quanto custa um ensaio de moda em Goiânia?",
     excerpt: "Entenda o que influencia o investimento em um book de moda e o que esperar de uma sessão editorial profissional em Goiânia.",
