@@ -144,25 +144,25 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/img-40", alt: "Book de moda Goiânia", span: "row-span-2", pos: "object-top" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/casamento/img-0836", alt: "Fotografia de casamento Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61", alt: "Ensaio gestante Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20masculina/sem-ti-tulo-27", alt: "Book masculino Goiânia", pos: "object-top" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/ensaio%20pessoal/img-0725", alt: "Ensaio pessoal Goiânia", pos: "object-top" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/batizado/img-6589", alt: "Fotografia de batizado Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/boda%202/capa-3", alt: "Book feminino Goiânia", pos: "object-top" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/img-40", alt: "Book de moda Goiânia", large: true },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-1", alt: "Ensaio moda feminina Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-2", alt: "Book feminino Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-3", alt: "Ensaio editorial Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-4", alt: "Fotografia de moda Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-5", alt: "Book masculino Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-6", alt: "Ensaio pessoal Goiânia" },
           ].map((img, i) => (
             <div
               key={i}
-              className={`relative overflow-hidden ${img.span ?? "aspect-square"} ${img.span ? "aspect-auto" : ""}`}
-              style={img.span ? { gridRow: "span 2" } : {}}
+              className={`relative overflow-hidden ${img.large ? "aspect-auto" : "aspect-square"}`}
+              style={img.large ? { gridRow: "span 2" } : {}}
             >
               <div className="relative w-full h-full min-h-[200px]">
                 <Image
                   src={img.src}
                   alt={img.alt}
                   fill
-                  className={`${img.pos ?? "object-center"} object-cover hover:scale-105 transition-transform duration-700`}
+                  className="object-cover object-top hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
