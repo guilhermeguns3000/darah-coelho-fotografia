@@ -207,8 +207,8 @@ export default function HomePage() {
           className="object-cover object-center"
         />
         {/* película: escurece sem apagar a foto */}
-        <div className="absolute inset-0 bg-dark/50" />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 70% at 50% 50%, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.6) 100%)" }} />
+        <div className="absolute inset-0 bg-dark/55" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.3) 100%)" }} />
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia e São Paulo</p>
           <h2 className="font-serif text-5xl text-white mb-6 leading-tight">
