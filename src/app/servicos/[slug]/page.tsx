@@ -126,11 +126,68 @@ export default async function ServicePage({ params }: Props) {
       {/* DESCRIÇÃO */}
       <section className="max-w-4xl mx-auto px-6 py-12 md:py-20">
         <p className="text-neutral-300 text-xl leading-relaxed mb-10">{service.description}</p>
+        {service.noPortfolio && (
+          <p className="text-xs text-neutral-500 tracking-widest uppercase border border-dark-400 inline-block px-4 py-2 mb-8">
+            Portfólio desta especialidade em produção — entre em contato para ver exemplos
+          </p>
+        )}
         <WhatsAppButton
           label={`Agendar ${service.shortTitle}`}
           message={`Olá, Darah! Tenho interesse em ${service.title}. Pode me passar mais informações?`}
         />
       </section>
+
+      {/* PACOTES / PREÇOS */}
+      {service.packages && service.packages.length > 0 && (
+        <section className="bg-dark-100 py-12 md:py-20">
+          <div className="max-w-4xl mx-auto px-6">
+            <p className="text-gold text-xs tracking-widest uppercase mb-4">Investimento</p>
+            <h2 className="font-serif text-2xl md:text-3xl text-white mb-8 md:mb-10">
+              Pacotes de {service.shortTitle.toLowerCase()} em Goiânia
+            </h2>
+            <div className={`grid gap-4 ${service.packages.length <= 2 ? "md:grid-cols-2" : service.packages.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2 lg:grid-cols-4"}`}>
+              {service.packages.map((pkg, i) => (
+                <div
+                  key={i}
+                  className={`relative p-6 border flex flex-col ${
+                    pkg.highlight
+                      ? "border-gold bg-dark-200"
+                      : "border-dark-300 bg-dark"
+                  }`}
+                >
+                  {pkg.highlight && (
+                    <span className="absolute -top-3 left-6 bg-gold text-dark text-xs font-medium tracking-widest uppercase px-3 py-1">
+                      Mais escolhido
+                    </span>
+                  )}
+                  <p className="text-gold text-xs tracking-widest uppercase mb-2">{pkg.name}</p>
+                  <p className="font-serif text-3xl text-white mb-1">{pkg.price}</p>
+                  {pkg.duration && (
+                    <p className="text-neutral-500 text-xs tracking-wide mb-5">{pkg.duration}</p>
+                  )}
+                  <ul className="space-y-2 flex-1">
+                    {pkg.includes.map((item, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-neutral-400">
+                        <span className="text-gold shrink-0 mt-0.5">✦</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-6">
+                    <WhatsAppButton
+                      label="Quero este pacote"
+                      message={`Olá, Darah! Tenho interesse no pacote ${pkg.name} de ${service.title}. Pode me passar mais informações?`}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-neutral-600 text-xs mt-6">
+              Pagamento parcial realizado até 24h antes da sessão. O material fica disponível por 1 mês no link do Drive — salve dentro desse prazo.
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* CORPO DO TEXTO — SEO content */}
       <section className="max-w-4xl mx-auto px-6 pb-4">

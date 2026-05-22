@@ -3,6 +3,14 @@ export interface FAQ {
   answer: string;
 }
 
+export interface Package {
+  name: string;
+  price: string;
+  duration?: string;
+  includes: string[];
+  highlight?: boolean;
+}
+
 export interface Service {
   slug: string;
   title: string;
@@ -19,6 +27,8 @@ export interface Service {
   faqs: FAQ[];
   schemaType: string;
   color: string;
+  packages?: Package[];
+  noPortfolio?: boolean;
 }
 
 export const services: Service[] = [
@@ -53,17 +63,68 @@ export const services: Service[] = [
       "Versões otimizadas para redes sociais e portfólio",
       "Opção de direção de arte completa (styling, make, locação)",
     ],
+    packages: [
+      {
+        name: "Por Look",
+        price: "R$ 60",
+        duration: "mínimo 10 looks",
+        includes: [
+          "4 fotos finalizadas por look",
+          "Estúdio incluso",
+          "Direção de poses",
+          "Entrega em até 2 dias úteis",
+        ],
+      },
+      {
+        name: "Por Look + Vídeo",
+        price: "R$ 75–90",
+        duration: "mínimo 10 looks",
+        highlight: true,
+        includes: [
+          "4–6 fotos finalizadas por look",
+          "Vídeo profissional ou mobile por look",
+          "Estúdio incluso",
+          "Direção de poses",
+          "Entrega em até 2 dias úteis",
+        ],
+      },
+      {
+        name: "Meia Diária",
+        price: "R$ 1.750",
+        duration: "até 20 looks · 4 horas",
+        includes: [
+          "Até 20 looks fotografados",
+          "4 horas de sessão",
+          "Estúdio incluso",
+          "Direção de arte completa",
+          "Entrega em até 2 dias úteis",
+        ],
+      },
+      {
+        name: "Diária",
+        price: "R$ 2.750",
+        duration: "até 50 looks · 8 horas",
+        includes: [
+          "Até 50 looks fotografados",
+          "8 horas de sessão",
+          "Estúdio incluso",
+          "Direção de arte completa",
+          "Entrega em até 2 dias úteis",
+        ],
+      },
+    ],
     process: [
       { step: "Briefing", description: "Conversa sobre seu objetivo, referências visuais e o que você quer transmitir com o book." },
       { step: "Planejamento", description: "Definimos locação, styling, luz e moodboard juntos para garantir coerência visual." },
       { step: "Sessão", description: "Dia da produção com direção de poses e direção artística durante todo o processo." },
-      { step: "Entrega", description: "Fotos editadas em alta resolução, prontas para portfólio, agências e redes sociais." },
+      { step: "Entrega", description: "Fotos editadas em alta resolução em até 2 dias úteis, prontas para portfólio, agências e redes sociais." },
     ],
     faqs: [
-      { question: "Quanto custa um book de moda em Goiânia?", answer: "O investimento varia conforme o escopo do projeto, número de looks, locações e nível de produção. Entre em contato para receber um orçamento personalizado." },
+      { question: "Quanto custa um book de moda em Goiânia?", answer: "O investimento varia conforme o escopo do projeto. Por look: R$ 60 (4 fotos) ou R$ 75–90 com vídeo incluso, mínimo de 10 looks. Também trabalhamos com meia diária (R$ 1.750, até 20 looks, 4h) e diária completa (R$ 2.750, até 50 looks, 8h). Entre em contato para montar o pacote ideal." },
       { question: "O book de moda serve para quem não é modelo profissional?", answer: "Sim. Atendo tanto modelos profissionais quanto pessoas que querem um book pessoal, book artístico ou material para redes sociais com estética editorial." },
       { question: "A fotógrafa atende em outros estados além de Goiânia?", answer: "Sim, atendo em São Paulo e posso me deslocar para outros estados mediante consulta. Entre em contato para verificar disponibilidade." },
       { question: "Preciso contratar maquiador e stylist separado?", answer: "Não necessariamente. Posso indicar profissionais parceiros em Goiânia ou organizar a equipe completa conforme o pacote escolhido." },
+      { question: "Em quanto tempo recebo as fotos?", answer: "O prazo padrão é de 2 dias úteis após a sessão. O material fica disponível por 1 mês no link do Drive — salve seu material dentro desse prazo." },
     ],
     schemaType: "Photographer",
     color: "from-stone-900 to-stone-800",
@@ -93,22 +154,52 @@ export const services: Service[] = [
     heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/ensaio%20pessoal/img-0725",
     deliverables: [
       "Sessão com direção de poses do início ao fim",
-      "Escolha de locação (estúdio, externo ou ambiente especial)",
+      "Escolha de locação (estúdio ou externo)",
+      "Auxílio com cabelo incluso",
       "Seleção e edição das melhores fotos",
       "Entrega em alta resolução",
       "Versões para redes sociais incluídas",
     ],
+    packages: [
+      {
+        name: "Essencial",
+        price: "R$ 1.750",
+        duration: "2 horas",
+        includes: [
+          "2 looks",
+          "Estúdio incluso",
+          "25 fotos finalizadas",
+          "Auxílio com cabelo",
+          "Entrega em até 7 dias úteis",
+        ],
+      },
+      {
+        name: "Completo",
+        price: "R$ 2.500",
+        duration: "4 horas",
+        highlight: true,
+        includes: [
+          "3 a 4 looks",
+          "Estúdio incluso",
+          "60 fotos finalizadas",
+          "Auxílio com cabelo",
+          "Vídeo de bastidores",
+          "Entrega em até 7 dias úteis",
+        ],
+      },
+    ],
     process: [
       { step: "Conversa", description: "Entendemos o que você quer expressar e qual clima combina com você." },
-      { step: "Locação", description: "Escolhemos juntos o ambiente ideal, estúdio, parque, centro histórico, café." },
+      { step: "Locação", description: "Escolhemos juntos o ambiente ideal: estúdio, parque, centro histórico, café." },
       { step: "Sessão", description: "Sessão descontraída com direção de poses para que você se sinta à vontade." },
-      { step: "Entrega", description: "Fotos selecionadas e editadas com cuidado, prontas para o celular e para imprimir." },
+      { step: "Entrega", description: "Fotos selecionadas e editadas com cuidado, entregues em até 7 dias úteis pelo link do Drive." },
     ],
     faqs: [
       { question: "Preciso ter experiência com fotos para fazer ensaio pessoal?", answer: "Não. A direção de poses é feita durante toda a sessão. Você não precisa saber posar: é exatamente para isso que estamos juntos." },
-      { question: "Onde são feitos os ensaios em Goiânia?", answer: "Atendemos em estúdio, locações externas em Goiânia (parques, centros comerciais, ambientes naturais) e em locações especiais mediante consulta." },
-      { question: "Quanto tempo dura a sessão?", answer: "As sessões costumam durar entre 1h30 e 3h dependendo do pacote. Esse tempo inclui troca de looks e pequenos intervalos." },
-      { question: "Em quanto tempo recebo as fotos?", answer: "As fotos editadas são entregues em até 15 dias úteis após a sessão, pela galeria online ou pelo link de download." },
+      { question: "Onde são feitos os ensaios em Goiânia?", answer: "Atendemos em estúdio ou locações externas em Goiânia (parques, centros comerciais, ambientes naturais). O estúdio já está incluso nos pacotes." },
+      { question: "Quanto tempo dura a sessão?", answer: "O Essencial tem 2 horas de duração. O Completo tem 4 horas, com mais tempo para troca de looks e explorar cenários diferentes." },
+      { question: "Em quanto tempo recebo as fotos?", answer: "As fotos editadas são entregues em até 7 dias úteis após a sessão, via link do Drive. O material fica disponível por 1 mês — salve dentro desse prazo." },
+      { question: "Como funciona o pagamento?", answer: "É feito um pagamento parcial até 24 horas antes do ensaio para confirmar o agendamento. O restante é combinado com a Darah no momento da sessão." },
     ],
     schemaType: "Photographer",
     color: "from-neutral-900 to-zinc-800",
@@ -185,21 +276,20 @@ export const services: Service[] = [
     deliverables: [
       "Sessão com direção de poses especializada para gestantes",
       "Opção de incluir parceiro e filhos na sessão",
-      "Props e acessórios disponíveis no estúdio",
       "Seleção e edição completa das fotos",
       "Entrega em alta resolução para álbum e redes sociais",
     ],
     process: [
-      { step: "Conversa", description: "Entendemos o seu momento e definimos o estilo do ensaio, mais clássico, boho, minimalista ou colorido." },
+      { step: "Conversa", description: "Entendemos o seu momento e definimos o estilo do ensaio: mais clássico, boho, minimalista ou colorido." },
       { step: "Melhor época", description: "O período ideal é entre a 28ª e 34ª semana de gestação, quando a barriga está evidente e a mamãe ainda se sente bem." },
       { step: "Sessão", description: "Sessão acolhedora com ritmo no seu tempo, direção de poses e toda atenção para você se sentir linda." },
-      { step: "Entrega", description: "Fotos editadas e entregues em galeria online privada em até 15 dias úteis." },
+      { step: "Entrega", description: "Fotos editadas e entregues em galeria online privada. O link fica disponível por 1 mês — salve seu material." },
     ],
     faqs: [
       { question: "Qual a melhor semana para fazer o ensaio de gestante?", answer: "O ideal é entre a 28ª e 34ª semana de gestação. Nesse período a barriga já está bem desenvolvida e você ainda está confortável para se movimentar e posar." },
       { question: "Posso incluir meu parceiro e outros filhos no ensaio?", answer: "Sim, com prazer! O ensaio pode incluir toda a família. Recomendamos reservar um tempo específico para as fotos em família dentro da sessão." },
       { question: "O ensaio de gestante pode ser feito em ambiente externo?", answer: "Sim. Oferecemos sessões em estúdio ou em locações externas em Goiânia, como parques e áreas naturais, dependendo do estilo que você deseja." },
-      { question: "Preciso levar roupa específica?", answer: "Orientamos sobre looks antes do ensaio. Em geral, vestidos longos, bodies e roupas que valorizem a barriga funcionam muito bem. Também temos algumas peças disponíveis no estúdio." },
+      { question: "Preciso levar roupa específica?", answer: "Orientamos sobre looks antes do ensaio. Em geral, vestidos longos, bodies e roupas que valorizem a barriga funcionam muito bem." },
     ],
     schemaType: "Photographer",
     color: "from-rose-950 to-stone-900",
@@ -239,7 +329,7 @@ export const services: Service[] = [
       { step: "Briefing", description: "Conversa sobre estilo, objetivo do book e referências visuais para alinhar o conceito da sessão." },
       { step: "Preparação", description: "Orientamos sobre looks, cores e acessórios para cada cena. Você chega pronto para fotografar." },
       { step: "Sessão", description: "Direção completa: postura, expressão e composição. Você não precisa saber posar: é para isso que estou aqui." },
-      { step: "Entrega", description: "Fotos editadas e entregues em galeria online em até 15 dias úteis após a sessão." },
+      { step: "Entrega", description: "Fotos editadas e entregues em galeria online em até 7 dias úteis após a sessão." },
     ],
     faqs: [
       { question: "Preciso ter experiência com fotografia para fazer um book masculino?", answer: "Não. A sessão tem direção completa, oriento cada pose, expressão e movimento. A maioria dos clientes nunca fez um book antes e o resultado é sempre surpreendente." },
@@ -272,7 +362,7 @@ export const services: Service[] = [
       "fotos família Goiânia",
       "fotografia família Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/familia/familia-principal",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/casamento/img_0840",
     deliverables: [
       "Sessão para famílias de todos os tamanhos",
       "Locações em estúdio ou externas em Goiânia",
@@ -326,7 +416,7 @@ export const services: Service[] = [
       "Edição completa e entrega em alta resolução",
     ],
     process: [
-      { step: "Alinhamento", description: "Definimos os momentos prioritários, entrada, sacramento, fotos em família, detalhes." },
+      { step: "Alinhamento", description: "Definimos os momentos prioritários: entrada, sacramento, fotos em família, detalhes." },
       { step: "Cerimônia", description: "Cobertura discreta e respeitosa durante o momento sagrado." },
       { step: "Festa", description: "Registro dos momentos em família, com amigos e os detalhes que fizeram o dia especial." },
       { step: "Entrega", description: "Fotos editadas entregues em galeria online em até 20 dias úteis." },
@@ -339,6 +429,67 @@ export const services: Service[] = [
     ],
     schemaType: "Photographer",
     color: "from-violet-950 to-stone-900",
+  },
+  {
+    slug: "ensaio-newborn-goiania",
+    title: "Ensaio Newborn em Goiânia",
+    shortTitle: "Newborn",
+    headline: "Ensaio newborn em Goiânia, os primeiros dias registrados com delicadeza",
+    description:
+      "Fotografia newborn em Goiânia para registrar os primeiros dias do seu bebê com segurança, delicadeza e um olhar artístico que transforma cada detalhe minúsculo em memória eterna.",
+    bodyText: [
+      "O ensaio newborn em Goiânia é uma das experiências mais delicadas e especiais da fotografia. Os primeiros dias de vida de um bebê passam em um piscar de olhos, e cada detalhe — os dedinhos, o cheiro, o sono profundo, a expressão de paz — merece ser registrado com cuidado e arte. A Darah Coelho conduz cada sessão newborn com total segurança, paciência e sensibilidade para criar imagens atemporais que emocionam a família por toda a vida.",
+      "O período ideal para o ensaio newborn é até os 14 primeiros dias de vida do bebê, quando ele ainda dorme profundamente e permite as posições mais delicadas e icônicas da fotografia newborn. A sessão é realizada no ritmo do bebê, com pausas para amamentação e troca de fraldas sempre que necessário. O conforto e a segurança do recém-nascido são a prioridade absoluta em cada momento da sessão.",
+      "As sessões de newborn em Goiânia incluem o uso de props, tecidos, cestinhas e acessórios cuidadosamente selecionados para criar composições lindas e atemporais. Também é possível incluir os pais e irmãos na sessão para registros em família ainda no estúdio. O resultado é um conjunto de imagens que vai compor o primeiro álbum do seu filho e que você vai guardar para sempre.",
+    ],
+    metaTitle: "Ensaio Newborn Goiânia | Fotógrafa Darah Coelho",
+    metaDescription:
+      "Ensaio newborn em Goiânia com delicadeza e segurança. Fotógrafa Darah Coelho registra os primeiros dias do seu bebê com arte e cuidado. Agende agora.",
+    keywords: [
+      "ensaio newborn Goiânia",
+      "fotógrafa newborn Goiânia",
+      "fotografia recém-nascido Goiânia",
+      "ensaio bebê Goiânia",
+      "newborn Goiânia",
+    ],
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/Gestante/77f73106-8ec3-435b-966e-de6cd7816eda",
+    deliverables: [
+      "Sessão no ritmo do bebê, com total segurança",
+      "Props, tecidos e acessórios inclusos",
+      "Opção de incluir pais e irmãos",
+      "Seleção e edição completa das fotos",
+      "Entrega em alta resolução para álbum e redes sociais",
+    ],
+    packages: [
+      {
+        name: "Newborn",
+        price: "A combinar",
+        duration: "conforme sessão",
+        highlight: true,
+        includes: [
+          "Sessão completa em estúdio",
+          "Props e acessórios inclusos",
+          "Inclusão de pais e irmãos",
+          "Edição e entrega em alta resolução",
+          "Valor personalizado conforme o pacote",
+        ],
+      },
+    ],
+    process: [
+      { step: "Agendamento", description: "Idealmente agendado ainda na gestação para garantir vaga nas primeiras semanas após o parto." },
+      { step: "Período ideal", description: "Até os 14 primeiros dias de vida do bebê, quando o sono é mais profundo e as poses são possíveis." },
+      { step: "Sessão", description: "Sessão no ritmo do bebê, com total segurança e paciência. Pausas sempre que necessário." },
+      { step: "Entrega", description: "Fotos editadas com cuidado e entregues em galeria online privada." },
+    ],
+    faqs: [
+      { question: "Qual o melhor momento para fazer o ensaio newborn?", answer: "O ideal é até os 14 primeiros dias de vida do bebê. Recomendo agendar ainda durante a gestação para garantir a vaga assim que o bebê nascer." },
+      { question: "O ensaio é seguro para o recém-nascido?", answer: "Sim. Toda a sessão é conduzida com total segurança. O bebê nunca fica em posições inseguras e o conforto dele é a prioridade absoluta do início ao fim." },
+      { question: "Posso incluir os pais e irmãos no ensaio?", answer: "Sim. Reservamos um momento especial dentro da sessão para fotos com pais e irmãos, tornando o registro ainda mais completo." },
+      { question: "Quanto custa o ensaio newborn em Goiânia?", answer: "O valor é personalizado conforme o pacote escolhido. Entre em contato pelo WhatsApp para receber uma proposta." },
+    ],
+    schemaType: "Photographer",
+    color: "from-rose-950 to-neutral-900",
+    noPortfolio: true,
   },
   {
     slug: "fotografia-produto-ecommerce-goiania",
@@ -362,7 +513,7 @@ export const services: Service[] = [
       "fotografia catálogo Goiânia",
       "fotografia marketplace Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/moda%20feminina/img_5554",
     deliverables: [
       "Fotos com fundo infinito branco (padrão marketplace)",
       "Fotos contextualizadas / lifestyle",
@@ -385,6 +536,7 @@ export const services: Service[] = [
     ],
     schemaType: "Photographer",
     color: "from-zinc-900 to-neutral-800",
+    noPortfolio: true,
   },
   {
     slug: "eventos-corporativos-goiania",
@@ -441,7 +593,7 @@ export const services: Service[] = [
       "Produção de vídeo profissional em Goiânia para casamentos, ensaios, eventos e marcas. Vídeos com estética cinematográfica, trilha personalizada e edição que conta histórias.",
     bodyText: [
       "O serviço de videomaker em Goiânia da Darah Coelho traz a mesma linguagem visual cuidadosa da fotografia para o formato em movimento. Cada vídeo é pensado como uma narrativa, com início, meio e fim emocionante, não como um simples registro de imagens em sequência. O resultado são vídeos que as pessoas assistem mais de uma vez, compartilham e guardam.",
-      "Para casamentos, o vídeo captura o que até as fotos não conseguem: a voz quebrada no votos, a música que tocou naquele momento, o choro e o riso ao mesmo tempo. Para ensaios de moda e editoriais, o vídeo adiciona movimento, textura e ritmo à identidade visual da marca ou do portfólio. Para eventos e marcas, o vídeo corporativo em Goiânia é o conteúdo de maior alcance nas redes sociais, especialmente em formato Reels e Stories.",
+      "Para casamentos, o vídeo captura o que até as fotos não conseguem: a voz quebrada nos votos, a música que tocou naquele momento, o choro e o riso ao mesmo tempo. Para ensaios de moda e editoriais, o vídeo adiciona movimento, textura e ritmo à identidade visual da marca ou do portfólio. Para eventos e marcas, o vídeo corporativo em Goiânia é o conteúdo de maior alcance nas redes sociais, especialmente em formato Reels e Stories.",
       "Como videomaker em Goiânia, a Darah filma em 4K com equipamento profissional e entrega com color grading cinematográfico, trilha licenciada e edição narrativa. Oferecemos pacotes combinados de foto + vídeo para casamentos e eventos, que garantem a mesma linguagem visual entre os dois formatos, e representam o melhor custo-benefício para quem quer um registro completo.",
     ],
     metaTitle: "Videomaker Goiânia | Produção de Vídeo – Darah Coelho",
@@ -454,7 +606,7 @@ export const services: Service[] = [
       "vídeo casamento Goiânia",
       "vídeo ensaio Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/moda%20feminina/sem-ti-tulo-022",
     deliverables: [
       "Vídeo principal editado com trilha personalizada",
       "Versões para Instagram Reels e Stories",
@@ -476,6 +628,7 @@ export const services: Service[] = [
     ],
     schemaType: "Photographer",
     color: "from-indigo-950 to-stone-900",
+    noPortfolio: true,
   },
 ];
 

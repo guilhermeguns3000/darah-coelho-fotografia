@@ -71,11 +71,18 @@ export default function SobrePage() {
               Me chamo<br />Darah Coelho
             </h1>
             <p className="text-neutral-400 text-lg leading-relaxed mb-6">
-              Sou fotógrafa profissional baseada em Goiânia, GO, especializada em fotografia de moda,
-              ensaios pessoais, casamentos, gestante, newborn e fotografia para e-commerce.
+              Sou fotógrafa profissional baseada em Goiânia, GO, especializada em fotografia de moda
+              há <span className="text-white font-medium">8 anos</span>. Atendo ensaios pessoais,
+              casamentos, gestante, newborn, produto para e-commerce e eventos corporativos.
+            </p>
+            <p className="text-neutral-400 leading-relaxed mb-4">
+              Sou também fundadora da{" "}
+              <span className="text-gold font-medium">Uzza Mídias</span>, agência de marketing
+              digital voltada para o segmento da moda. Com um olhar sensível e estratégico,
+              transformo coleções em imagens que comunicam propósito, estilo e identidade.
             </p>
             <p className="text-neutral-400 leading-relaxed mb-8">
-              Meu trabalho começa muito antes do clique, está no briefing, no moodboard, na escolha
+              Meu trabalho começa muito antes do clique: está no briefing, no moodboard, na escolha
               da locação, na direção de poses e no olhar que transforma um momento em arte.
               Cada foto é pensada para transmitir <span className="text-gold">verdade, leveza e elegância</span>.
             </p>
@@ -104,6 +111,7 @@ export default function SobrePage() {
               { title: "Atendimento personalizado", text: "Nenhuma sessão é igual à outra. Entendo o que cada cliente quer transmitir e construo a experiência em torno disso, do estilo ao ambiente, da luz à edição." },
               { title: "Especialista em moda e editorial", text: "Domínio técnico e estético de fotografia fashion e editorial, com olhar treinado para composição, styling e narrativa visual." },
               { title: "Goiânia e São Paulo", text: "Baseada em Goiânia com atendimento regular também em São Paulo. Para projetos especiais, me desloco para qualquer lugar do Brasil." },
+              { title: "8 anos de moda + agência própria", text: "Fotógrafa de moda há 8 anos e fundadora da Uzza Mídias, agência de marketing digital para o segmento da moda. Entendo o mercado fashion de dentro." },
             ].map((item, i) => (
               <div key={i} className="border-l-2 border-gold pl-6 py-2">
                 <h3 className="text-white font-medium mb-2">{item.title}</h3>

@@ -30,7 +30,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "Em quanto tempo recebo as fotos depois do ensaio?",
-      acceptedAnswer: { "@type": "Answer", text: "Ensaios pessoais e de moda: até 15 dias úteis. Ensaio de gestante e família: até 15 dias úteis. Casamentos: até 30 dias. Eventos corporativos: até 20 dias. A entrega é feita por galeria online privada em alta resolução." },
+      acceptedAnswer: { "@type": "Answer", text: "Ensaio de moda: até 2 dias úteis. Ensaio pessoal: até 7 dias úteis. Gestante e família: até 15 dias úteis. Casamentos: até 30 dias. Eventos corporativos: até 20 dias. A entrega é feita via link do Drive, disponível por 1 mês." },
     },
     {
       "@type": "Question",
@@ -192,12 +192,12 @@ export default function HomePage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
             { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:2,w_600,f_auto,q_auto/darah/moda%20feminina/img-40", alt: "Book de moda Goiânia", large: true },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-1", alt: "Ensaio moda feminina Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-2", alt: "Book feminino Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-3", alt: "Ensaio editorial Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-4", alt: "Fotografia de moda Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-5", alt: "Book masculino Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-6", alt: "Ensaio pessoal Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/moda%20feminina/sem-titulo-05", alt: "Ensaio moda feminina Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/casamento/img_0836", alt: "Fotógrafa casamento Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/ensaio%20pessoal/img-0725", alt: "Ensaio pessoal Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/moda%20masculina/sem-titulo-27", alt: "Book masculino Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61", alt: "Ensaio gestante Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/eventos%20corporativos/0x7a9832", alt: "Fotografia corporativa Goiânia" },
           ].map((img, i) => (
             <div
               key={i}
@@ -242,7 +242,7 @@ export default function HomePage() {
       {/* CTA FINAL */}
       <section className="relative py-32 overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/portfolio/foto-1"
+          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/moda%20feminina/sem-ti-tulo-01"
           alt="Fotógrafa Goiânia, agende sua sessão"
           fill
           className="object-cover object-center"
@@ -280,7 +280,7 @@ export default function HomePage() {
             },
             {
               q: "Em quanto tempo recebo as fotos depois do ensaio?",
-              a: "Ensaios pessoais e de moda: até 15 dias úteis. Ensaio de gestante e família: até 15 dias úteis. Casamentos: até 30 dias. Eventos corporativos: até 20 dias. A entrega é feita por galeria online privada em alta resolução.",
+              a: "Ensaio de moda: até 2 dias úteis. Ensaio pessoal: até 7 dias úteis. Gestante e família: até 15 dias úteis. Casamentos: até 30 dias. Eventos corporativos: até 20 dias. A entrega é feita via link do Drive, disponível por 1 mês — salve seu material dentro desse prazo.",
             },
             {
               q: "Preciso ter experiência com fotos para fazer um ensaio?",
