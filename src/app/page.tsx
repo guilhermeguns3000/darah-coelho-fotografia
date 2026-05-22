@@ -239,13 +239,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CTA FINAL */}
+      <section className="relative py-32 overflow-hidden">
+        <Image
+          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/portfolio/foto-1"
+          alt="Fotógrafa Goiânia, agende sua sessão"
+          fill
+          className="object-cover object-center"
+        />
+        {/* película: escurece sem apagar a foto */}
+        <div className="absolute inset-0 bg-dark/55" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.3) 100%)" }} />
+        <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
+          <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia e São Paulo</p>
+          <h2 className="font-serif text-5xl text-white mb-6 leading-tight">
+            Sua história merece ser registrada com estilo
+          </h2>
+          <p className="text-neutral-400 mb-10 text-lg leading-relaxed">
+            Entre em contato e vamos criar juntos uma experiência fotográfica única, com direção, propósito e muita arte.
+          </p>
+          <WhatsAppButton label="Falar com a Darah" message="Olá, Darah! Gostaria de agendar uma sessão fotográfica." />
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Dúvidas frequentes</p>
           <h2 className="font-serif text-4xl text-white">Perguntas sobre fotografia em Goiânia</h2>
         </div>
-        <div className="space-y-0 divide-y divide-dark-300">
+        <div className="divide-y divide-dark-300">
           {[
             {
               q: "Quanto custa um ensaio fotográfico em Goiânia?",
@@ -280,29 +303,6 @@ export default function HomePage() {
               <p className="mt-4 text-neutral-400 leading-relaxed">{faq.a}</p>
             </details>
           ))}
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section className="relative py-32 overflow-hidden">
-        <Image
-          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/portfolio/foto-1"
-          alt="Fotógrafa Goiânia, agende sua sessão"
-          fill
-          className="object-cover object-center"
-        />
-        {/* película: escurece sem apagar a foto */}
-        <div className="absolute inset-0 bg-dark/55" />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.3) 100%)" }} />
-        <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
-          <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia e São Paulo</p>
-          <h2 className="font-serif text-5xl text-white mb-6 leading-tight">
-            Sua história merece ser registrada com estilo
-          </h2>
-          <p className="text-neutral-400 mb-10 text-lg leading-relaxed">
-            Entre em contato e vamos criar juntos uma experiência fotográfica única, com direção, propósito e muita arte.
-          </p>
-          <WhatsAppButton label="Falar com a Darah" message="Olá, Darah! Gostaria de agendar uma sessão fotográfica." />
         </div>
       </section>
     </>
