@@ -220,21 +220,55 @@ export default function HomePage() {
 
       {/* DEPOIMENTOS */}
       <section className="bg-dark-100 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-gold text-xs tracking-widest uppercase mb-4">Feedbacks</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-white mb-10 md:mb-16">O que dizem os clientes</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-10 md:mb-16">
+            <p className="text-gold text-xs tracking-widest uppercase mb-4">Depoimentos reais</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-white">O que dizem os clientes</h2>
+          </div>
+
+          {/* Depoimentos em destaque */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { text: "A Darah captou exatamente o que eu queria no ensaio de moda. Profissionalismo, direção impecável e fotos lindíssimas.", name: "Ana Clara", service: "Ensaio de Moda" },
-              { text: "As fotos do nosso casamento ficaram perfeitas. Ela sabe capturar os momentos reais sem perder a estética.", name: "Mariana & Felipe", service: "Casamento" },
-              { text: "Ensaio de gestante mais especial que eu poderia ter. A Darah nos deixou completamente à vontade.", name: "Gabriela", service: "Gestante" },
+              { text: "Já fazia um tempo que estávamos procurando uma profissional que entendesse a necessidade da nossa marca, e vc conseguiu fazer isso com excelência. Pontualidade incrível, belíssimo atendimento de uma simpatia sem igual.", name: "Janaina Stuart", service: "Book de Moda" },
+              { text: "Vc é gigante sério. Foi tão leve e pela primeira vez me senti especial! Quero ter clientes fixos pra gente fotografar juntas. Obrigada por me ceder seu tempo que é muito valioso.", name: "Wellen Rocha", service: "Ensaio Pessoal" },
+              { text: "Vc é uma das melhores partes do meu trabalho Darah, sempre fico feliz com o resultado do trampo, isso me faz tão bem! Muito obrigado.", name: "Leonardo Diniz Atos", service: "Eventos Corporativos" },
             ].map((t, i) => (
               <div key={i} className="bg-dark-200 p-6 text-left border border-dark-300">
-                <p className="text-neutral-400 leading-relaxed mb-4 text-sm">"{t.text}"</p>
+                <p className="text-gold text-2xl leading-none mb-4 font-serif">"</p>
+                <p className="text-neutral-300 leading-relaxed mb-5 text-sm">"{t.text}"</p>
                 <p className="text-white font-medium text-sm">{t.name}</p>
                 <p className="text-gold text-xs tracking-widest uppercase mt-1">{t.service}</p>
               </div>
             ))}
+          </div>
+
+          {/* Prints reais dos clientes */}
+          <div>
+            <p className="text-neutral-500 text-xs tracking-widest uppercase text-center mb-6">Prints reais de clientes</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+              {[
+                "darah/depoimentos/31b91e49-62b6-4693-a827-d04bec387805",
+                "darah/depoimentos/4d7d8293-ace9-4087-a244-d11e9922cae1",
+                "darah/depoimentos/6f7523d7-9d48-4051-9a7b-8f6d4fcbce85",
+                "darah/depoimentos/7d796d79-3abf-4219-9eda-442a26206058",
+                "darah/depoimentos/ef36aab4-5d94-4b9f-81fa-1202771747a0",
+                "darah/depoimentos/f3089693-800d-4c1b-aa06-665f4328090c",
+                "darah/depoimentos/img-3151-png",
+                "darah/depoimentos/img-3814-png",
+                "darah/depoimentos/img-5760-png",
+                "darah/depoimentos/img-5997-png",
+              ].map((id, i) => (
+                <div key={i} className="relative aspect-[9/16] overflow-hidden rounded-sm">
+                  <Image
+                    src={`https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_400/${id}`}
+                    alt={`Depoimento de cliente – Darah Coelho Fotografia`}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 20vw"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
