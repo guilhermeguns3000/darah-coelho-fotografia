@@ -226,7 +226,7 @@ export const services: Service[] = [
       "ensaio bebê Goiânia",
       "newborn Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20masculina/sem-ti-tulo-119",
     deliverables: [
       "Sessão nos primeiros 5 a 14 dias de vida",
       "Cenários e wraps incluídos",
