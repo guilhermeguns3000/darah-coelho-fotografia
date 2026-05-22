@@ -28,6 +28,7 @@ export default function HomePage() {
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/75 via-dark/30 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">
             Fotógrafa em Goiânia
