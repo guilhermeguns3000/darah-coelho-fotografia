@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Book fotográfico em Goiânia com direção de arte. Fotógrafa Darah Coelho, ensaios de moda, book pessoal e editorial. Agende sua sessão.",
     images: [
       {
-        url: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/boda%202/capa-1?w=1200&q=80",
+        url: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1200/darah/boda%202/capa-1",
         alt: "Book fotográfico Goiânia, Darah Coelho",
       },
     ],
@@ -41,7 +41,7 @@ const schema = {
       description:
         "Book fotográfico e ensaio de moda em Goiânia com direção de arte e atendimento personalizado.",
       url: "https://darahcoelhofotografia.com.br/book-fotografico-goiania",
-      email: "contato@darahcoelhofotografia.com.br",
+      email: "darahtrabalho@icloud.com",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Goiânia",
@@ -142,7 +142,7 @@ export default function BookFotograficoPage() {
       {/* HERO */}
       <section className="relative h-[80vh] flex items-end pb-20 overflow-hidden pt-16">
         <Image
-          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/boda%202/capa-1?w=1920&q=80"
+          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/boda%202/capa-1"
           alt="Book fotográfico Goiânia, ensaio de moda Darah Coelho"
           fill
           className="object-cover object-top"
@@ -205,7 +205,7 @@ export default function BookFotograficoPage() {
               className="group relative aspect-[4/5] overflow-hidden block"
             >
               <Image
-                src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/boda%202/capa-1?w=800&q=80"
+                src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/boda%202/capa-1"
                 alt="Book de moda fotógrafa Goiânia, editorial e fashion"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

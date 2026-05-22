@@ -22,7 +22,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://darahcoelhofotografia.com.br"),
   title: {
     default: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
-    template: "%s | Darah Coelho Fotografia",
   },
   description:
     "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante, newborn e fotografia para e-commerce. Atendimento personalizado com direção artística.",
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     title: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
     description:
       "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante e e-commerce. Atendimento personalizado.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Darah Coelho Fotografia" }],
+    images: [{ url: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,w_1200,h_630,f_auto,q_auto/darah/Darah%20coelho/darah-home", width: 1200, height: 630, alt: "Darah Coelho, fotógrafa em Goiânia" }],
   },
   twitter: {
     card: "summary_large_image",

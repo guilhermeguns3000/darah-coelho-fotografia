@@ -42,12 +42,6 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
-      // Newborn renomeado para Moda Masculina
-      {
-        source: "/servicos/ensaio-newborn-goiania",
-        destination: "/servicos/moda-masculina-goiania",
-        permanent: true,
-      },
       // Trailing slash — WordPress usa /slug/, Next.js usa /slug (sem barra)
       {
         source: "/book-fotografico-goiania/",
@@ -62,6 +56,21 @@ const nextConfig: NextConfig = {
       {
         source: "/servicos/",
         destination: "/servicos",
+        permanent: true,
+      },
+      {
+        source: "/sobre/",
+        destination: "/sobre",
+        permanent: true,
+      },
+      {
+        source: "/galeria/",
+        destination: "/galeria",
+        permanent: true,
+      },
+      {
+        source: "/blog/",
+        destination: "/blog",
         permanent: true,
       },
     ];
