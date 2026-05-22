@@ -276,7 +276,7 @@ export default function HomePage() {
       {/* CTA FINAL */}
       <section className="relative py-32 overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/moda%20feminina/sem-ti-tulo-01"
+          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:9,w_1920,f_auto,q_auto/darah/casamento/img_0829"
           alt="Fotógrafa Goiânia, agende sua sessão"
           fill
           className="object-cover object-center"
