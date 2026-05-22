@@ -195,7 +195,8 @@ export default function HomePage() {
             { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/moda%20feminina/sem-titulo-05", alt: "Ensaio moda feminina Goiânia" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/casamento/img_0836", alt: "Fotógrafa casamento Goiânia" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/ensaio%20pessoal/img-0725", alt: "Ensaio pessoal Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/moda%20masculina/sem-titulo-27", alt: "Book masculino Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/moda%20masculina/sem-titulo-41", alt: "Book masculino Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_1:1,w_600,f_auto,q_auto/darah/moda%20masculina/sem-titulo-59", alt: "Ensaio masculino Goiânia" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61", alt: "Ensaio gestante Goiânia" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/eventos%20corporativos/0x7a9832", alt: "Fotografia corporativa Goiânia" },
           ].map((img, i) => (
