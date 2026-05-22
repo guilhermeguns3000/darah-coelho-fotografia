@@ -144,13 +144,13 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/img-40", alt: "Book de moda Goiânia", large: true },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-1", alt: "Ensaio moda feminina Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-2", alt: "Book feminino Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-3", alt: "Ensaio editorial Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-4", alt: "Fotografia de moda Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-5", alt: "Book masculino Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/portfolio/foto-6", alt: "Ensaio pessoal Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:2,w_600,f_auto,q_auto/darah/moda%20feminina/img-40", alt: "Book de moda Goiânia", large: true },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-1", alt: "Ensaio moda feminina Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-2", alt: "Book feminino Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-3", alt: "Ensaio editorial Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-4", alt: "Fotografia de moda Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-5", alt: "Book masculino Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_1:1,w_600,f_auto,q_auto/darah/portfolio/foto-6", alt: "Ensaio pessoal Goiânia" },
           ].map((img, i) => (
             <div
               key={i}
@@ -162,7 +162,7 @@ export default function HomePage() {
                   src={img.src}
                   alt={img.alt}
                   fill
-                  className="object-cover object-top hover:scale-105 transition-transform duration-700"
+                  className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
