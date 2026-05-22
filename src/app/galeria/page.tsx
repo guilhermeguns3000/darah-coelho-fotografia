@@ -26,6 +26,9 @@ const galleryImages = [
   { src: `${BASE}/darah/eventos%20corporativos/0x7a9832`, alt: "Fotografia eventos corporativos Goiânia", service: "Eventos", slug: "eventos-corporativos-goiania" },
   { src: `${BASE}/darah/eventos%20corporativos/0x7a0117`, alt: "Cobertura evento Goiânia", service: "Eventos", slug: "eventos-corporativos-goiania" },
   { src: `${BASE}/darah/batizado/img-6589`, alt: "Fotografia batismo Goiânia", service: "Batismo", slug: "fotografia-batismo-goiania" },
+  { src: `${BASE}/darah/casamento/img-0836`, alt: "Fotografia casamento Goiânia", service: "Casamento", slug: "fotografia-casamento-goiania" },
+  { src: `${BASE}/darah/casamento/img-0833`, alt: "Fotógrafa casamento Goiânia", service: "Casamento", slug: "fotografia-casamento-goiania" },
+  { src: `${BASE}/darah/casamento/img-0844`, alt: "Casamento fotógrafa Goiânia", service: "Casamento", slug: "fotografia-casamento-goiania" },
 ];
 
 export default function GaleriaPage() {

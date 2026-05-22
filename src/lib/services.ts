@@ -135,7 +135,7 @@ export const services: Service[] = [
       "casamento Goiânia fotógrafa",
       "melhor fotógrafa casamento Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/casamento/img-0836",
     deliverables: [
       "Cobertura completa do dia (cerimônia e recepção)",
       "Fotografia documental + momentos posados",
