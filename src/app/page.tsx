@@ -144,11 +144,13 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/boda%202/capa-3", alt: "Book de moda Goiânia", span: "row-span-2" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/eventos%20corporativos/0x7a9837", alt: "Fotografia eventos Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/img-40", alt: "Book de moda Goiânia", span: "row-span-2", pos: "object-top" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/casamento/img-0836", alt: "Fotografia de casamento Goiânia" },
             { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61", alt: "Ensaio gestante Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/sem-ti-tulo-01", alt: "Ensaio moda Goiânia" },
-            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/img-40", alt: "Ensaio moda editorial Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20masculina/sem-ti-tulo-27", alt: "Book masculino Goiânia", pos: "object-top" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/ensaio%20pessoal/img-0725", alt: "Ensaio pessoal Goiânia", pos: "object-top" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/batizado/img-6589", alt: "Fotografia de batizado Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/boda%202/capa-3", alt: "Book feminino Goiânia", pos: "object-top" },
           ].map((img, i) => (
             <div
               key={i}
@@ -160,7 +162,7 @@ export default function HomePage() {
                   src={img.src}
                   alt={img.alt}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  className={`${img.pos ?? "object-center"} object-cover hover:scale-105 transition-transform duration-700`}
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
