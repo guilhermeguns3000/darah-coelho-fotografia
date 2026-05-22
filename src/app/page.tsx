@@ -20,7 +20,7 @@ export default function HomePage() {
       <section className="relative h-screen flex items-end pb-20 overflow-hidden">
         <Image
           src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/ensaio%20pessoal/img-0717"
-          alt="Fotógrafa Darah Coelho — ensaio de moda em Goiânia"
+          alt="Fotógrafa Darah Coelho, ensaio de moda em Goiânia"
           fill
           className="object-cover"
           style={{ objectPosition: "50% 70%" }}
@@ -69,7 +69,7 @@ export default function HomePage() {
           </p>
           <p className="text-neutral-400 leading-relaxed mb-8">
             Meu diferencial está no atendimento personalizado e na direção artística
-            presente em cada sessão — desde o briefing até a entrega das fotos editadas.
+            presente em cada sessão, desde o briefing até a entrega das fotos editadas.
             Atendo também em São Paulo.
           </p>
           <Link
@@ -111,7 +111,7 @@ export default function HomePage() {
               >
                 <Image
                   src={service.heroImage}
-                  alt={`${service.shortTitle} — fotógrafa Goiânia`}
+                  alt={`${service.shortTitle}, fotógrafa Goiânia`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -202,7 +202,7 @@ export default function HomePage() {
       <section className="relative py-32 overflow-hidden">
         <Image
           src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/portfolio/foto-1"
-          alt="Fotógrafa Goiânia — agende sua sessão"
+          alt="Fotógrafa Goiânia, agende sua sessão"
           fill
           className="object-cover object-center"
         />
@@ -215,7 +215,7 @@ export default function HomePage() {
             Sua história merece ser registrada com estilo
           </h2>
           <p className="text-neutral-400 mb-10 text-lg leading-relaxed">
-            Entre em contato e vamos criar juntos uma experiência fotográfica única — com direção, propósito e muita arte.
+            Entre em contato e vamos criar juntos uma experiência fotográfica única, com direção, propósito e muita arte.
           </p>
           <WhatsAppButton label="Falar com a Darah" message="Olá, Darah! Gostaria de agendar uma sessão fotográfica." />
         </div>

@@ -38,7 +38,7 @@ export default function GaleriaPage() {
         <p className="text-gold text-xs tracking-widest uppercase mb-4">Portfólio</p>
         <h1 className="font-serif text-5xl text-white mb-4">Galeria</h1>
         <p className="text-neutral-400 max-w-xl leading-relaxed">
-          Uma seleção de trabalhos de moda, ensaios, casamentos e mais — todos realizados em Goiânia e São Paulo.
+          Uma seleção de trabalhos de moda, ensaios, casamentos e mais, todos realizados em Goiânia e São Paulo.
         </p>
       </section>
 

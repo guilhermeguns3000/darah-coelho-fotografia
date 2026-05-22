@@ -18,7 +18,7 @@ export default function Footer() {
             </p>
             <p className="text-neutral-600 text-xs leading-relaxed mb-6">
               Rua Fn4, Qd4 LT25 C1<br />
-              Jardim Fonte Nova — Goiânia, GO
+              Jardim Fonte Nova, Goiânia, GO
             </p>
             <div className="flex gap-4">
               <a
@@ -121,7 +121,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-dark-300 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-neutral-600">
-          <p>© {new Date().getFullYear()} Darah Coelho Fotografia — Goiânia, GO. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Darah Coelho Fotografia, Goiânia, GO. Todos os direitos reservados.</p>
           <div className="flex gap-6">
             <Link href="/sobre" className="hover:text-neutral-400 transition-colors">Sobre</Link>
             <Link href="/galeria" className="hover:text-neutral-400 transition-colors">Galeria</Link>

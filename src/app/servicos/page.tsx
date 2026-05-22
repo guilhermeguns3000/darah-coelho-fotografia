@@ -32,7 +32,7 @@ export default function ServicosPage() {
             >
               <Image
                 src={service.heroImage}
-                alt={`${service.title} — fotógrafa Goiânia`}
+                alt={`${service.title}, fotógrafa Goiânia`}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

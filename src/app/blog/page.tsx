@@ -13,7 +13,7 @@ const posts = [
   { slug: "melhor-epoca-fotos-externas-goiania", title: "Melhor época do ano para fotos externas em Goiânia", excerpt: "Goiânia tem clima específico que afeta diretamente a qualidade das fotos ao ar livre. Veja quando e como planejar seu ensaio.", date: "2026-04-15", category: "Dicas" },
   { slug: "ensaio-gestante-quando-fazer", title: "Ensaio gestante: quando fazer e como se preparar", excerpt: "A janela ideal para o ensaio de gestante, como escolher o look, o que esperar da sessão e como aproveitar ao máximo.", date: "2026-04-01", category: "Gestante" },
   { slug: "o-que-e-fotografia-editorial", title: "O que é fotografia editorial e para quem é?", excerpt: "Diferença entre book pessoal e fotografia editorial, como funciona o processo criativo e quem pode se beneficiar de um editorial.", date: "2026-03-20", category: "Moda" },
-  { slug: "como-escolher-fotografa-casamento-goiania", title: "Como escolher a fotógrafa de casamento certa em Goiânia", excerpt: "5 critérios fundamentais para escolher a fotógrafa do seu casamento em Goiânia — além do portfólio.", date: "2026-03-05", category: "Casamento" },
+  { slug: "como-escolher-fotografa-casamento-goiania", title: "Como escolher a fotógrafa de casamento certa em Goiânia", excerpt: "5 critérios fundamentais para escolher a fotógrafa do seu casamento em Goiânia, além do portfólio.", date: "2026-03-05", category: "Casamento" },
   { slug: "looks-ensaio-fotografico", title: "Looks para ensaio fotográfico: o que vestir", excerpt: "Guia completo de combinações de roupas que funcionam para ensaios em estúdio e ao ar livre, com dicas de cores e estilos.", date: "2026-02-20", category: "Dicas" },
 ];
 

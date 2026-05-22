@@ -51,7 +51,7 @@ export default function SobrePage() {
               ensaios pessoais, casamentos, gestante, newborn e fotografia para e-commerce.
             </p>
             <p className="text-neutral-400 leading-relaxed mb-8">
-              Meu trabalho começa muito antes do clique — está no briefing, no moodboard, na escolha
+              Meu trabalho começa muito antes do clique, está no briefing, no moodboard, na escolha
               da locação, na direção de poses e no olhar que transforma um momento em arte.
               Cada foto é pensada para transmitir <span className="text-gold">verdade, leveza e elegância</span>.
             </p>
@@ -60,7 +60,7 @@ export default function SobrePage() {
           <div className="relative min-h-[400px]">
             <Image
               src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_900/darah/Darah%20coelho/img-3778"
-              alt="Darah Coelho — fotógrafa profissional em Goiânia"
+              alt="Darah Coelho, fotógrafa profissional em Goiânia"
               fill
               className="object-cover"
               priority
@@ -76,8 +76,8 @@ export default function SobrePage() {
           <h2 className="font-serif text-3xl text-white mb-12">Diferenciais</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              { title: "Direção artística completa", text: "Não basta ter câmera. Cada sessão tem um briefing criativo, moodboard e direção de poses do início ao fim. Você não precisa saber posar — é para isso que estou aqui." },
-              { title: "Atendimento personalizado", text: "Nenhuma sessão é igual à outra. Entendo o que cada cliente quer transmitir e construo a experiência em torno disso — do estilo ao ambiente, da luz à edição." },
+              { title: "Direção artística completa", text: "Não basta ter câmera. Cada sessão tem um briefing criativo, moodboard e direção de poses do início ao fim. Você não precisa saber posar: é para isso que estou aqui." },
+              { title: "Atendimento personalizado", text: "Nenhuma sessão é igual à outra. Entendo o que cada cliente quer transmitir e construo a experiência em torno disso, do estilo ao ambiente, da luz à edição." },
               { title: "Especialista em moda e editorial", text: "Domínio técnico e estético de fotografia fashion e editorial, com olhar treinado para composição, styling e narrativa visual." },
               { title: "Goiânia e São Paulo", text: "Baseada em Goiânia com atendimento regular também em São Paulo. Para projetos especiais, me desloco para qualquer lugar do Brasil." },
             ].map((item, i) => (

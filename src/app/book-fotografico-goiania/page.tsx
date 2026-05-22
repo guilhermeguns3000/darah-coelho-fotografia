@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Book Fotográfico Goiânia – Ensaio de Moda | Darah Coelho",
   description:
-    "Book fotográfico em Goiânia com direção de arte e olhar editorial. Fotógrafa Darah Coelho — ensaios de moda, book pessoal e editorial para modelos, marcas e agências. Agende.",
+    "Book fotográfico em Goiânia com direção de arte e olhar editorial. Fotógrafa Darah Coelho, ensaios de moda, book pessoal e editorial para modelos, marcas e agências. Agende.",
   keywords: [
     "book fotográfico Goiânia",
     "ensaio de moda Goiânia",
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Book Fotográfico Goiânia – Ensaio de Moda | Darah Coelho",
     description:
-      "Book fotográfico em Goiânia com direção de arte. Fotógrafa Darah Coelho — ensaios de moda, book pessoal e editorial. Agende sua sessão.",
+      "Book fotográfico em Goiânia com direção de arte. Fotógrafa Darah Coelho, ensaios de moda, book pessoal e editorial. Agende sua sessão.",
     images: [
       {
         url: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/boda%202/capa-1?w=1200&q=80",
-        alt: "Book fotográfico Goiânia — Darah Coelho",
+        alt: "Book fotográfico Goiânia, Darah Coelho",
       },
     ],
   },
@@ -107,7 +107,7 @@ const schema = {
           name: "Qual a diferença entre book de moda e book pessoal?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "O book de moda tem foco em ensaio editorial com styling, direção de arte e estética fashion — ideal para modelos e marcas. O book pessoal é mais intimista, voltado para expressar a personalidade e o momento de vida de cada pessoa.",
+            text: "O book de moda tem foco em ensaio editorial com styling, direção de arte e estética fashion, ideal para modelos e marcas. O book pessoal é mais intimista, voltado para expressar a personalidade e o momento de vida de cada pessoa.",
           },
         },
         {
@@ -123,7 +123,7 @@ const schema = {
           name: "Preciso ter experiência como modelo para fazer um book?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Não. A direção de poses está presente do início ao fim da sessão. Você não precisa saber posar — é exatamente para isso que a fotógrafa está ali.",
+            text: "Não. A direção de poses está presente do início ao fim da sessão. Você não precisa saber posar: é exatamente para isso que a fotógrafa está ali.",
           },
         },
       ],
@@ -143,7 +143,7 @@ export default function BookFotograficoPage() {
       <section className="relative h-[80vh] flex items-end pb-20 overflow-hidden pt-16">
         <Image
           src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/boda%202/capa-1?w=1920&q=80"
-          alt="Book fotográfico Goiânia — ensaio de moda Darah Coelho"
+          alt="Book fotográfico Goiânia, ensaio de moda Darah Coelho"
           fill
           className="object-cover object-top"
           priority
@@ -170,17 +170,17 @@ export default function BookFotograficoPage() {
       {/* INTRO */}
       <section className="max-w-4xl mx-auto px-6 py-20">
         <p className="text-neutral-300 text-xl leading-relaxed mb-6">
-          Um book fotográfico em Goiânia feito com intenção é diferente de qualquer outra sessão de fotos. Cada imagem é pensada para transmitir <span className="text-gold">verdade, leveza e elegância</span> — com direção de arte do briefing à entrega final.
+          Um book fotográfico em Goiânia feito com intenção é diferente de qualquer outra sessão de fotos. Cada imagem é pensada para transmitir <span className="text-gold">verdade, leveza e elegância</span>, com direção de arte do briefing à entrega final.
         </p>
         <div className="space-y-5 text-neutral-400 leading-relaxed">
           <p>
-            A Darah Coelho é fotógrafa especializada em book fotográfico e ensaio de moda em Goiânia. Com olhar editorial e atendimento completamente personalizado, cada sessão começa com uma conversa — sobre quem você é, o que quer transmitir e qual estética combina com o seu momento. O resultado são imagens com identidade própria, que contam uma história.
+            A Darah Coelho é fotógrafa especializada em book fotográfico e ensaio de moda em Goiânia. Com olhar editorial e atendimento completamente personalizado, cada sessão começa com uma conversa, sobre quem você é, o que quer transmitir e qual estética combina com o seu momento. O resultado são imagens com identidade própria, que contam uma história.
           </p>
           <p>
             Seja para portfólio profissional, material para agências de moda, redes sociais ou simplesmente para se ver de um ângulo diferente, o book fotográfico em Goiânia pode ser tão fashion ou tão intimista quanto você quiser. Atendemos modelos profissionais e iniciantes, marcas locais e pessoas que nunca fizeram uma sessão fotográfica na vida.
           </p>
           <p>
-            As sessões são realizadas em estúdio próprio em Goiânia — com iluminação controlada e cenários montados para cada proposta visual — ou em locações externas cuidadosamente selecionadas. Para projetos maiores ou de moda, também atendemos em São Paulo. A Darah dirige cada pose, cada expressão e cada enquadramento para que você não precise adivinhar o que fazer na frente da câmera.
+            As sessões são realizadas em estúdio próprio em Goiânia, com iluminação controlada e cenários montados para cada proposta visual, ou em locações externas cuidadosamente selecionadas. Para projetos maiores ou de moda, também atendemos em São Paulo. A Darah dirige cada pose, cada expressão e cada enquadramento para que você não precise adivinhar o que fazer na frente da câmera.
           </p>
         </div>
         <div className="mt-10">
@@ -206,7 +206,7 @@ export default function BookFotograficoPage() {
             >
               <Image
                 src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/boda%202/capa-1?w=800&q=80"
-                alt="Book de moda fotógrafa Goiânia — editorial e fashion"
+                alt="Book de moda fotógrafa Goiânia, editorial e fashion"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -215,7 +215,7 @@ export default function BookFotograficoPage() {
                 <p className="text-gold text-xs tracking-widest uppercase mb-2">Editorial</p>
                 <h3 className="font-serif text-3xl text-white mb-3">Book de Moda</h3>
                 <p className="text-neutral-400 text-sm leading-relaxed max-w-sm">
-                  Ensaio editorial com direção de arte completa — styling, locação, luz e composição para um book com identidade fashion.
+                  Ensaio editorial com direção de arte completa, styling, locação, luz e composição para um book com identidade fashion.
                 </p>
                 <p className="text-gold text-sm mt-4 group-hover:underline">Ver mais sobre book de moda →</p>
               </div>
@@ -228,7 +228,7 @@ export default function BookFotograficoPage() {
             >
               <Image
                 src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/ensaio%20pessoal/img-0725"
-                alt="Book pessoal ensaio fotográfico Goiânia — autenticidade e leveza"
+                alt="Book pessoal ensaio fotográfico Goiânia, autenticidade e leveza"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -237,7 +237,7 @@ export default function BookFotograficoPage() {
                 <p className="text-gold text-xs tracking-widest uppercase mb-2">Pessoal</p>
                 <h3 className="font-serif text-3xl text-white mb-3">Book Pessoal</h3>
                 <p className="text-neutral-400 text-sm leading-relaxed max-w-sm">
-                  Ensaio que revela quem você é — com leveza, autenticidade e direção de poses que te faz sentir à vontade desde o primeiro clique.
+                  Ensaio que revela quem você é, com leveza, autenticidade e direção de poses que te faz sentir à vontade desde o primeiro clique.
                 </p>
                 <p className="text-gold text-sm mt-4 group-hover:underline">Ver mais sobre ensaio pessoal →</p>
               </div>
@@ -259,7 +259,7 @@ export default function BookFotograficoPage() {
             },
             {
               q: "Qual a diferença entre book de moda e book pessoal?",
-              a: "O book de moda tem foco editorial — com styling, direção de arte e estética fashion, ideal para modelos e marcas. O book pessoal é mais intimista, voltado para expressar a personalidade e o momento de vida de cada pessoa.",
+              a: "O book de moda tem foco editorial, com styling, direção de arte e estética fashion, ideal para modelos e marcas. O book pessoal é mais intimista, voltado para expressar a personalidade e o momento de vida de cada pessoa.",
             },
             {
               q: "A fotógrafa atende em São Paulo além de Goiânia?",
@@ -267,7 +267,7 @@ export default function BookFotograficoPage() {
             },
             {
               q: "Preciso ter experiência como modelo para fazer um book?",
-              a: "Não. A direção de poses está presente do início ao fim da sessão. Você não precisa saber posar — é exatamente para isso que a fotógrafa está ali.",
+              a: "Não. A direção de poses está presente do início ao fim da sessão. Você não precisa saber posar: é exatamente para isso que a fotógrafa está ali.",
             },
           ].map((faq, i) => (
             <div key={i} className="border-b border-dark-300 pb-8">

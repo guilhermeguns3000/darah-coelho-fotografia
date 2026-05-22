@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Darah Coelho Fotografia — Fotógrafa em Goiânia";
+export const alt = "Darah Coelho Fotografia, Fotógrafa em Goiânia";
 
 export default function OgImage() {
   return new ImageResponse(
