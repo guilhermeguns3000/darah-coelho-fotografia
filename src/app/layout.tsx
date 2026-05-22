@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://darahcoelhofotografia.com.br" },
+  verification: { google: "JSJvoOG-7KiUK3zLBba9tquixZe8vaEwXzPaxviTDDc" },
 };
 
 export default function RootLayout({
