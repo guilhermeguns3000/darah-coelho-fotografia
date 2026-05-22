@@ -80,14 +80,18 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="relative aspect-[4/5] overflow-hidden">
-          <Image
-            src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto:best,w_800/darah/Darah%20coelho/img-3778"
-            alt="Fotógrafa Darah Coelho em Goiânia"
-            fill
-            className="object-cover animate-kenburns"
-          />
-          {/* vignette para profundidade */}
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, transparent 50%, rgba(10,10,10,0.55) 100%)" }} />
+          <div
+            className="absolute inset-0"
+            style={{ animation: "kenburns 12s ease-in-out infinite", transformOrigin: "center center" }}
+          >
+            <Image
+              src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto:best,w_800/darah/Darah%20coelho/img-3778"
+              alt="Fotógrafa Darah Coelho em Goiânia"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, transparent 45%, rgba(10,10,10,0.6) 100%)" }} />
         </div>
       </section>
 
