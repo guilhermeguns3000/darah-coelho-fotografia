@@ -19,10 +19,11 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative h-screen flex items-end pb-20 overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920,c_fill,g_face,ar_16:9/darah/ensaio%20pessoal/img-0717"
+          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/ensaio%20pessoal/img-0717"
           alt="Fotógrafa Darah Coelho — ensaio de moda em Goiânia"
           fill
-          className="object-cover object-top"
+          className="object-cover"
+          style={{ objectPosition: "50% 15%" }}
           priority
           fetchPriority="high"
         />
