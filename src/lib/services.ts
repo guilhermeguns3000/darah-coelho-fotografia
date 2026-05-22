@@ -44,7 +44,7 @@ export const services: Service[] = [
       "fotografia fashion Goiânia",
       "book fotográfico Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-01",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/moda%20feminina/sem-ti-tulo-01",
     deliverables: [
       "Briefing criativo e moodboard personalizado",
       "Direção de poses e expressão durante a sessão",
@@ -90,7 +90,7 @@ export const services: Service[] = [
       "fotógrafa ensaio Goiânia",
       "sessão fotográfica Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/ensaio%20pessoal/img-0725",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/ensaio%20pessoal/img-0725",
     deliverables: [
       "Sessão com direção de poses do início ao fim",
       "Escolha de locação (estúdio, externo ou ambiente especial)",
@@ -135,7 +135,7 @@ export const services: Service[] = [
       "casamento Goiânia fotógrafa",
       "melhor fotógrafa casamento Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/casamento/img-0836",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/casamento/img-0829",
     deliverables: [
       "Cobertura completa do dia (cerimônia e recepção)",
       "Fotografia documental + momentos posados",
@@ -181,7 +181,7 @@ export const services: Service[] = [
       "fotografia gestante Goiânia",
       "ensaio maternidade Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61",
     deliverables: [
       "Sessão com direção de poses especializada para gestantes",
       "Opção de incluir parceiro e filhos na sessão",
@@ -226,7 +226,7 @@ export const services: Service[] = [
       "fotógrafa moda masculina Goiânia",
       "ensaio masculino Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20masculina/sem-ti-tulo-27",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/moda%20masculina/sem-ti-tulo-27",
     deliverables: [
       "Briefing criativo e escolha de locação",
       "Direção de poses e expressão durante toda a sessão",
@@ -272,7 +272,7 @@ export const services: Service[] = [
       "fotos família Goiânia",
       "fotografia família Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/familia/familia-principal",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/familia/familia-principal",
     deliverables: [
       "Sessão para famílias de todos os tamanhos",
       "Locações em estúdio ou externas em Goiânia",
@@ -317,7 +317,7 @@ export const services: Service[] = [
       "fotos batismo Goiânia",
       "fotógrafa batizado Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/batizado/img-6589",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/batizado/img-6589",
     deliverables: [
       "Cobertura da cerimônia religiosa",
       "Registro da festa e confraternização",
@@ -408,7 +408,7 @@ export const services: Service[] = [
       "cobertura fotográfica evento Goiânia",
       "fotógrafa empresarial Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/eventos%20corporativos/0x7a9832",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/eventos%20corporativos/0x7a9832",
     deliverables: [
       "Cobertura completa do evento (abertura ao encerramento)",
       "Fotografias dos palestrantes e painéis",
