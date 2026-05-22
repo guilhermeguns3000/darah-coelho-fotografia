@@ -201,15 +201,14 @@ export default function HomePage() {
       {/* CTA FINAL */}
       <section className="relative py-32 overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/ensaio%20pessoal/fe76bfce-909e-4a28-a3dc-bb5494ae02ce"
+          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/portfolio/foto-1"
           alt="Fotógrafa Goiânia — agende sua sessão"
           fill
-          className="object-cover"
-          style={{ objectPosition: "50% 25%" }}
+          className="object-cover object-center"
         />
-        {/* película escura com foco central nas letras */}
-        <div className="absolute inset-0 bg-dark/70" />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.85) 100%)" }} />
+        {/* película: escurece sem apagar a foto */}
+        <div className="absolute inset-0 bg-dark/50" />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 70% at 50% 50%, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.6) 100%)" }} />
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia e São Paulo</p>
           <h2 className="font-serif text-5xl text-white mb-6 leading-tight">
