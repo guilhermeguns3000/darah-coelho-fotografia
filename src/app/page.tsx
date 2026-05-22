@@ -19,7 +19,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative h-screen flex items-end pb-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80"
+          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-022"
           alt="Fotógrafa Darah Coelho — ensaio de moda em Goiânia"
           fill
           className="object-cover object-center"
@@ -78,7 +78,7 @@ export default function HomePage() {
         </div>
         <div className="relative aspect-[4/5] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80"
+            src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/ensaio%20pessoal/img-0729"
             alt="Fotógrafa Darah Coelho em Goiânia"
             fill
             className="object-cover"
@@ -141,11 +141,11 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
-            { src: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=75", alt: "Book de moda Goiânia", span: "row-span-2" },
-            { src: "https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=600&q=75", alt: "Fotografia casamento Goiânia" },
-            { src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=75", alt: "Ensaio gestante Goiânia" },
-            { src: "https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=600&q=75", alt: "Ensaio newborn Goiânia" },
-            { src: "https://images.unsplash.com/photo-1478369402113-1fd53f17e8b4?w=600&q=75", alt: "Ensaio família Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/sem-ti-tulo-01", alt: "Book de moda Goiânia", span: "row-span-2" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/eventos%20corporativos/0x7a9837", alt: "Fotografia eventos Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61", alt: "Ensaio gestante Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/ensaio%20pessoal/img-0725", alt: "Ensaio pessoal Goiânia" },
+            { src: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_600/darah/moda%20feminina/img-40", alt: "Ensaio moda editorial Goiânia" },
           ].map((img, i) => (
             <div
               key={i}
@@ -190,7 +190,7 @@ export default function HomePage() {
       {/* CTA FINAL */}
       <section className="relative py-32 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920&q=70"
+          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-05"
           alt="Fotógrafa Goiânia — agende sua sessão"
           fill
           className="object-cover object-center opacity-30"

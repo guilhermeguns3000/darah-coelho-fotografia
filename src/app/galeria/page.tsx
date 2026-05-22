@@ -11,19 +11,21 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+const BASE = "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800";
+
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80", alt: "Book de moda fotógrafa Goiânia", service: "Moda", slug: "book-de-moda-goiania" },
-  { src: "https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=800&q=80", alt: "Fotografia casamento Goiânia", service: "Casamento", slug: "fotografia-casamento-goiania" },
-  { src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&q=80", alt: "Ensaio gestante fotógrafa Goiânia", service: "Gestante", slug: "ensaio-gestante-goiania" },
-  { src: "https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=800&q=80", alt: "Ensaio newborn fotógrafa Goiânia", service: "Newborn", slug: "ensaio-newborn-goiania" },
-  { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80", alt: "Ensaio pessoal fotógrafa Goiânia", service: "Ensaio Pessoal", slug: "ensaio-pessoal-goiania" },
-  { src: "https://images.unsplash.com/photo-1478369402113-1fd53f17e8b4?w=800&q=80", alt: "Ensaio família fotógrafa Goiânia", service: "Família", slug: "ensaio-familia-goiania" },
-  { src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80", alt: "Fotografia eventos corporativos Goiânia", service: "Eventos", slug: "eventos-corporativos-goiania" },
-  { src: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80", alt: "Fotografia produto e-commerce Goiânia", service: "Produto", slug: "fotografia-produto-ecommerce-goiania" },
-  { src: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800&q=80", alt: "Fotografia batismo Goiânia", service: "Batismo", slug: "fotografia-batismo-goiania" },
-  { src: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80", alt: "Videomaker Goiânia", service: "Videomaker", slug: "videomaker-goiania" },
-  { src: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80", alt: "Ensaio editorial moda Goiânia", service: "Moda", slug: "book-de-moda-goiania" },
-  { src: "https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=800&q=80", alt: "Pré-wedding fotógrafa Goiânia", service: "Casamento", slug: "fotografia-casamento-goiania" },
+  { src: `${BASE}/darah/moda%20feminina/sem-ti-tulo-01`, alt: "Book de moda fotógrafa Goiânia", service: "Moda", slug: "book-de-moda-goiania" },
+  { src: `${BASE}/darah/moda%20feminina/sem-ti-tulo-022`, alt: "Ensaio editorial moda Goiânia", service: "Moda", slug: "book-de-moda-goiania" },
+  { src: `${BASE}/darah/moda%20feminina/img-40`, alt: "Book moda feminina Goiânia", service: "Moda", slug: "book-de-moda-goiania" },
+  { src: `${BASE}/darah/moda%20feminina/sem-ti-tulo-067`, alt: "Fotografia fashion Goiânia", service: "Moda", slug: "book-de-moda-goiania" },
+  { src: `${BASE}/darah/ensaio%20pessoal/img-0725`, alt: "Ensaio pessoal fotógrafa Goiânia", service: "Ensaio Pessoal", slug: "ensaio-pessoal-goiania" },
+  { src: `${BASE}/darah/ensaio%20pessoal/img-0717`, alt: "Book pessoal Goiânia", service: "Ensaio Pessoal", slug: "ensaio-pessoal-goiania" },
+  { src: `${BASE}/darah/ensaio%20pessoal/img-0729`, alt: "Ensaio feminino Goiânia", service: "Ensaio Pessoal", slug: "ensaio-pessoal-goiania" },
+  { src: `${BASE}/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61`, alt: "Ensaio gestante fotógrafa Goiânia", service: "Gestante", slug: "ensaio-gestante-goiania" },
+  { src: `${BASE}/darah/Gestante/524ac503-32df-4e54-bbb1-a424ad42de67`, alt: "Fotografia gestante Goiânia", service: "Gestante", slug: "ensaio-gestante-goiania" },
+  { src: `${BASE}/darah/eventos%20corporativos/0x7a9832`, alt: "Fotografia eventos corporativos Goiânia", service: "Eventos", slug: "eventos-corporativos-goiania" },
+  { src: `${BASE}/darah/eventos%20corporativos/0x7a0117`, alt: "Cobertura evento Goiânia", service: "Eventos", slug: "eventos-corporativos-goiania" },
+  { src: `${BASE}/darah/batizado/img-6589`, alt: "Fotografia batismo Goiânia", service: "Batismo", slug: "fotografia-batismo-goiania" },
 ];
 
 export default function GaleriaPage() {

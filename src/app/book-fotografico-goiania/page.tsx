@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Book fotográfico em Goiânia com direção de arte. Fotógrafa Darah Coelho — ensaios de moda, book pessoal e editorial. Agende sua sessão.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1200&q=80",
+        url: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-01?w=1200&q=80",
         alt: "Book fotográfico Goiânia — Darah Coelho",
       },
     ],
@@ -142,7 +142,7 @@ export default function BookFotograficoPage() {
       {/* HERO */}
       <section className="relative h-[80vh] flex items-end pb-20 overflow-hidden pt-16">
         <Image
-          src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80"
+          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-01?w=1920&q=80"
           alt="Book fotográfico Goiânia — ensaio de moda Darah Coelho"
           fill
           className="object-cover object-top"
@@ -205,7 +205,7 @@ export default function BookFotograficoPage() {
               className="group relative aspect-[4/5] overflow-hidden block"
             >
               <Image
-                src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80"
+                src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-01?w=800&q=80"
                 alt="Book de moda fotógrafa Goiânia — editorial e fashion"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -227,7 +227,7 @@ export default function BookFotograficoPage() {
               className="group relative aspect-[4/5] overflow-hidden block"
             >
               <Image
-                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80"
+                src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/ensaio%20pessoal/img-0725"
                 alt="Book pessoal ensaio fotográfico Goiânia — autenticidade e leveza"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

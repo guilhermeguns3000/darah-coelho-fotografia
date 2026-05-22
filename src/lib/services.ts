@@ -44,7 +44,7 @@ export const services: Service[] = [
       "fotografia fashion Goiânia",
       "book fotográfico Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-01",
     deliverables: [
       "Briefing criativo e moodboard personalizado",
       "Direção de poses e expressão durante a sessão",
@@ -90,7 +90,7 @@ export const services: Service[] = [
       "fotógrafa ensaio Goiânia",
       "sessão fotográfica Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/ensaio%20pessoal/img-0725",
     deliverables: [
       "Sessão com direção de poses do início ao fim",
       "Escolha de locação (estúdio, externo ou ambiente especial)",
@@ -181,7 +181,7 @@ export const services: Service[] = [
       "fotografia gestante Goiânia",
       "ensaio maternidade Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61",
     deliverables: [
       "Sessão com direção de poses especializada para gestantes",
       "Opção de incluir parceiro e filhos na sessão",
@@ -317,7 +317,7 @@ export const services: Service[] = [
       "fotos batismo Goiânia",
       "fotógrafa batizado Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/batizado/img-6589",
     deliverables: [
       "Cobertura da cerimônia religiosa",
       "Registro da festa e confraternização",
@@ -408,7 +408,7 @@ export const services: Service[] = [
       "cobertura fotográfica evento Goiânia",
       "fotógrafa empresarial Goiânia",
     ],
-    heroImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/eventos%20corporativos/0x7a9832",
     deliverables: [
       "Cobertura completa do evento (abertura ao encerramento)",
       "Fotografias dos palestrantes e painéis",
