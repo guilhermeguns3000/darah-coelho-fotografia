@@ -102,7 +102,8 @@ export default async function ServicePage({ params }: Props) {
           priority
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-dark/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/40 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           {/* Breadcrumb */}
           <nav className="flex gap-2 text-xs text-neutral-500 tracking-widest uppercase mb-6">
