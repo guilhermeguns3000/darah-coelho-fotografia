@@ -316,7 +316,7 @@ export const services: Service[] = [
       "fotógrafa moda masculina Goiânia",
       "ensaio masculino Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/moda%20masculina/sem-ti-tulo-27",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/moda%20masculina/sem-titulo-130",
     deliverables: [
       "Briefing criativo e escolha de locação",
       "Direção de poses e expressão durante toda a sessão",
