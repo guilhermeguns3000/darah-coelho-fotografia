@@ -9,9 +9,52 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://darahcoelhofotografia.com.br/contato" },
 };
 
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "Photographer"],
+      "@id": "https://darahcoelhofotografia.com.br/#business",
+      name: "Darah Coelho Fotografia",
+      url: "https://darahcoelhofotografia.com.br",
+      telephone: "+55-62-98293-3266",
+      email: "darahtrabalho@icloud.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Goiânia",
+        addressRegion: "GO",
+        addressCountry: "BR",
+      },
+      areaServed: ["Goiânia", "Aparecida de Goiânia", "Anápolis", "São Paulo"],
+      sameAs: [
+        "https://www.instagram.com/darahcoelho/",
+        "https://www.tiktok.com/@darahcoelho0",
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+55-62-98293-3266",
+        contactType: "customer service",
+        availableLanguage: "Portuguese",
+        contactOption: "TollFree",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Início", item: "https://darahcoelhofotografia.com.br" },
+        { "@type": "ListItem", position: 2, name: "Contato", item: "https://darahcoelhofotografia.com.br/contato" },
+      ],
+    },
+  ],
+};
+
 export default function ContatoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <section className="pt-32 pb-20 max-w-4xl mx-auto px-6">
         <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia e São Paulo</p>
         <h1 className="font-serif text-5xl text-white mb-6">Contato</h1>
@@ -32,10 +75,10 @@ export default function ContatoPage() {
             <div>
               <p className="text-gold text-xs tracking-widest uppercase mb-2">E-mail</p>
               <a
-                href="mailto:contato@darahcoelhofotografia.com.br"
+                href="mailto:darahtrabalho@icloud.com"
                 className="text-neutral-300 hover:text-gold transition-colors"
               >
-                contato@darahcoelhofotografia.com.br
+                darahtrabalho@icloud.com
               </a>
             </div>
             <div>

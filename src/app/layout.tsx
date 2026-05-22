@@ -20,9 +20,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darahcoelhofotografia.com.br"),
-  title: {
-    default: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
-  },
+  title: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
   description:
     "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante, newborn e fotografia para e-commerce. Atendimento personalizado com direção artística.",
   keywords: [

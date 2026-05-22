@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/lib/services";
+import GalleryGrid from "@/components/GalleryGrid";
 
 export const metadata: Metadata = {
   title: "Galeria de Fotografia em Goiânia | Darah Coelho Portfólio",
@@ -228,32 +228,7 @@ export default function GaleriaPage() {
 
       {/* Grid masonry-style */}
       <section className="max-w-7xl mx-auto px-6 pb-32">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-1 space-y-1">
-          {galleryImages.map((img, i) => (
-            <Link
-              key={i}
-              href={`/servicos/${img.slug}`}
-              className="group block relative overflow-hidden break-inside-avoid"
-            >
-              <div className="relative w-full overflow-hidden">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  width={800}
-                  height={i % 3 === 0 ? 1000 : 600}
-                  className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  loading={i < 9 ? "eager" : "lazy"}
-                />
-                <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/40 transition-all duration-300 flex items-center justify-center">
-                  <span className="text-white text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity">
-                    {img.service}
-                  </span>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <GalleryGrid images={galleryImages} />
       </section>
     </>
   );
