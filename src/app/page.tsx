@@ -29,6 +29,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-dark/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-transparent to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <p className="text-gold text-xs tracking-widest uppercase mb-4 [text-shadow:0_1px_6px_rgba(0,0,0,0.9)]">
             Fotógrafa em Goiânia
