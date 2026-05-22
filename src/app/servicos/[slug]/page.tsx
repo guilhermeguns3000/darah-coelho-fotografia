@@ -98,7 +98,7 @@ export default async function ServicePage({ params }: Props) {
           src={service.heroImage}
           alt={`${service.title} — Darah Coelho fotógrafa Goiânia`}
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           priority
           fetchPriority="high"
         />
