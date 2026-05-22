@@ -16,10 +16,6 @@ export default function Footer() {
             <p className="text-neutral-500 text-sm leading-relaxed mb-2">
               Fotógrafa em Goiânia especializada em moda, ensaios e casamento.
             </p>
-            <p className="text-neutral-600 text-xs leading-relaxed mb-6">
-              Rua Fn4, Qd4 LT25 C1<br />
-              Jardim Fonte Nova, Goiânia, GO
-            </p>
             <div className="flex gap-4">
               <a
                 href="https://www.instagram.com/darahcoelho/"

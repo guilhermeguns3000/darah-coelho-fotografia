@@ -13,11 +13,8 @@ export default function SchemaOrg() {
           "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante, newborn e fotografia para e-commerce.",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Rua Fn4, Quadra 4, Lote 25, Casa 1",
-          neighborhood: "Jardim Fonte Nova",
           addressLocality: "Goiânia",
           addressRegion: "GO",
-          postalCode: "74415-000",
           addressCountry: "BR",
         },
         geo: {
