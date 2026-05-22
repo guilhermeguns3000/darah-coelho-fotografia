@@ -63,8 +63,7 @@ export default function HomePage() {
           src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/ensaio%20pessoal/img-0717"
           alt="Fotógrafa Darah Coelho, ensaio de moda em Goiânia"
           fill
-          className="object-cover"
-          style={{ objectPosition: "50% 70%" }}
+          className="object-cover object-[50%_20%] md:object-[50%_70%]"
           priority
           fetchPriority="high"
         />
