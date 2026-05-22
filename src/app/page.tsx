@@ -81,7 +81,7 @@ export default function HomePage() {
         </div>
         <div className="relative aspect-[4/5] overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/Darah%20coelho/img-3777"
+            src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto:best,w_800/darah/Darah%20coelho/img-3778"
             alt="Fotógrafa Darah Coelho em Goiânia"
             fill
             className="object-cover"
