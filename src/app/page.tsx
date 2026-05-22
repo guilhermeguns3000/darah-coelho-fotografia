@@ -23,11 +23,11 @@ export default function HomePage() {
           alt="Fotógrafa Darah Coelho — ensaio de moda em Goiânia"
           fill
           className="object-cover"
-          style={{ objectPosition: "50% 15%" }}
+          style={{ objectPosition: "50% 70%" }}
           priority
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">
             Fotógrafa em Goiânia
