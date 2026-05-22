@@ -27,18 +27,18 @@ export default function HomePage() {
           priority
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark/75 via-dark/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-dark/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/40 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <p className="text-gold text-xs tracking-widest uppercase mb-4">
+          <p className="text-gold text-xs tracking-widest uppercase mb-4 [text-shadow:0_1px_6px_rgba(0,0,0,0.9)]">
             Fotógrafa em Goiânia
           </p>
-          <h1 className="font-serif text-5xl md:text-7xl text-white max-w-2xl leading-tight mb-6">
+          <h1 className="font-serif text-5xl md:text-7xl text-white max-w-2xl leading-tight mb-6 [text-shadow:0_2px_12px_rgba(0,0,0,0.8)]">
             Darah Coelho
             <br />
             <span className="text-gold">Fotografia</span>
           </h1>
-          <p className="text-neutral-300 text-lg max-w-lg mb-8 leading-relaxed">
+          <p className="text-neutral-200 text-lg max-w-lg mb-8 leading-relaxed [text-shadow:0_1px_8px_rgba(0,0,0,0.9)]">
             Cada foto pensada para transmitir verdade, leveza e elegância.
             Especializada em moda, ensaios e casamento em Goiânia.
           </p>
