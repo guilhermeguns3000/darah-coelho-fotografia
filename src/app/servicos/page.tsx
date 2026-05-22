@@ -59,14 +59,14 @@ export default function ServicosPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <section className="pt-32 pb-16 max-w-7xl mx-auto px-6">
+      <section className="pt-24 md:pt-32 pb-10 md:pb-16 max-w-7xl mx-auto px-6">
         <nav className="flex gap-2 text-xs text-neutral-500 tracking-widest uppercase mb-8">
           <Link href="/" className="hover:text-gold transition-colors">Início</Link>
           <span>/</span>
           <span className="text-gold">Serviços</span>
         </nav>
         <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia, GO</p>
-        <h1 className="font-serif text-5xl text-white mb-6">Serviços de Fotografia em Goiânia</h1>
+        <h1 className="font-serif text-3xl md:text-5xl text-white mb-6">Serviços de Fotografia em Goiânia</h1>
         <p className="text-neutral-400 text-lg max-w-2xl leading-relaxed">
           A Darah Coelho é fotógrafa profissional em Goiânia com serviços de book de moda, ensaio pessoal,
           fotografia de casamento, ensaio de gestante, família, batismo, eventos corporativos e videomaker.

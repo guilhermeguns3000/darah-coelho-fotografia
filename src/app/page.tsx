@@ -97,10 +97,10 @@ export default function HomePage() {
       </section>
 
       {/* SOBRE RÁPIDO */}
-      <section className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div>
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Sobre a Darah</p>
-          <h2 className="font-serif text-4xl text-white mb-6 leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-white mb-6 leading-tight">
             Uma experiência fotográfica com direção, estilo e propósito
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-4">
@@ -137,11 +137,11 @@ export default function HomePage() {
       </section>
 
       {/* SERVIÇOS */}
-      <section className="bg-dark-100 py-24">
+      <section className="bg-dark-100 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <p className="text-gold text-xs tracking-widest uppercase mb-4">O que faço</p>
-            <h2 className="font-serif text-4xl text-white">Serviços em Goiânia</h2>
+            <h2 className="font-serif text-3xl md:text-4xl text-white">Serviços em Goiânia</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
             {featuredServices.map((service) => (
@@ -179,11 +179,11 @@ export default function HomePage() {
       </section>
 
       {/* PORTFÓLIO PREVIEW */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="flex justify-between items-end mb-12">
+      <section className="max-w-7xl mx-auto px-6 py-16 md:py-24">
+        <div className="flex justify-between items-end mb-8 md:mb-12">
           <div>
             <p className="text-gold text-xs tracking-widest uppercase mb-2">Trabalhos recentes</p>
-            <h2 className="font-serif text-4xl text-white">Portfólio em Goiânia</h2>
+            <h2 className="font-serif text-3xl md:text-4xl text-white">Portfólio em Goiânia</h2>
           </div>
           <Link href="/galeria" className="text-sm text-neutral-500 tracking-widest uppercase hover:text-gold transition-colors hidden md:block">
             Ver galeria completa →
@@ -219,10 +219,10 @@ export default function HomePage() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section className="bg-dark-100 py-24">
+      <section className="bg-dark-100 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Feedbacks</p>
-          <h2 className="font-serif text-4xl text-white mb-16">O que dizem os clientes</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-white mb-10 md:mb-16">O que dizem os clientes</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { text: "A Darah captou exatamente o que eu queria no ensaio de moda. Profissionalismo, direção impecável e fotos lindíssimas.", name: "Ana Clara", service: "Ensaio de Moda" },
@@ -252,7 +252,7 @@ export default function HomePage() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.3) 100%)" }} />
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia e São Paulo</p>
-          <h2 className="font-serif text-5xl text-white mb-6 leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl text-white mb-6 leading-tight">
             Sua história merece ser registrada com estilo
           </h2>
           <p className="text-neutral-400 mb-10 text-lg leading-relaxed">
@@ -263,10 +263,10 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <div className="text-center mb-14">
+      <section className="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        <div className="text-center mb-10 md:mb-14">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Dúvidas frequentes</p>
-          <h2 className="font-serif text-4xl text-white">Perguntas sobre fotografia em Goiânia</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-white">Perguntas sobre fotografia em Goiânia</h2>
         </div>
         <div className="divide-y divide-dark-300">
           {[
@@ -296,7 +296,7 @@ export default function HomePage() {
             },
           ].map((faq, i) => (
             <details key={i} className="group py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <summary className="flex items-center justify-between gap-4 text-white font-medium text-lg group-open:text-gold transition-colors">
+              <summary className="flex items-center justify-between gap-4 text-white font-medium text-base md:text-lg group-open:text-gold transition-colors">
                 {faq.q}
                 <span className="shrink-0 text-gold text-xl transition-transform group-open:rotate-45">+</span>
               </summary>

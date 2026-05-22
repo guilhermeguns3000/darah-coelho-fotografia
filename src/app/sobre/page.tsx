@@ -67,7 +67,7 @@ export default function SobrePage() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-0 items-stretch min-h-[60vh]">
           <div className="flex flex-col justify-center py-16 pr-0 md:pr-16">
             <p className="text-gold text-xs tracking-widest uppercase mb-4">Fotógrafa em Goiânia</p>
-            <h1 className="font-serif text-5xl text-white mb-6 leading-tight">
+            <h1 className="font-serif text-3xl md:text-5xl text-white mb-6 leading-tight">
               Me chamo<br />Darah Coelho
             </h1>
             <p className="text-neutral-400 text-lg leading-relaxed mb-6">
@@ -94,10 +94,10 @@ export default function SobrePage() {
       </section>
 
       {/* DIFERENCIAIS */}
-      <section className="bg-dark-100 py-24">
+      <section className="bg-dark-100 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Por que a Darah</p>
-          <h2 className="font-serif text-3xl text-white mb-12">Por que escolher a fotógrafa Darah Coelho em Goiânia</h2>
+          <h2 className="font-serif text-2xl md:text-3xl text-white mb-8 md:mb-12">Por que escolher a fotógrafa Darah Coelho em Goiânia</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
               { title: "Direção artística completa", text: "Não basta ter câmera. Cada sessão tem um briefing criativo, moodboard e direção de poses do início ao fim. Você não precisa saber posar: é para isso que estou aqui." },
@@ -164,9 +164,9 @@ export default function SobrePage() {
       </section>
 
       {/* CONTATO */}
-      <section className="bg-dark-100 py-24">
+      <section className="bg-dark-100 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-4xl text-white mb-4">Vamos trabalhar juntos em Goiânia?</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">Vamos trabalhar juntos em Goiânia?</h2>
           <p className="text-neutral-400 mb-8 text-lg">
             Entre em contato e conte como posso ajudar com o seu projeto fotográfico.
           </p>

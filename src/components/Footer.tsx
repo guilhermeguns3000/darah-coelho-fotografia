@@ -5,7 +5,7 @@ export default function Footer() {
   const whatsapp = "https://wa.me/5562982933266";
 
   return (
-    <footer className="bg-dark-100 border-t border-dark-300 mt-32">
+    <footer className="bg-dark-100 border-t border-dark-300 mt-16 md:mt-32">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
@@ -91,7 +91,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:contato@darahcoelhofotografia.com.br"
-                  className="text-sm text-neutral-500 hover:text-gold transition-colors"
+                  className="text-sm text-neutral-500 hover:text-gold transition-colors break-all"
                 >
                   contato@darahcoelhofotografia.com.br
                 </a>

@@ -525,7 +525,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* OUTROS POSTS */}
       {otherPosts.length > 0 && (
-        <section className="max-w-7xl mx-auto px-6 py-20">
+        <section className="max-w-7xl mx-auto px-6 py-12 md:py-20">
           <h2 className="font-serif text-2xl text-white mb-10">Outros artigos</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {otherPosts.map((p) => (

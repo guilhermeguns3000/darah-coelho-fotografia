@@ -74,13 +74,14 @@ export default function GaleriaPage() {
 
       {/* Filtros por serviço */}
       <section className="max-w-7xl mx-auto px-6 mb-8">
-        <div className="flex flex-wrap gap-3">
-          <span className="px-4 py-2 bg-gold text-dark text-xs tracking-widest uppercase">Todos</span>
+        <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-none snap-x"
+          style={{ WebkitOverflowScrolling: "touch" }}>
+          <span className="shrink-0 px-4 py-2 bg-gold text-dark text-xs tracking-widest uppercase">Todos</span>
           {services.map((s) => (
             <Link
               key={s.slug}
               href={`/servicos/${s.slug}`}
-              className="px-4 py-2 border border-dark-400 text-neutral-500 text-xs tracking-widest uppercase hover:border-gold hover:text-gold transition-all"
+              className="shrink-0 px-4 py-2 border border-dark-400 text-neutral-500 text-xs tracking-widest uppercase hover:border-gold hover:text-gold transition-all"
             >
               {s.shortTitle}
             </Link>

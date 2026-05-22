@@ -124,7 +124,7 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* DESCRIÇÃO */}
-      <section className="max-w-4xl mx-auto px-6 py-20">
+      <section className="max-w-4xl mx-auto px-6 py-12 md:py-20">
         <p className="text-neutral-300 text-xl leading-relaxed mb-10">{service.description}</p>
         <WhatsAppButton
           label={`Agendar ${service.shortTitle}`}
@@ -144,9 +144,9 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* O QUE INCLUI */}
-      <section className="bg-dark-100 py-20">
+      <section className="bg-dark-100 py-12 md:py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl text-white mb-10">
+          <h2 className="font-serif text-2xl md:text-3xl text-white mb-8 md:mb-10">
             O que inclui o {service.shortTitle.toLowerCase()} em Goiânia
           </h2>
           <ul className="grid md:grid-cols-2 gap-4">
@@ -161,8 +161,8 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* PROCESSO */}
-      <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="font-serif text-3xl text-white mb-12">Como funciona o {service.shortTitle.toLowerCase()} com a Darah Coelho</h2>
+      <section className="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <h2 className="font-serif text-2xl md:text-3xl text-white mb-8 md:mb-12">Como funciona o {service.shortTitle.toLowerCase()} com a Darah Coelho</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {service.process.map((p, i) => (
             <div key={i} className="flex gap-5">
@@ -179,10 +179,10 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* CTA MEIO */}
-      <section className="bg-dark-200 border-y border-dark-300 py-16">
+      <section className="bg-dark-200 border-y border-dark-300 py-10 md:py-16">
         <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="font-serif text-2xl text-white mb-2">Agende seu {service.shortTitle.toLowerCase()} em Goiânia</h2>
+            <h2 className="font-serif text-xl md:text-2xl text-white mb-2">Agende seu {service.shortTitle.toLowerCase()} em Goiânia</h2>
             <p className="text-neutral-400">Entre em contato pelo WhatsApp para verificar disponibilidade e orçamento.</p>
           </div>
           <WhatsAppButton
@@ -193,8 +193,8 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* FAQ */}
-      <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="font-serif text-3xl text-white mb-12">
+      <section className="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <h2 className="font-serif text-2xl md:text-3xl text-white mb-8 md:mb-12">
           Perguntas frequentes sobre {service.shortTitle.toLowerCase()} em Goiânia
         </h2>
         <div className="space-y-8">
@@ -224,9 +224,9 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* OUTROS SERVIÇOS */}
-      <section className="bg-dark-100 py-20">
+      <section className="bg-dark-100 py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-serif text-3xl text-white mb-10">Outros serviços em Goiânia</h2>
+          <h2 className="font-serif text-2xl md:text-3xl text-white mb-8 md:mb-10">Outros serviços em Goiânia</h2>
           <div className="grid md:grid-cols-3 gap-1">
             {relatedServices.map((s) => (
               <Link
