@@ -126,10 +126,10 @@ export default function HomePage() {
             style={{ animation: "kenburns 12s ease-in-out infinite", transformOrigin: "center center" }}
           >
             <Image
-              src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto:best,w_800/darah/Darah%20coelho/darah-home"
+              src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/Darah%20coelho/darah-home"
               alt="Fotógrafa Darah Coelho em Goiânia"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, transparent 45%, rgba(10,10,10,0.6) 100%)" }} />
