@@ -8,7 +8,7 @@ export default function SchemaOrg() {
         name: "Darah Coelho Fotografia",
         url: "https://darahcoelhofotografia.com.br",
         telephone: "+55-62-98293-3266",
-        email: "contato@darahcoelhofotografia.com.br",
+        email: "darahtrabalho@icloud.com",
         description:
           "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante, newborn e fotografia para e-commerce.",
         address: {

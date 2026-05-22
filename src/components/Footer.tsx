@@ -86,10 +86,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:contato@darahcoelhofotografia.com.br"
+                  href="mailto:darahtrabalho@icloud.com"
                   className="text-sm text-neutral-500 hover:text-gold transition-colors break-all"
                 >
-                  contato@darahcoelhofotografia.com.br
+                  darahtrabalho@icloud.com
                 </a>
               </li>
               <li>

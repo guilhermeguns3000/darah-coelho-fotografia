@@ -50,7 +50,7 @@ export default async function ServicePage({ params }: Props) {
         description: service.description,
         url: `https://darahcoelhofotografia.com.br/servicos/${slug}`,
         telephone: "+55-62-98293-3266",
-        email: "contato@darahcoelhofotografia.com.br",
+        email: "darahtrabalho@icloud.com",
         priceRange: "$$",
         sameAs: ["https://www.instagram.com/darahcoelho/"],
         address: {
