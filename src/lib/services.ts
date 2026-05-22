@@ -362,7 +362,7 @@ export const services: Service[] = [
       "fotos família Goiânia",
       "fotografia família Goiânia",
     ],
-    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/casamento/img_0840",
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto/darah/batizado/img_6612",
     deliverables: [
       "Sessão para famílias de todos os tamanhos",
       "Locações em estúdio ou externas em Goiânia",
@@ -370,6 +370,7 @@ export const services: Service[] = [
       "Fotos individuais e em grupo",
       "Edição e entrega em alta resolução",
     ],
+    noPortfolio: true,
     process: [
       { step: "Planejamento", description: "Definimos a locação e o melhor horário para todos, inclusive crianças pequenas." },
       { step: "Locação", description: "Estúdio, parque, jardim ou um lugar com significado para a família." },
