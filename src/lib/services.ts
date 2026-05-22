@@ -486,3 +486,9 @@ export function getServiceBySlug(slug: string): Service | undefined {
 export function getAllServiceSlugs(): string[] {
   return services.map((s) => s.slug);
 }
+
+export function toCardImage(heroImageUrl: string): string {
+  return heroImageUrl
+    .replace("c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto", "c_fill,g_face,ar_4:5,w_800,f_auto,q_auto")
+    .replace("c_fill,g_auto,ar_16:7,w_1920,f_auto,q_auto", "c_fill,g_auto,ar_4:5,w_800,f_auto,q_auto");
+}

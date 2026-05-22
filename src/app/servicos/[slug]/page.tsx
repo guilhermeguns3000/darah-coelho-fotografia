@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { services, getServiceBySlug, getAllServiceSlugs } from "@/lib/services";
+import { services, getServiceBySlug, getAllServiceSlugs, toCardImage } from "@/lib/services";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 interface Props {
@@ -232,7 +232,7 @@ export default async function ServicePage({ params }: Props) {
                 className="group relative aspect-[4/3] overflow-hidden block"
               >
                 <Image
-                  src={s.heroImage}
+                  src={toCardImage(s.heroImage)}
                   alt={`${s.shortTitle} — fotógrafa Goiânia`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

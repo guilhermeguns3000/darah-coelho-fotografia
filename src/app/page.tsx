@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { services } from "@/lib/services";
+import { services, toCardImage } from "@/lib/services";
 
 export const metadata: Metadata = {
   title: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
@@ -110,7 +110,7 @@ export default function HomePage() {
                 className="group relative aspect-[4/5] overflow-hidden block"
               >
                 <Image
-                  src={service.heroImage}
+                  src={toCardImage(service.heroImage)}
                   alt={`${service.shortTitle}, fotógrafa Goiânia`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
