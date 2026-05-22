@@ -142,7 +142,7 @@ export default function HomePage() {
         <div className="flex justify-between items-end mb-12">
           <div>
             <p className="text-gold text-xs tracking-widest uppercase mb-2">Trabalhos recentes</p>
-            <h2 className="font-serif text-4xl text-white">Portfólio</h2>
+            <h2 className="font-serif text-4xl text-white">Portfólio em Goiânia</h2>
           </div>
           <Link href="/galeria" className="text-sm text-neutral-500 tracking-widest uppercase hover:text-gold transition-colors hidden md:block">
             Ver galeria completa →

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      images: [{ url: service.heroImage, alt: service.shortTitle }],
+      images: [{ url: service.heroImage, alt: service.keywords[0] }],
     },
   };
 }
@@ -49,7 +49,10 @@ export default async function ServicePage({ params }: Props) {
         name: "Darah Coelho Fotografia",
         description: service.description,
         url: `https://darahcoelhofotografia.com.br/servicos/${slug}`,
+        telephone: "+55-62-98293-3266",
         email: "contato@darahcoelhofotografia.com.br",
+        priceRange: "$$",
+        sameAs: ["https://www.instagram.com/darahcoelho/"],
         address: {
           "@type": "PostalAddress",
           addressLocality: "Goiânia",
@@ -144,7 +147,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="bg-dark-100 py-20">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl text-white mb-10">
-            O que está incluído na sessão
+            O que inclui o {service.shortTitle.toLowerCase()} em Goiânia
           </h2>
           <ul className="grid md:grid-cols-2 gap-4">
             {service.deliverables.map((item, i) => (
@@ -159,7 +162,7 @@ export default async function ServicePage({ params }: Props) {
 
       {/* PROCESSO */}
       <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="font-serif text-3xl text-white mb-12">Como funciona</h2>
+        <h2 className="font-serif text-3xl text-white mb-12">Como funciona o {service.shortTitle.toLowerCase()} com a Darah Coelho</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {service.process.map((p, i) => (
             <div key={i} className="flex gap-5">
@@ -179,7 +182,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="bg-dark-200 border-y border-dark-300 py-16">
         <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="font-serif text-2xl text-white mb-2">Pronta para agendar?</h2>
+            <h2 className="font-serif text-2xl text-white mb-2">Agende seu {service.shortTitle.toLowerCase()} em Goiânia</h2>
             <p className="text-neutral-400">Entre em contato pelo WhatsApp para verificar disponibilidade e orçamento.</p>
           </div>
           <WhatsAppButton

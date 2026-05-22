@@ -12,22 +12,39 @@ export const metadata: Metadata = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Darah Coelho",
-  jobTitle: "Fotógrafa Profissional",
-  url: "https://darahcoelhofotografia.com.br/sobre",
-  worksFor: {
-    "@type": "LocalBusiness",
-    name: "Darah Coelho Fotografia",
-    "@id": "https://darahcoelhofotografia.com.br/#business",
-  },
-  knowsAbout: ["Fotografia de Moda", "Fotografia de Casamento", "Ensaio Gestante", "Ensaio Newborn", "Fotografia para E-commerce"],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Goiânia",
-    addressRegion: "GO",
-    addressCountry: "BR",
-  },
+  "@graph": [
+    {
+      "@type": "Person",
+      name: "Darah Coelho",
+      jobTitle: "Fotógrafa Profissional",
+      url: "https://darahcoelhofotografia.com.br/sobre",
+      image: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_900/darah/Darah%20coelho/img-3778",
+      sameAs: [
+        "https://www.instagram.com/darahcoelho/",
+        "https://www.tiktok.com/@darahcoelho0",
+      ],
+      worksFor: {
+        "@type": "LocalBusiness",
+        name: "Darah Coelho Fotografia",
+        "@id": "https://darahcoelhofotografia.com.br/#business",
+        telephone: "+55-62-98293-3266",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Goiânia",
+          addressRegion: "GO",
+          addressCountry: "BR",
+        },
+      },
+      knowsAbout: ["Fotografia de Moda", "Fotografia de Casamento", "Ensaio Gestante", "Ensaio Newborn", "Fotografia para E-commerce"],
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Início", item: "https://darahcoelhofotografia.com.br" },
+        { "@type": "ListItem", position: 2, name: "Sobre a Darah Coelho", item: "https://darahcoelhofotografia.com.br/sobre" },
+      ],
+    },
+  ],
 };
 
 export default function SobrePage() {
@@ -40,6 +57,13 @@ export default function SobrePage() {
 
       {/* HERO */}
       <section className="pt-32 pb-0">
+        <div className="max-w-7xl mx-auto px-6 pt-6">
+          <nav className="flex gap-2 text-xs text-neutral-500 tracking-widest uppercase mb-8">
+            <Link href="/" className="hover:text-gold transition-colors">Início</Link>
+            <span>/</span>
+            <span className="text-gold">Sobre</span>
+          </nav>
+        </div>
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-0 items-stretch min-h-[60vh]">
           <div className="flex flex-col justify-center py-16 pr-0 md:pr-16">
             <p className="text-gold text-xs tracking-widest uppercase mb-4">Fotógrafa em Goiânia</p>
@@ -73,7 +97,7 @@ export default function SobrePage() {
       <section className="bg-dark-100 py-24">
         <div className="max-w-4xl mx-auto px-6">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Por que a Darah</p>
-          <h2 className="font-serif text-3xl text-white mb-12">Diferenciais</h2>
+          <h2 className="font-serif text-3xl text-white mb-12">Por que escolher a fotógrafa Darah Coelho em Goiânia</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
               { title: "Direção artística completa", text: "Não basta ter câmera. Cada sessão tem um briefing criativo, moodboard e direção de poses do início ao fim. Você não precisa saber posar: é para isso que estou aqui." },
@@ -93,7 +117,7 @@ export default function SobrePage() {
       {/* ESPECIALIDADES */}
       <section className="max-w-4xl mx-auto px-6 py-24">
         <p className="text-gold text-xs tracking-widest uppercase mb-4">Especialidades</p>
-        <h2 className="font-serif text-3xl text-white mb-10">O que fotografo</h2>
+        <h2 className="font-serif text-3xl text-white mb-10">Serviços de fotografia em Goiânia</h2>
         <div className="flex flex-wrap gap-3">
           {[
             { label: "Book de Moda", href: "/servicos/book-de-moda-goiania" },
@@ -114,12 +138,37 @@ export default function SobrePage() {
         </div>
       </section>
 
+      {/* RECONHECIMENTO */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-dark-300">
+        <p className="text-neutral-500 text-sm leading-relaxed">
+          A fotografia profissional em Goiânia é reconhecida pela{" "}
+          <a
+            href="https://www.anafoto.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gold hover:underline"
+          >
+            ANAFOTO (Associação Nacional de Fotógrafos Profissionais)
+          </a>{" "}
+          como uma das categorias criativas em maior crescimento no Brasil. Acompanhe o trabalho da
+          Darah Coelho no{" "}
+          <a
+            href="https://www.instagram.com/darahcoelho/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gold hover:underline"
+          >
+            Instagram @darahcoelho
+          </a>.
+        </p>
+      </section>
+
       {/* CONTATO */}
       <section className="bg-dark-100 py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-4xl text-white mb-4">Vamos trabalhar juntos?</h2>
+          <h2 className="font-serif text-4xl text-white mb-4">Vamos trabalhar juntos em Goiânia?</h2>
           <p className="text-neutral-400 mb-8 text-lg">
-            Entre em contato e cuente como posso ajudar com o seu projeto.
+            Entre em contato e conte como posso ajudar com o seu projeto fotográfico.
           </p>
           <WhatsAppButton label="Agendar sessão" message="Olá, Darah! Vi o seu trabalho e gostaria de agendar uma sessão." />
         </div>

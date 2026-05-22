@@ -4,9 +4,9 @@ import Link from "next/link";
 import { services } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "Galeria de Fotos | Darah Coelho Fotografia Goiânia",
+  title: "Galeria de Fotografia em Goiânia | Darah Coelho Portfólio",
   description:
-    "Portfólio da fotógrafa Darah Coelho em Goiânia. Trabalhos de moda, ensaio pessoal, casamento, gestante, newborn e fotografia para e-commerce.",
+    "Portfólio e galeria de fotos da fotógrafa Darah Coelho em Goiânia. Book de moda, ensaio pessoal, casamento, gestante e eventos. Veja os trabalhos e agende sua sessão.",
   alternates: { canonical: "https://darahcoelhofotografia.com.br/galeria" },
   robots: { index: true, follow: true },
 };
@@ -31,14 +31,44 @@ const galleryImages = [
   { src: `${BASE}/darah/casamento/img-0844`, alt: "Casamento fotógrafa Goiânia", service: "Casamento", slug: "fotografia-casamento-goiania" },
 ];
 
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ImageGallery",
+      name: "Galeria de Fotografia em Goiânia – Darah Coelho",
+      description: "Portfólio da fotógrafa Darah Coelho em Goiânia com trabalhos de book de moda, ensaio pessoal, casamento, gestante e eventos.",
+      url: "https://darahcoelhofotografia.com.br/galeria",
+      author: { "@type": "Person", name: "Darah Coelho", url: "https://darahcoelhofotografia.com.br/sobre" },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Início", item: "https://darahcoelhofotografia.com.br" },
+        { "@type": "ListItem", position: 2, name: "Galeria de Fotografia em Goiânia", item: "https://darahcoelhofotografia.com.br/galeria" },
+      ],
+    },
+  ],
+};
+
 export default function GaleriaPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <section className="pt-32 pb-16 max-w-7xl mx-auto px-6">
+        <nav className="flex gap-2 text-xs text-neutral-500 tracking-widest uppercase mb-8">
+          <Link href="/" className="hover:text-gold transition-colors">Início</Link>
+          <span>/</span>
+          <span className="text-gold">Galeria</span>
+        </nav>
         <p className="text-gold text-xs tracking-widest uppercase mb-4">Portfólio</p>
-        <h1 className="font-serif text-5xl text-white mb-4">Galeria</h1>
+        <h1 className="font-serif text-5xl text-white mb-4">Galeria de Fotografia em Goiânia</h1>
         <p className="text-neutral-400 max-w-xl leading-relaxed">
-          Uma seleção de trabalhos de moda, ensaios, casamentos e mais, todos realizados em Goiânia e São Paulo.
+          Uma seleção de trabalhos de book de moda, ensaio pessoal, fotografia de casamento, gestante
+          e eventos corporativos, todos realizados em Goiânia e São Paulo pela fotógrafa Darah Coelho.
         </p>
       </section>
 
