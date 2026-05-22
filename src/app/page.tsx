@@ -84,8 +84,10 @@ export default function HomePage() {
             src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto:best,w_800/darah/Darah%20coelho/img-3778"
             alt="Fotógrafa Darah Coelho em Goiânia"
             fill
-            className="object-cover"
+            className="object-cover animate-kenburns"
           />
+          {/* vignette para profundidade */}
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, transparent 50%, rgba(10,10,10,0.55) 100%)" }} />
         </div>
       </section>
 
