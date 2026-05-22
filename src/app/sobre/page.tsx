@@ -95,10 +95,21 @@ export default function SobrePage() {
         <p className="text-gold text-xs tracking-widest uppercase mb-4">Especialidades</p>
         <h2 className="font-serif text-3xl text-white mb-10">O que fotografo</h2>
         <div className="flex flex-wrap gap-3">
-          {["Book de Moda", "Ensaio Pessoal", "Casamento", "Gestante", "Newborn", "Família", "Batismo", "Eventos Corporativos", "Fotografia de Produto", "Videomaker"].map((esp) => (
-            <span key={esp} className="px-4 py-2 border border-dark-400 text-neutral-400 text-sm hover:border-gold hover:text-gold transition-all">
-              {esp}
-            </span>
+          {[
+            { label: "Book de Moda", href: "/servicos/book-de-moda-goiania" },
+            { label: "Ensaio Pessoal", href: "/servicos/ensaio-pessoal-goiania" },
+            { label: "Casamento", href: "/servicos/fotografia-casamento-goiania" },
+            { label: "Gestante", href: "/servicos/ensaio-gestante-goiania" },
+            { label: "Família", href: "/servicos/ensaio-familia-goiania" },
+            { label: "Batismo", href: "/servicos/fotografia-batismo-goiania" },
+            { label: "Moda Masculina", href: "/servicos/moda-masculina-goiania" },
+            { label: "Eventos Corporativos", href: "/servicos/eventos-corporativos-goiania" },
+            { label: "Produto / E-commerce", href: "/servicos/fotografia-produto-ecommerce-goiania" },
+            { label: "Videomaker", href: "/servicos/videomaker-goiania" },
+          ].map((esp) => (
+            <Link key={esp.label} href={esp.href} className="px-4 py-2 border border-dark-400 text-neutral-400 text-sm hover:border-gold hover:text-gold transition-all">
+              {esp.label}
+            </Link>
           ))}
         </div>
       </section>

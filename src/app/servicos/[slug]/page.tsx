@@ -96,7 +96,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="relative h-[70vh] flex items-end pb-16 overflow-hidden pt-16">
         <Image
           src={service.heroImage}
-          alt={`${service.title} — Darah Coelho fotógrafa Goiânia`}
+          alt={`${service.keywords[0]}, fotógrafa Darah Coelho em Goiânia`}
           fill
           className="object-cover object-center"
           priority
@@ -233,7 +233,7 @@ export default async function ServicePage({ params }: Props) {
               >
                 <Image
                   src={toCardImage(s.heroImage)}
-                  alt={`${s.shortTitle} — fotógrafa Goiânia`}
+                  alt={`${s.keywords[0]}, Darah Coelho fotógrafa Goiânia`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"

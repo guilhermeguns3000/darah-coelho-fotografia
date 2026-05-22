@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -12,7 +13,11 @@ interface BlogPost {
   date: string;
   category: string;
   readTime: string;
+  heroImg: string;
+  heroAlt: string;
   sections: { heading?: string; body: string }[];
+  internalLink: { href: string; label: string; context: string };
+  externalLink: { href: string; label: string; context: string };
   cta: { heading: string; message: string };
 }
 
@@ -28,6 +33,8 @@ const posts: BlogPost[] = [
     date: "2026-05-01",
     category: "Moda",
     readTime: "6 min",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1200,f_auto,q_auto/darah/moda%20feminina/sem-ti-tulo-01",
+    heroAlt: "book de moda Goiânia, sessão editorial fotógrafa Darah Coelho",
     sections: [
       {
         body: "Uma das perguntas mais frequentes que recebo é: quanto custa um ensaio de moda em Goiânia? A resposta honesta é: depende. Mas não de forma evasiva. Depende de fatores muito concretos que vou detalhar aqui para que você chegue ao orçamento de qualquer fotógrafa já sabendo o que está comprando.",
@@ -54,12 +61,22 @@ const posts: BlogPost[] = [
       },
       {
         heading: "Vale a pena investir em um book de moda?",
-        body: "Para modelos em início de carreira, um book bem produzido é a porta de entrada para agências em Goiânia, São Paulo e outras cidades. Para marcas locais, o material fotográfico de qualidade impacta diretamente as vendas e a percepção do produto. Para quem quer fotos para redes sociais com identidade visual própria, o book de moda substitui anos de conteúdo amador por um conjunto coeso e profissional. O retorno do investimento vai além das fotos: é a imagem que você projeta a partir dali.",
+        body: "Para modelos em início de carreira, um book de moda bem produzido é a porta de entrada para agências em Goiânia, São Paulo e em todo o Brasil. Para marcas locais, o material fotográfico de qualidade impacta diretamente as vendas e a percepção do produto. Para quem quer fotos para redes sociais com identidade visual própria, o book de moda substitui anos de conteúdo amador por um conjunto coeso e profissional. O retorno do investimento vai além das fotos: é a imagem que você projeta a partir dali.",
       },
     ],
+    internalLink: {
+      href: "/servicos/book-de-moda-goiania",
+      label: "Ver o serviço de Book de Moda em Goiânia",
+      context: "Quer conhecer os pacotes disponíveis para ensaio de moda em Goiânia?",
+    },
+    externalLink: {
+      href: "https://www.abradi.com.br",
+      label: "ABRADI",
+      context: "Para entender melhor o mercado criativo e de imagem no Brasil, a",
+    },
     cta: {
       heading: "Quer um orçamento real para o seu ensaio?",
-      message: "Olá, Darah! Gostaria de saber o valor para um ensaio de moda. Pode me passar mais informações?",
+      message: "Olá, Darah! Gostaria de saber o valor para um ensaio de moda em Goiânia. Pode me passar mais informações?",
     },
   },
   {
@@ -67,12 +84,14 @@ const posts: BlogPost[] = [
     title: "Melhor época do ano para fotos externas em Goiânia",
     metaTitle: "Melhor época para fotos externas em Goiânia | Darah Coelho",
     metaDescription:
-      "Goiânia tem clima de cerrado com estação seca e chuvosa bem definidas. Saiba quando a luz é melhor para ensaios ao ar livre e como planejar sua sessão.",
+      "Goiânia tem clima de cerrado com estação seca e chuvosa bem definidas. Saiba quando a luz é melhor para ensaios ao ar livre e como planejar sua sessão fotográfica.",
     excerpt:
       "Goiânia tem clima específico que afeta diretamente a qualidade das fotos ao ar livre. Veja quando e como planejar seu ensaio.",
     date: "2026-04-15",
     category: "Dicas",
     readTime: "5 min",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1200,f_auto,q_auto/darah/ensaio%20pessoal/img-0717",
+    heroAlt: "ensaio fotográfico externo Goiânia, fotógrafa Darah Coelho em locação ao ar livre",
     sections: [
       {
         body: "Goiânia tem um clima de cerrado com duas estações bem definidas: a chuvosa (outubro a março) e a seca (abril a setembro). Para quem quer fazer um ensaio fotográfico externo em Goiânia, entender essa divisão é fundamental para garantir fotos com a luz certa, o cenário ideal e sem imprevistos.",
@@ -98,6 +117,16 @@ const posts: BlogPost[] = [
         body: "Antes de agendar, pense no tipo de foto que você quer: urbano, natural, íntimo ou editorial? Isso define a locação e, por consequência, o melhor período do ano. Se você tem flexibilidade, priorize maio, junho e julho, que combinam tempo seco, temperatura amena e luz bonita em Goiânia. Se a data for na estação chuvosa, fique tranquila: trabalhamos com plano de contingência e acompanho a previsão do tempo nos dias anteriores para ajustar o horário se necessário.",
       },
     ],
+    internalLink: {
+      href: "/servicos/ensaio-pessoal-goiania",
+      label: "Ver ensaios pessoais externos em Goiânia",
+      context: "Quer agendar o seu ensaio ao ar livre em Goiânia?",
+    },
+    externalLink: {
+      href: "https://portal.inmet.gov.br",
+      label: "INMET (Instituto Nacional de Meteorologia)",
+      context: "Para acompanhar a previsão do tempo e planejar com antecedência, o",
+    },
     cta: {
       heading: "Vamos planejar o seu ensaio externo?",
       message: "Olá, Darah! Quero agendar um ensaio externo em Goiânia. Pode me ajudar com as datas e locações?",
@@ -106,21 +135,23 @@ const posts: BlogPost[] = [
   {
     slug: "ensaio-gestante-quando-fazer",
     title: "Ensaio gestante: quando fazer e como se preparar",
-    metaTitle: "Ensaio Gestante: quando fazer e como se preparar | Darah Coelho Goiânia",
+    metaTitle: "Ensaio Gestante em Goiânia: quando fazer e como se preparar | Darah Coelho",
     metaDescription:
-      "A janela ideal para o ensaio de gestante é entre 32 e 36 semanas. Saiba como se preparar, o que vestir e o que esperar da sua sessão com a fotógrafa Darah Coelho em Goiânia.",
+      "A janela ideal para o ensaio de gestante em Goiânia é entre 32 e 36 semanas. Saiba como se preparar, o que vestir e o que esperar da sua sessão com a fotógrafa Darah Coelho.",
     excerpt:
       "A janela ideal para o ensaio de gestante, como escolher o look, o que esperar da sessão e como aproveitar ao máximo.",
     date: "2026-04-01",
     category: "Gestante",
     readTime: "7 min",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1200,f_auto,q_auto/darah/Gestante/cecfd24b-94e9-4c9c-a9ea-a0f98a0a1c61",
+    heroAlt: "ensaio gestante Goiânia, fotógrafa especializada em ensaio de gestante Darah Coelho",
     sections: [
       {
-        body: "O ensaio de gestante é um dos registros mais especiais que uma mulher pode ter. É o momento de celebrar a transformação do corpo, a chegada de uma vida nova e toda a emoção que vem junto. Como fotógrafa especializada em ensaios de gestante em Goiânia, vejo de perto o quanto essas fotos se tornam um tesouro que vai muito além da gravidez.",
+        body: "O ensaio de gestante em Goiânia é um dos registros mais especiais que uma mulher pode ter. É o momento de celebrar a transformação do corpo, a chegada de uma vida nova e toda a emoção que vem junto. Como fotógrafa especializada em ensaios de gestante em Goiânia, vejo de perto o quanto essas fotos se tornam um tesouro que vai muito além da gravidez.",
       },
       {
-        heading: "Qual a melhor semana para o ensaio de gestante?",
-        body: "A janela ideal para o ensaio gestante é entre 32 e 36 semanas de gestação. Nesse período, a barriga já está bem evidente e arredondada — o que cria fotos lindas e expressivas — e a gestante ainda tem disposição e mobilidade para diferentes poses e movimentos. Antes das 30 semanas, a barriga pode ainda não ter o volume ideal para as fotos. Após as 37 semanas, o cansaço aumenta e o desconforto para certas posições é maior. Se você está planejando o ensaio, marque ainda no segundo trimestre para garantir a data dentro dessa janela.",
+        heading: "Qual a melhor semana para o ensaio de gestante em Goiânia?",
+        body: "A janela ideal para o ensaio gestante é entre 32 e 36 semanas de gestação. Nesse período, a barriga já está bem evidente e arredondada, o que cria fotos lindas e expressivas, e a gestante ainda tem disposição e mobilidade para diferentes poses e movimentos. Antes das 30 semanas, a barriga pode ainda não ter o volume ideal para as fotos. Após as 37 semanas, o cansaço aumenta e o desconforto para certas posições é maior. Se você está planejando o ensaio, marque ainda no segundo trimestre para garantir a data dentro dessa janela.",
       },
       {
         heading: "O que vestir no ensaio gestante",
@@ -128,11 +159,11 @@ const posts: BlogPost[] = [
       },
       {
         heading: "Estúdio ou externo?",
-        body: "Ambos têm sua beleza. O ensaio gestante em estúdio oferece controle total da luz, privacidade e conforto, com possibilidade de trabalhar com fundos lisos e iluminação cinematográfica. O ensaio gestante em locação externa traz o ar livre, a vegetação do cerrado goiano e uma atmosfera mais orgânica e natural. Muitas clientes optam por combinar os dois em um único ensaio, começando em ambiente externo no início da sessão (quando a disposição é maior) e finalizando em estúdio com looks mais intimistas.",
+        body: "Ambos têm sua beleza. O ensaio gestante em estúdio oferece controle total da luz, privacidade e conforto, com possibilidade de trabalhar com fundos lisos e iluminação cinematográfica. O ensaio gestante em locação externa traz o ar livre, a vegetação do cerrado goiano e uma atmosfera mais orgânica e natural. Muitas clientes optam por combinar os dois em um único ensaio, começando em ambiente externo no início da sessão e finalizando em estúdio com looks mais intimistas.",
       },
       {
         heading: "Como se preparar para a sessão",
-        body: "Nos dias anteriores, hidrate bem a pele e descanse o máximo possível. No dia do ensaio, faça uma refeição leve antes da sessão e leve um lanche. Traga todas as roupas que separou, mesmo que ache que não vai usar — é melhor ter opções a mais do que faltar. Se for fazer maquiagem, opte por algo que realce sua beleza natural sem parecer pesado. Marque o horário do ensaio levando em conta o período do dia em que você se sente com mais energia — para muitas gestantes, o período da manhã é o melhor.",
+        body: "Nos dias anteriores, hidrate bem a pele e descanse o máximo possível. No dia do ensaio, faça uma refeição leve antes da sessão e leve um lanche. Traga todas as roupas que separou, mesmo que ache que não vai usar. Se for fazer maquiagem, opte por algo que realce sua beleza natural sem parecer pesado. Marque o horário do ensaio levando em conta o período do dia em que você se sente com mais energia.",
       },
       {
         heading: "O parceiro ou parceira pode participar?",
@@ -143,9 +174,19 @@ const posts: BlogPost[] = [
         body: "Uma sessão completa de ensaio gestante em Goiânia dura entre 1h30 e 2h30, dependendo do número de looks e se é em estúdio, externo ou os dois. Nesse tempo, conseguimos cobrir uma média de 2 a 3 looks com boa variedade de poses e ângulos. A entrega das fotos editadas acontece em até 15 dias após a sessão, por galeria online privada.",
       },
     ],
+    internalLink: {
+      href: "/servicos/ensaio-gestante-goiania",
+      label: "Ver todos os detalhes do ensaio de gestante em Goiânia",
+      context: "Quer saber mais sobre como funciona o ensaio de gestante com a Darah?",
+    },
+    externalLink: {
+      href: "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gestante",
+      label: "Ministério da Saúde",
+      context: "Para informações completas sobre saúde na gestação, consulte o",
+    },
     cta: {
       heading: "Agende seu ensaio gestante em Goiânia",
-      message: "Olá, Darah! Estou grávida e quero agendar meu ensaio gestante. Pode me passar as informações?",
+      message: "Olá, Darah! Estou grávida e quero agendar meu ensaio gestante em Goiânia. Pode me passar as informações?",
     },
   },
   {
@@ -153,15 +194,17 @@ const posts: BlogPost[] = [
     title: "O que é fotografia editorial e para quem é?",
     metaTitle: "O que é fotografia editorial e para quem é? | Darah Coelho Goiânia",
     metaDescription:
-      "Entenda a diferença entre book pessoal e fotografia editorial, como funciona o processo criativo e quem pode se beneficiar de um editorial fotográfico em Goiânia.",
+      "Entenda a diferença entre book pessoal e fotografia editorial em Goiânia, como funciona o processo criativo e quem pode se beneficiar de um editorial fotográfico.",
     excerpt:
       "Diferença entre book pessoal e fotografia editorial, como funciona o processo criativo e quem pode se beneficiar de um editorial.",
     date: "2026-03-20",
     category: "Moda",
     readTime: "6 min",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1200,f_auto,q_auto/darah/moda%20feminina/img-40",
+    heroAlt: "fotografia editorial Goiânia, ensaio de moda editorial fotógrafa Darah Coelho",
     sections: [
       {
-        body: "A fotografia editorial é um dos formatos mais criativos e completos da fotografia de moda. Ela vai além do simples registro: é a criação de uma narrativa visual com intenção artística e comunicativa, onde cada elemento da imagem, da roupa ao cenário, da pose à iluminação, é escolhido a dedo para transmitir uma ideia específica.",
+        body: "A fotografia editorial em Goiânia é um dos formatos mais criativos e completos da fotografia de moda. Ela vai além do simples registro: é a criação de uma narrativa visual com intenção artística e comunicativa, onde cada elemento da imagem, da roupa ao cenário, da pose à iluminação, é escolhido a dedo para transmitir uma ideia específica.",
       },
       {
         heading: "A diferença entre book pessoal e editorial",
@@ -177,16 +220,26 @@ const posts: BlogPost[] = [
       },
       {
         heading: "Editorial de moda x campanha publicitária",
-        body: "Um editorial de moda tem liberdade criativa maior — pode ser mais conceitual, abstrato ou artístico, com imagens que provocam interpretação. Uma campanha publicitária tem um objetivo comercial muito claro: comunicar o produto, despertar desejo e gerar venda. Na prática, há muita sobreposição entre os dois. Marcas inteligentes criam campanhas com qualidade e profundidade editorial, porque essa abordagem gera mais engajamento e se destaca em meio ao conteúdo genérico.",
+        body: "Um editorial de moda tem liberdade criativa maior, pode ser mais conceitual, abstrato ou artístico, com imagens que provocam interpretação. Uma campanha publicitária tem um objetivo comercial muito claro: comunicar o produto, despertar desejo e gerar venda. Na prática, há muita sobreposição entre os dois. Marcas inteligentes criam campanhas com qualidade e profundidade editorial, porque essa abordagem gera mais engajamento e se destaca em meio ao conteúdo genérico.",
       },
       {
         heading: "Como avaliar um bom editorial fotográfico",
         body: "Um editorial bem executado tem identidade visual consistente (todas as fotos pertencem ao mesmo universo), narrativa reconhecível (você sente que está olhando para uma história), intenção em cada detalhe (nada parece acidental), e execução técnica impecável (luz, foco, composição e edição alinhados). Se ao olhar um conjunto de fotos você sente que poderia estar numa revista de moda, é provável que seja um editorial bem feito.",
       },
     ],
+    internalLink: {
+      href: "/servicos/book-de-moda-goiania",
+      label: "Conhecer o serviço de Book de Moda Editorial em Goiânia",
+      context: "Pronto para criar seu editorial fotográfico em Goiânia?",
+    },
+    externalLink: {
+      href: "https://www.vogue.com.br",
+      label: "Vogue Brasil",
+      context: "Para se inspirar com editoriais de moda referência, a",
+    },
     cta: {
-      heading: "Quer criar um editorial com a sua marca ou para o seu portfólio?",
-      message: "Olá, Darah! Tenho interesse em fazer um editorial fotográfico. Pode me passar mais informações?",
+      heading: "Quer criar um editorial com a sua marca ou portfólio?",
+      message: "Olá, Darah! Tenho interesse em fazer um editorial fotográfico em Goiânia. Pode me passar mais informações?",
     },
   },
   {
@@ -194,15 +247,17 @@ const posts: BlogPost[] = [
     title: "Como escolher a fotógrafa de casamento certa em Goiânia",
     metaTitle: "Como escolher fotógrafa de casamento em Goiânia | Darah Coelho",
     metaDescription:
-      "5 critérios fundamentais para escolher a fotógrafa do seu casamento em Goiânia além do portfólio. Guia prático da fotógrafa Darah Coelho.",
+      "5 critérios fundamentais para escolher a fotógrafa de casamento em Goiânia além do portfólio. Guia prático da fotógrafa Darah Coelho.",
     excerpt:
       "5 critérios fundamentais para escolher a fotógrafa do seu casamento em Goiânia, além do portfólio.",
     date: "2026-03-05",
     category: "Casamento",
     readTime: "7 min",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:7,w_1200,f_auto,q_auto/darah/casamento/img-0836",
+    heroAlt: "fotógrafa casamento Goiânia, fotografia de casamento Darah Coelho",
     sections: [
       {
-        body: "Escolher a fotógrafa de casamento em Goiânia é uma das decisões mais importantes do planejamento. O DJ pode falhar, o buffet pode atrasar — e você se esquece disso com o tempo. Mas as fotos ficam para sempre. São elas que vão contar a história do seu dia para filhos, netos e para você mesma daqui a 30 anos. Por isso, essa escolha merece muito mais do que olhar um portfólio bonito.",
+        body: "Escolher a fotógrafa de casamento em Goiânia é uma das decisões mais importantes do planejamento. O DJ pode falhar, o buffet pode atrasar, e você se esquece disso com o tempo. Mas as fotos ficam para sempre. São elas que vão contar a história do seu dia para filhos, netos e para você mesma daqui a 30 anos. Por isso, essa escolha merece muito mais do que olhar um portfólio bonito.",
       },
       {
         heading: "1. Identifique a linguagem visual que você ama",
@@ -214,21 +269,31 @@ const posts: BlogPost[] = [
       },
       {
         heading: "3. Avalie a comunicação antes de avaliar o preço",
-        body: "A fotógrafa de casamento vai estar com você nos momentos mais emocionais do seu dia. A forma como ela se comunica antes do casamento é um indicador claro de como vai ser a experiência. Responde rápido? Faz perguntas sobre o que você quer? Demonstra interesse genuíno pela sua história? Ou simplesmente envia um contrato e some? A comunicação antes do contrato é um espelho fiel da comunicação no dia do casamento.",
+        body: "A fotógrafa de casamento em Goiânia vai estar com você nos momentos mais emocionais do seu dia. A forma como ela se comunica antes do casamento é um indicador claro de como vai ser a experiência. Responde rápido? Faz perguntas sobre o que você quer? Demonstra interesse genuíno pela sua história? Ou simplesmente envia um contrato e some? A comunicação antes do contrato é um espelho fiel da comunicação no dia do casamento.",
       },
       {
         heading: "4. Entenda o que está incluído no pacote",
-        body: "Os preços de fotografia de casamento em Goiânia variam muito. Antes de comparar valores, certifique-se de que está comparando pacotes equivalentes. Pergunte: quantas horas de cobertura estão incluídas? Haverá segundo fotógrafo? Quantas fotos editadas serão entregues? O álbum impresso está incluso ou é cobrado à parte? Qual o prazo de entrega? Essas variáveis fazem a diferença entre um pacote de R$ 3.000 e um de R$ 8.000 fazerem sentido ou não.",
+        body: "Os preços de fotografia de casamento em Goiânia variam muito. Antes de comparar valores, certifique-se de que está comparando pacotes equivalentes. Pergunte: quantas horas de cobertura estão incluídas? Haverá segundo fotógrafo? Quantas fotos editadas serão entregues? O álbum impresso está incluso ou é cobrado à parte? Qual o prazo de entrega? Essas variáveis fazem a diferença entre pacotes com valores muito diferentes fazerem sentido ou não.",
       },
       {
         heading: "5. Confie na sensação da reunião presencial",
         body: "Antes de fechar contrato, marque uma reunião, mesmo que online. Converse sobre o casamento, sobre como você se sente, sobre o que é importante para você. Observe se a fotógrafa escuta com atenção, se faz perguntas pertinentes, se demonstra entusiasmo. A fotografia de casamento é um trabalho íntimo: a fotógrafa vai estar mais próxima de você do que a maioria dos fornecedores no seu dia. Essa conexão humana importa tanto quanto o portfólio.",
       },
       {
-        heading: "Fechando: o critério definitivo",
+        heading: "O critério definitivo",
         body: "Depois de avaliar portfólio, comunicação, preço e pacote, pergunte a si mesma: quando imagino essa fotógrafa no meu casamento, me sinto tranquila? Se a resposta for sim, feche. Se houver qualquer hesitação, continue procurando. O seu casamento merece alguém que te deixe completamente confiante.",
       },
     ],
+    internalLink: {
+      href: "/servicos/fotografia-casamento-goiania",
+      label: "Ver fotografia de casamento em Goiânia com a Darah Coelho",
+      context: "Quer conhecer o trabalho da Darah em casamentos?",
+    },
+    externalLink: {
+      href: "https://www.abrazo.com.br",
+      label: "Abrazo Cerimonial",
+      context: "Para um planejamento completo do casamento em Goiânia, profissionais como os da",
+    },
     cta: {
       heading: "Vamos conversar sobre o seu casamento?",
       message: "Olá, Darah! Estou planejando meu casamento em Goiânia e gostaria de saber mais sobre a fotografia. Pode me ajudar?",
@@ -237,7 +302,7 @@ const posts: BlogPost[] = [
   {
     slug: "looks-ensaio-fotografico",
     title: "Looks para ensaio fotográfico: o que vestir",
-    metaTitle: "Looks para ensaio fotográfico: o que vestir | Darah Coelho Goiânia",
+    metaTitle: "Looks para ensaio fotográfico em Goiânia: o que vestir | Darah Coelho",
     metaDescription:
       "Guia completo de roupas para ensaio fotográfico em estúdio e ao ar livre em Goiânia. Cores, estilos e erros a evitar para fotos lindas.",
     excerpt:
@@ -245,12 +310,14 @@ const posts: BlogPost[] = [
     date: "2026-02-20",
     category: "Dicas",
     readTime: "8 min",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1200,f_auto,q_auto/darah/portfolio/foto-1",
+    heroAlt: "looks para ensaio fotográfico em Goiânia, roupas para sessão de fotos Darah Coelho",
     sections: [
       {
-        body: "A escolha das roupas é um dos fatores que mais influencia o resultado de um ensaio fotográfico — e também um dos que mais gera dúvidas. O que vestir? Quantas trocas trazer? O que evitar? Preparei este guia com base nos ensaios que realizo em Goiânia para te ajudar a chegar na sessão confiante e preparada.",
+        body: "A escolha das roupas é um dos fatores que mais influencia o resultado de um ensaio fotográfico em Goiânia, e também um dos que mais gera dúvidas. O que vestir? Quantas trocas trazer? O que evitar? Preparei este guia com base nos ensaios que realizo em Goiânia para te ajudar a chegar na sessão confiante e preparada.",
       },
       {
-        heading: "Quantos looks levar para o ensaio?",
+        heading: "Quantos looks levar para o ensaio fotográfico",
         body: "Para uma sessão de 2 horas, o ideal é ter de 3 a 4 looks preparados. Isso não significa que todos vão para as fotos, mas ter opções garante variedade de clima, estilo e cenário dentro do mesmo ensaio. Leve mais do que acha que vai usar: na hora, a escolha do look certo para cada locação ou para a luz daquele momento pode mudar completamente.",
       },
       {
@@ -258,7 +325,7 @@ const posts: BlogPost[] = [
         body: "Tons neutros e terrosos são os mais seguros e versáteis: bege, off-white, caramelo, terracota, verde-musgo e bordô fotografam muito bem em qualquer locação. Pastéis suaves também funcionam excelentemente. Para quem quer algo mais marcante, azul royal, vinho e verde-escuro criam contraste elegante. O branco puro é um clássico em locações externas com luz natural. O preto funciona bem em fotos com tratamento mais cinematográfico ou em ambientes controlados.",
       },
       {
-        heading: "O que evitar",
+        heading: "O que evitar no ensaio fotográfico",
         body: "Estampas muito miúdas (xadrez pequeno, listras finas) criam um efeito de moiré nas fotos e distraem o olhar. Logos e escritas grandes chamam mais atenção do que o rosto. Roupas com muito brilho ou sequins em fotos externas podem criar reflexos indesejados. Roupas que não são do seu estilo real: se você nunca usa aquilo no dia a dia, provavelmente vai se sentir desconfortável na foto. Conforto é fundamental para naturalidade.",
       },
       {
@@ -271,13 +338,23 @@ const posts: BlogPost[] = [
       },
       {
         heading: "Combinações que sempre funcionam",
-        body: "Não sabe o que levar? Essas combinações raramente erram: calça de alfaiataria + blusa básica de uma só cor + sandália ou scarpin; vestido midi fluido em tom neutro; conjunto de blusa e saia em tecido nobre; jeans escuro + blusa branca de boa qualidade; vestido longo com decote elegante. São clássicos porque a atenção fica no rosto e na expressão, não na roupa.",
+        body: "Não sabe o que levar? Essas combinações raramente erram: calça de alfaiataria com blusa básica de uma só cor e sandália ou scarpin; vestido midi fluido em tom neutro; conjunto de blusa e saia em tecido nobre; jeans escuro com blusa branca de boa qualidade; vestido longo com decote elegante. São clássicos porque a atenção fica no rosto e na expressão, não na roupa.",
       },
       {
         heading: "A preparação faz a diferença",
-        body: "Separe todas as roupas na semana anterior. Experimente cada look completo com os sapatos e acessórios. Tire uma foto no espelho para ter uma referência. Isso te dá segurança e economiza tempo durante o ensaio. Se tiver dúvidas sobre alguma combinação específica, pode me mandar uma foto antes da sessão: estou sempre disponível para ajudar na curadoria dos looks.",
+        body: "Separe todas as roupas na semana anterior. Experimente cada look completo com os sapatos e acessórios. Tire uma foto no espelho para ter uma referência. Isso te dá segurança e economiza tempo durante o ensaio fotográfico em Goiânia. Se tiver dúvidas sobre alguma combinação específica, pode me mandar uma foto antes da sessão: estou sempre disponível para ajudar na curadoria dos looks.",
       },
     ],
+    internalLink: {
+      href: "/servicos/ensaio-pessoal-goiania",
+      label: "Agendar ensaio pessoal em Goiânia",
+      context: "Pronta para colocar as dicas em prática?",
+    },
+    externalLink: {
+      href: "https://www.instagram.com/darahcoelho/",
+      label: "Instagram @darahcoelho",
+      context: "Para ver exemplos reais de looks que funcionam em sessões fotográficas, acompanhe o",
+    },
     cta: {
       heading: "Pronta para planejar seu ensaio?",
       message: "Olá, Darah! Quero agendar um ensaio fotográfico em Goiânia. Pode me passar mais informações?",
@@ -305,6 +382,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
+      images: [{ url: post.heroImg, alt: post.heroAlt }],
     },
   };
 }
@@ -323,11 +401,13 @@ export default async function BlogPostPage({ params }: Props) {
         "@type": "Article",
         headline: post.title,
         description: post.metaDescription,
+        image: post.heroImg,
         author: { "@type": "Person", name: "Darah Coelho", url: "https://darahcoelhofotografia.com.br/sobre" },
         publisher: {
           "@type": "Organization",
           name: "Darah Coelho Fotografia",
           url: "https://darahcoelhofotografia.com.br",
+          logo: { "@type": "ImageObject", url: "https://darahcoelhofotografia.com.br/og-image.jpg" },
         },
         datePublished: post.date,
         dateModified: post.date,
@@ -353,32 +433,48 @@ export default async function BlogPostPage({ params }: Props) {
       />
 
       {/* HERO DO POST */}
-      <section className="pt-32 pb-12 max-w-3xl mx-auto px-6">
-        <nav className="flex gap-2 text-xs text-neutral-500 tracking-widest uppercase mb-8">
-          <Link href="/" className="hover:text-gold transition-colors">Início</Link>
-          <span>/</span>
-          <Link href="/blog" className="hover:text-gold transition-colors">Blog</Link>
-          <span>/</span>
-          <span className="text-gold truncate max-w-[200px]">{post.category}</span>
-        </nav>
+      <section className="pt-24 pb-0">
+        <div className="max-w-3xl mx-auto px-6 pt-8 pb-6">
+          <nav className="flex gap-2 text-xs text-neutral-500 tracking-widest uppercase mb-8">
+            <Link href="/" className="hover:text-gold transition-colors">Início</Link>
+            <span>/</span>
+            <Link href="/blog" className="hover:text-gold transition-colors">Blog</Link>
+            <span>/</span>
+            <span className="text-gold truncate max-w-[200px]">{post.category}</span>
+          </nav>
 
-        <span className="text-gold text-xs tracking-widest uppercase">{post.category}</span>
-        <h1 className="font-serif text-4xl md:text-5xl text-white mt-3 mb-6 leading-tight">
-          {post.title}
-        </h1>
-        <div className="flex items-center gap-4 text-neutral-500 text-sm border-b border-dark-300 pb-8">
-          <span>
-            {new Date(post.date).toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}
-          </span>
-          <span>·</span>
-          <span>{post.readTime} de leitura</span>
-          <span>·</span>
-          <span>por Darah Coelho</span>
+          <span className="text-gold text-xs tracking-widest uppercase">{post.category}</span>
+          <h1 className="font-serif text-4xl md:text-5xl text-white mt-3 mb-6 leading-tight">
+            {post.title}
+          </h1>
+          <div className="flex items-center gap-4 text-neutral-500 text-sm border-b border-dark-300 pb-8">
+            <span>
+              {new Date(post.date).toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}
+            </span>
+            <span>·</span>
+            <span>{post.readTime} de leitura</span>
+            <span>·</span>
+            <span>por <Link href="/sobre" className="hover:text-gold transition-colors">Darah Coelho</Link></span>
+          </div>
+        </div>
+
+        {/* Imagem hero do post */}
+        <div className="max-w-4xl mx-auto px-6 pb-12">
+          <div className="relative w-full aspect-[16/7] overflow-hidden">
+            <Image
+              src={post.heroImg}
+              alt={post.heroAlt}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
       {/* CORPO DO POST */}
-      <article className="max-w-3xl mx-auto px-6 pb-16">
+      <article className="max-w-3xl mx-auto px-6 pb-8">
         <div className="space-y-8">
           {post.sections.map((section, i) => (
             <div key={i}>
@@ -389,16 +485,39 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           ))}
         </div>
+
+        {/* Link interno */}
+        <div className="mt-12 p-6 border border-dark-300 bg-dark-100">
+          <p className="text-neutral-400 text-sm mb-3">{post.internalLink.context}</p>
+          <Link
+            href={post.internalLink.href}
+            className="text-gold text-sm tracking-widest uppercase underline underline-offset-4 hover:text-gold-light transition-colors"
+          >
+            {post.internalLink.label} →
+          </Link>
+        </div>
+
+        {/* Link externo DoFollow */}
+        <p className="mt-10 text-neutral-500 text-sm leading-relaxed">
+          {post.externalLink.context}{" "}
+          <a
+            href={post.externalLink.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gold hover:underline"
+          >
+            {post.externalLink.label}
+          </a>{" "}
+          é um bom ponto de partida para aprofundar o tema.
+        </p>
       </article>
 
       {/* CTA */}
-      <section className="bg-dark-200 border-y border-dark-300 py-16">
+      <section className="bg-dark-200 border-y border-dark-300 py-16 mt-8">
         <div className="max-w-3xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="font-serif text-2xl text-white mb-2">{post.cta.heading}</h2>
-            <p className="text-neutral-400">
-              Atendimento personalizado em Goiânia e São Paulo.
-            </p>
+            <p className="text-neutral-400">Atendimento personalizado em Goiânia e São Paulo.</p>
           </div>
           <WhatsAppButton label="Falar com a Darah" message={post.cta.message} />
         </div>
@@ -415,6 +534,15 @@ export default async function BlogPostPage({ params }: Props) {
                 href={`/blog/${p.slug}`}
                 className="group border border-dark-300 hover:border-gold transition-colors"
               >
+                <div className="relative aspect-[16/7] overflow-hidden">
+                  <Image
+                    src={p.heroImg}
+                    alt={p.heroAlt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
                 <div className="p-6">
                   <span className="text-gold text-xs tracking-widest uppercase">{p.category}</span>
                   <h3 className="font-serif text-lg text-white mt-3 mb-3 group-hover:text-gold transition-colors leading-tight">
