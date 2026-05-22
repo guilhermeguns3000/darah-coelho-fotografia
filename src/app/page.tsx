@@ -204,7 +204,8 @@ export default function HomePage() {
           src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:9,w_1920,f_auto,q_auto/darah/ensaio%20pessoal/fe76bfce-909e-4a28-a3dc-bb5494ae02ce"
           alt="Fotógrafa Goiânia — agende sua sessão"
           fill
-          className="object-cover object-center"
+          className="object-cover"
+          style={{ objectPosition: "50% 25%" }}
         />
         {/* película escura com foco central nas letras */}
         <div className="absolute inset-0 bg-dark/70" />
