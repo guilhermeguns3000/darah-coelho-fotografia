@@ -126,7 +126,7 @@ export default function HomePage() {
             style={{ animation: "kenburns 12s ease-in-out infinite", transformOrigin: "center center" }}
           >
             <Image
-              src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_800/darah/Darah%20coelho/darah-home"
+              src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_100,w_1200/darah/Darah%20coelho/darah-home"
               alt="Fotógrafa Darah Coelho em Goiânia"
               fill
               className="object-cover object-top"
