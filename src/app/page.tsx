@@ -195,10 +195,10 @@ export default function HomePage() {
       {/* CTA FINAL */}
       <section className="relative py-32 overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_1920/darah/moda%20feminina/sem-ti-tulo-05"
+          src="https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_auto,ar_16:9,w_1920,f_auto,q_auto/darah/portfolio/foto-4"
           alt="Fotógrafa Goiânia — agende sua sessão"
           fill
-          className="object-cover object-center opacity-30"
+          className="object-cover object-center opacity-40"
         />
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <p className="text-gold text-xs tracking-widest uppercase mb-4">Goiânia e São Paulo</p>
