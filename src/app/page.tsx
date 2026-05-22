@@ -13,9 +13,50 @@ export const metadata: Metadata = {
 
 const featuredServices = services.slice(0, 6);
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Quanto custa um ensaio fotográfico em Goiânia?",
+      acceptedAnswer: { "@type": "Answer", text: "O investimento varia conforme o tipo de ensaio, número de looks e duração da sessão. Book de moda, ensaio pessoal e ensaio de gestante têm pacotes diferentes. Entre em contato pelo WhatsApp para receber um orçamento personalizado." },
+    },
+    {
+      "@type": "Question",
+      name: "A fotógrafa Darah Coelho atende fora de Goiânia?",
+      acceptedAnswer: { "@type": "Answer", text: "Sim. Além de Goiânia, atendo regularmente em São Paulo e posso me deslocar para qualquer cidade do Brasil mediante consulta. Casamentos e eventos corporativos em outras cidades têm orçamento com deslocamento incluso." },
+    },
+    {
+      "@type": "Question",
+      name: "Em quanto tempo recebo as fotos depois do ensaio?",
+      acceptedAnswer: { "@type": "Answer", text: "Ensaios pessoais e de moda: até 15 dias úteis. Ensaio de gestante e família: até 15 dias úteis. Casamentos: até 30 dias. Eventos corporativos: até 20 dias. A entrega é feita por galeria online privada em alta resolução." },
+    },
+    {
+      "@type": "Question",
+      name: "Preciso ter experiência com fotos para fazer um ensaio?",
+      acceptedAnswer: { "@type": "Answer", text: "Não. Todas as sessões têm direção de poses do início ao fim. Você não precisa saber posar — é exatamente para isso que a Darah está lá. A maioria dos clientes nunca tinha feito um ensaio antes e o resultado surpreende." },
+    },
+    {
+      "@type": "Question",
+      name: "Qual a melhor época para fazer fotos externas em Goiânia?",
+      acceptedAnswer: { "@type": "Answer", text: "A estação seca (abril a setembro) é a mais recomendada para ensaios externos em Goiânia, com céu azul, luz bonita e sem risco de chuva. Junho e julho são os meses ideais. Na estação chuvosa, agendamos sessões pela manhã e trabalhamos com plano B." },
+    },
+    {
+      "@type": "Question",
+      name: "Como funciona o agendamento de uma sessão fotográfica?",
+      acceptedAnswer: { "@type": "Answer", text: "O primeiro passo é entrar em contato pelo WhatsApp para verificar disponibilidade e alinhar o tipo de sessão desejada. Após a confirmação, realizamos um briefing criativo para planejar locação, looks e conceito antes do dia da sessão." },
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* HERO */}
       <section className="relative h-screen flex items-end pb-20 overflow-hidden">
         <Image
@@ -195,6 +236,50 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="max-w-4xl mx-auto px-6 py-24">
+        <div className="text-center mb-14">
+          <p className="text-gold text-xs tracking-widest uppercase mb-4">Dúvidas frequentes</p>
+          <h2 className="font-serif text-4xl text-white">Perguntas sobre fotografia em Goiânia</h2>
+        </div>
+        <div className="space-y-0 divide-y divide-dark-300">
+          {[
+            {
+              q: "Quanto custa um ensaio fotográfico em Goiânia?",
+              a: "O investimento varia conforme o tipo de ensaio, número de looks e duração da sessão. Book de moda, ensaio pessoal e ensaio de gestante têm pacotes diferentes. Entre em contato pelo WhatsApp para receber um orçamento personalizado.",
+            },
+            {
+              q: "A fotógrafa Darah Coelho atende fora de Goiânia?",
+              a: "Sim. Além de Goiânia, atendo regularmente em São Paulo e posso me deslocar para qualquer cidade do Brasil mediante consulta. Casamentos e eventos corporativos em outras cidades têm orçamento com deslocamento incluso.",
+            },
+            {
+              q: "Em quanto tempo recebo as fotos depois do ensaio?",
+              a: "Ensaios pessoais e de moda: até 15 dias úteis. Ensaio de gestante e família: até 15 dias úteis. Casamentos: até 30 dias. Eventos corporativos: até 20 dias. A entrega é feita por galeria online privada em alta resolução.",
+            },
+            {
+              q: "Preciso ter experiência com fotos para fazer um ensaio?",
+              a: "Não. Todas as sessões têm direção de poses do início ao fim. Você não precisa saber posar — é exatamente para isso que a Darah está lá. A maioria dos clientes nunca tinha feito um ensaio antes e o resultado surpreende.",
+            },
+            {
+              q: "Qual a melhor época para fazer fotos externas em Goiânia?",
+              a: "A estação seca (abril a setembro) é a mais recomendada para ensaios externos em Goiânia, com céu azul, luz bonita e sem risco de chuva. Junho e julho são os meses ideais. Na estação chuvosa, agendamos sessões pela manhã e trabalhamos com plano B.",
+            },
+            {
+              q: "Como funciona o agendamento de uma sessão fotográfica?",
+              a: "O primeiro passo é entrar em contato pelo WhatsApp para verificar disponibilidade e alinhar o tipo de sessão desejada. Após a confirmação, realizamos um briefing criativo para planejar locação, looks e conceito antes do dia da sessão.",
+            },
+          ].map((faq, i) => (
+            <details key={i} className="group py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between gap-4 text-white font-medium text-lg group-open:text-gold transition-colors">
+                {faq.q}
+                <span className="shrink-0 text-gold text-xl transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p className="mt-4 text-neutral-400 leading-relaxed">{faq.a}</p>
+            </details>
+          ))}
         </div>
       </section>
 
