@@ -18,7 +18,7 @@ const schema = {
       name: "Darah Coelho",
       jobTitle: "Fotógrafa Profissional",
       url: "https://darahcoelhofotografia.com.br/sobre",
-      image: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_900/darah/Darah%20coelho/img-3778",
+      image: "https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_900/darah/Darah%20coelho/img_2629",
       sameAs: [
         "https://www.instagram.com/darahcoelho/",
         "https://www.tiktok.com/@darahcoelho0",
@@ -83,7 +83,7 @@ export default function SobrePage() {
           </div>
           <div className="relative min-h-[400px]">
             <Image
-              src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_900/darah/Darah%20coelho/img-3778"
+              src="https://res.cloudinary.com/djjacet57/image/upload/f_auto,q_auto,w_900/darah/Darah%20coelho/img_2629"
               alt="Darah Coelho, fotógrafa profissional em Goiânia"
               fill
               className="object-cover"
