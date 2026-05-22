@@ -33,17 +33,19 @@ export default function Navbar() {
               <span className="text-xs">▾</span>
             </button>
             {servicesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-dark-200 border border-dark-300 rounded shadow-2xl py-2">
-                {services.map((s) => (
-                  <Link
-                    key={s.slug}
-                    href={`/servicos/${s.slug}`}
-                    className="block px-4 py-2 text-sm text-neutral-400 hover:text-gold hover:bg-dark-300 transition-colors tracking-wide"
-                    onClick={() => setServicesOpen(false)}
-                  >
-                    {s.shortTitle}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2">
+                <div className="bg-dark-200 border border-dark-300 rounded shadow-2xl py-2">
+                  {services.map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={`/servicos/${s.slug}`}
+                      className="block px-4 py-2 text-sm text-neutral-400 hover:text-gold hover:bg-dark-300 transition-colors tracking-wide"
+                      onClick={() => setServicesOpen(false)}
+                    >
+                      {s.shortTitle}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
