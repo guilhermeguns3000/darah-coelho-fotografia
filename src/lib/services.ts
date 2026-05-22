@@ -260,7 +260,7 @@ export const services: Service[] = [
     bodyText: [
       "O ensaio de gestante em Goiânia é uma das experiências mais especiais que uma mulher pode viver. A gravidez transforma o corpo, a identidade e a vida, e merece ser registrada com a mesma delicadeza que esse momento carrega. A Darah Coelho conduz cada sessão de gestante com um olhar sensível, direção de poses pensada para o conforto e a beleza de cada fase, e um resultado que emociona toda vez que você olha de volta.",
       "As sessões de ensaio de gestante podem ser realizadas em estúdio, com cenários montados especialmente para criar imagens atemporais, ou em locações externas em Goiânia, como parques, campos e jardins que trazem leveza e naturalidade às fotos. A escolha do estilo é sua: clássico e elegante, boho e natural, minimalista ou cheio de cor. Planejamos tudo juntos para que o resultado reflita sua personalidade.",
-      "O período ideal para o ensaio de gestante é entre a 28ª e 34ª semana, quando a barriga já está bem evidenciada e a mamãe ainda se movimenta com conforto. Além das fotos individuais, a sessão pode incluir o parceiro, filhos e até pets. O ensaio de gestante em Goiânia com a Darah é também um presente que você vai guardar para mostrar ao seu filho quando ele crescer.",
+      "O período ideal para o ensaio de gestante é entre a 32ª e 36ª semana, quando a barriga já está bem evidenciada e a mamãe ainda se movimenta com conforto. Além das fotos individuais, a sessão pode incluir o parceiro, filhos e até pets. O ensaio de gestante em Goiânia com a Darah é também um presente que você vai guardar para mostrar ao seu filho quando ele crescer.",
     ],
     metaTitle: "Ensaio Gestante Goiânia | Fotógrafa Darah Coelho",
     metaDescription:
@@ -281,12 +281,12 @@ export const services: Service[] = [
     ],
     process: [
       { step: "Conversa", description: "Entendemos o seu momento e definimos o estilo do ensaio: mais clássico, boho, minimalista ou colorido." },
-      { step: "Melhor época", description: "O período ideal é entre a 28ª e 34ª semana de gestação, quando a barriga está evidente e a mamãe ainda se sente bem." },
+      { step: "Melhor época", description: "O período ideal é entre a 32ª e 36ª semana de gestação, quando a barriga está evidente e a mamãe ainda se sente bem." },
       { step: "Sessão", description: "Sessão acolhedora com ritmo no seu tempo, direção de poses e toda atenção para você se sentir linda." },
       { step: "Entrega", description: "Fotos editadas e entregues em galeria online privada. O link fica disponível por 1 mês — salve seu material." },
     ],
     faqs: [
-      { question: "Qual a melhor semana para fazer o ensaio de gestante?", answer: "O ideal é entre a 28ª e 34ª semana de gestação. Nesse período a barriga já está bem desenvolvida e você ainda está confortável para se movimentar e posar." },
+      { question: "Qual a melhor semana para fazer o ensaio de gestante?", answer: "O ideal é entre a 32ª e 36ª semana de gestação. Nesse período a barriga já está bem desenvolvida e você ainda está confortável para se movimentar e posar." },
       { question: "Posso incluir meu parceiro e outros filhos no ensaio?", answer: "Sim, com prazer! O ensaio pode incluir toda a família. Recomendamos reservar um tempo específico para as fotos em família dentro da sessão." },
       { question: "O ensaio de gestante pode ser feito em ambiente externo?", answer: "Sim. Oferecemos sessões em estúdio ou em locações externas em Goiânia, como parques e áreas naturais, dependendo do estilo que você deseja." },
       { question: "Preciso levar roupa específica?", answer: "Orientamos sobre looks antes do ensaio. Em geral, vestidos longos, bodies e roupas que valorizem a barriga funcionam muito bem." },

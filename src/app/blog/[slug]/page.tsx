@@ -45,7 +45,7 @@ const posts: BlogPost[] = [
       },
       {
         heading: "Faixas de investimento em Goiânia",
-        body: "No mercado de Goiânia, você vai encontrar ensaios de moda a partir de R$ 400 até R$ 2.500 ou mais. Fotógrafas iniciantes ou em formação costumam cobrar entre R$ 400 e R$ 800, com entrega de 15 a 30 fotos. Profissionais com portfólio consolidado, direção criativa e edição refinada ficam entre R$ 900 e R$ 2.500, com entrega de 30 a 80 fotos editadas. Valores abaixo de R$ 400 costumam indicar ausência de edição profissional ou portfólio ainda muito limitado.",
+        body: "No mercado de Goiânia, você vai encontrar ensaios de moda a partir de R$ 400 até R$ 3.000 ou mais. Fotógrafas iniciantes ou em formação costumam cobrar entre R$ 400 e R$ 800, com entrega de 15 a 30 fotos. Profissionais com portfólio consolidado, direção criativa e edição refinada ficam entre R$ 900 e R$ 3.000, com entrega de 30 a 80 fotos editadas. Valores abaixo de R$ 400 costumam indicar ausência de edição profissional ou portfólio ainda muito limitado.",
       },
       {
         heading: "Por que o preço varia tanto?",
@@ -310,7 +310,7 @@ const posts: BlogPost[] = [
     date: "2026-02-20",
     category: "Dicas",
     readTime: "8 min",
-    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1200,f_auto,q_auto/darah/portfolio/foto-1",
+    heroImg: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1200,f_auto,q_auto/darah/moda%20feminina/sem-titulo-43",
     heroAlt: "looks para ensaio fotográfico em Goiânia, roupas para sessão de fotos Darah Coelho",
     sections: [
       {
