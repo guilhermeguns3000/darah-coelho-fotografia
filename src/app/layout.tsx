@@ -78,6 +78,11 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <Script
+          src="https://flora-dashboard-dun.vercel.app/tracker.js"
+          data-site="a3fc1977-bea2-487b-8d1e-fb35684fee79"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
