@@ -1,6 +1,17 @@
 import type { NextConfig } from "next";
 
+// Painel Flora (analytics próprio) em FIRST-PARTY: serve o tracker e o coletor
+// pelo próprio domínio via rewrite (resistente a CSP e a bloqueadores).
+const FLORA = "https://flora-dashboard-dun.vercel.app";
+
 const nextConfig: NextConfig = {
+  async rewrites() {
+    return [
+      { source: "/sm.js", destination: `${FLORA}/tracker.js` },
+      { source: "/sm-e", destination: `${FLORA}/api/ingest` },
+    ];
+  },
+
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "res.cloudinary.com" },
