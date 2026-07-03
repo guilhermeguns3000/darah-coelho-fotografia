@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SchemaOrg from "@/components/SchemaOrg";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import LeadTracking from "@/components/LeadTracking";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -83,6 +84,7 @@ export default function RootLayout({
       </head>
       <body>
         <SchemaOrg />
+        <LeadTracking />
         <Navbar />
         <main>{children}</main>
         <Footer />
