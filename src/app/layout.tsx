@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://darahcoelhofotografia.com.br",
-    siteName: "Darah Coelho Fotografia",
+    siteName: "Darah Coelho Fotografia e Vídeo",
     title: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
     description:
       "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante e e-commerce. Atendimento personalizado.",

@@ -34,6 +34,16 @@ export default function Footer() {
                 TikTok
               </a>
             </div>
+            <a
+              href="https://share.google/5cI6g9NK2SGGg8fkO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-5 text-sm text-neutral-300 hover:text-gold transition-colors"
+              aria-label="Ver avaliações no Google"
+            >
+              <span className="text-gold" aria-hidden>★★★★★</span>
+              <span>5,0 no Google · 17 avaliações</span>
+            </a>
           </div>
 
           {/* Serviços col 1 */}
@@ -117,7 +127,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-dark-300 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-neutral-600">
-          <p>© {new Date().getFullYear()} Darah Coelho Fotografia, Goiânia, GO. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Darah Coelho Fotografia e Vídeo, Goiânia, GO. Todos os direitos reservados.</p>
           <div className="flex gap-6">
             <Link href="/sobre" className="hover:text-neutral-400 transition-colors">Sobre</Link>
             <Link href="/galeria" className="hover:text-neutral-400 transition-colors">Galeria</Link>

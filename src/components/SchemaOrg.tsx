@@ -5,7 +5,7 @@ export default function SchemaOrg() {
       {
         "@type": ["LocalBusiness", "Photographer"],
         "@id": "https://darahcoelhofotografia.com.br/#business",
-        name: "Darah Coelho Fotografia",
+        name: "Darah Coelho Fotografia e Vídeo",
         url: "https://darahcoelhofotografia.com.br",
         telephone: "+55-62-98293-3266",
         email: "darahtrabalho@icloud.com",
@@ -48,6 +48,7 @@ export default function SchemaOrg() {
         sameAs: [
           "https://www.instagram.com/darahcoelho/",
           "https://www.tiktok.com/@darahcoelho0",
+          "https://share.google/5cI6g9NK2SGGg8fkO",
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -70,7 +71,7 @@ export default function SchemaOrg() {
         "@type": "WebSite",
         "@id": "https://darahcoelhofotografia.com.br/#website",
         url: "https://darahcoelhofotografia.com.br",
-        name: "Darah Coelho Fotografia",
+        name: "Darah Coelho Fotografia e Vídeo",
         publisher: { "@id": "https://darahcoelhofotografia.com.br/#business" },
         potentialAction: {
           "@type": "SearchAction",

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllServiceSlugs } from "@/lib/services";
+import { localPages } from "@/lib/bairros";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://darahcoelhofotografia.com.br";
@@ -78,5 +79,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...blogPages];
+  // Páginas locais "Serviço + Bairro" — long-tail de alta intenção local
+  const localServicePages: MetadataRoute.Sitemap = localPages.map((c) => ({
+    url: `${base}/servicos/${c.service}/${c.bairro}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+  }));
+
+  return [...staticPages, ...servicePages, ...blogPages, ...localServicePages];
 }
