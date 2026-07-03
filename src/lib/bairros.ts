@@ -76,6 +76,7 @@ export interface LocalPageCombo {
 // PILOTO: 1 página. Para escalar, adicione linhas aqui.
 export const localPages: LocalPageCombo[] = [
   { service: "ensaio-gestante-goiania", bairro: "setor-marista" },
+  { service: "fotografia-casamento-goiania", bairro: "jardim-goias" },
 ];
 
 export function getBairro(slug: string): Bairro | undefined {
