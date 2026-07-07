@@ -42,7 +42,7 @@ export const services: Service[] = [
     bodyText: [
       "Um book de moda em Goiânia é muito mais do que um conjunto de fotos bonitas: é a construção da sua identidade visual. A Darah Coelho traz para cada ensaio editorial uma abordagem de direção de arte completa: do briefing criativo ao moodboard, da escolha da locação à edição final. Cada detalhe é pensado para que as imagens comuniquem quem você é, o que você representa e para onde você vai.",
       "A fotografia de moda em Goiânia tem um mercado crescente, com marcas locais, agências emergentes e modelos que precisam de um portfólio que se destaque. Se você está iniciando carreira ou já atua profissionalmente, um book de moda bem produzido abre portas, para agências em Goiânia, São Paulo e em todo o Brasil. O ensaio editorial correto faz você ser lembrado nas seleções certas.",
-      "Trabalhamos com estúdio próprio em Goiânia e uma curadoria de locações externas, desde cenários urbanos nos bairros Setor Bueno e Jardim Goiás até ambientes naturais ao redor da cidade. Para projetos maiores, também atendemos em São Paulo. Seja um look minimalista, um editorial de alto impacto ou um book de moda para redes sociais, o resultado entregue pela Darah Coelho é sempre imagens com força visual e identidade própria.",
+      "Trabalhamos com uma curadoria de estúdios e locações externas em Goiânia, desde cenários urbanos nos bairros Setor Bueno e Jardim Goiás até ambientes naturais ao redor da cidade. Para projetos maiores, também atendemos em São Paulo. Seja um look minimalista, um editorial de alto impacto ou um book de moda para redes sociais, o resultado entregue pela Darah Coelho é sempre imagens com força visual e identidade própria.",
     ],
     metaTitle: "Book de Moda Goiânia | Fotógrafa Editorial – Darah Coelho",
     metaDescription:
@@ -70,7 +70,7 @@ export const services: Service[] = [
         duration: "mínimo 10 looks",
         includes: [
           "4 fotos finalizadas por look",
-          "Estúdio incluso",
+          "Estúdio/locação à parte — ajudamos a contratar",
           "Direção de poses",
           "Entrega em até 2 dias úteis",
         ],
@@ -83,7 +83,7 @@ export const services: Service[] = [
         includes: [
           "4–6 fotos finalizadas por look",
           "Vídeo profissional ou mobile por look",
-          "Estúdio incluso",
+          "Estúdio/locação à parte — ajudamos a contratar",
           "Direção de poses",
           "Entrega em até 2 dias úteis",
         ],
@@ -95,7 +95,7 @@ export const services: Service[] = [
         includes: [
           "Até 20 looks fotografados",
           "4 horas de sessão",
-          "Estúdio incluso",
+          "Estúdio/locação à parte — ajudamos a contratar",
           "Direção de arte completa",
           "Entrega em até 2 dias úteis",
         ],
@@ -107,7 +107,7 @@ export const services: Service[] = [
         includes: [
           "Até 50 looks fotografados",
           "8 horas de sessão",
-          "Estúdio incluso",
+          "Estúdio/locação à parte — ajudamos a contratar",
           "Direção de arte completa",
           "Entrega em até 2 dias úteis",
         ],
@@ -167,7 +167,7 @@ export const services: Service[] = [
         duration: "2 horas",
         includes: [
           "2 looks",
-          "Estúdio incluso",
+          "Estúdio/locação à parte — ajudamos a contratar",
           "25 fotos finalizadas",
           "Auxílio com cabelo",
           "Entrega em até 7 dias úteis",
@@ -180,7 +180,7 @@ export const services: Service[] = [
         highlight: true,
         includes: [
           "3 a 4 looks",
-          "Estúdio incluso",
+          "Estúdio/locação à parte — ajudamos a contratar",
           "60 fotos finalizadas",
           "Auxílio com cabelo",
           "Vídeo de bastidores",
@@ -196,7 +196,7 @@ export const services: Service[] = [
     ],
     faqs: [
       { question: "Preciso ter experiência com fotos para fazer ensaio pessoal?", answer: "Não. A direção de poses é feita durante toda a sessão. Você não precisa saber posar: é exatamente para isso que estamos juntos." },
-      { question: "Onde são feitos os ensaios em Goiânia?", answer: "Atendemos em estúdio ou locações externas em Goiânia (parques, centros comerciais, ambientes naturais). O estúdio já está incluso nos pacotes." },
+      { question: "Onde são feitos os ensaios em Goiânia?", answer: "Atendemos em estúdio ou em locações externas em Goiânia (parques, centros comerciais, ambientes naturais). O valor do estúdio ou da locação fica à parte e não está incluso no pacote — ajudamos você a contratar, com várias opções conforme seu estilo e orçamento." },
       { question: "Quanto tempo dura a sessão?", answer: "O Essencial tem 2 horas de duração. O Completo tem 4 horas, com mais tempo para troca de looks e explorar cenários diferentes." },
       { question: "Em quanto tempo recebo as fotos?", answer: "As fotos editadas são entregues em até 7 dias úteis após a sessão, via link do Drive. O material fica disponível por 1 mês — salve dentro desse prazo." },
       { question: "Como funciona o pagamento?", answer: "É feito um pagamento parcial até 24 horas antes do ensaio para confirmar o agendamento. O restante é combinado com a Darah no momento da sessão." },
