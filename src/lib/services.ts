@@ -169,6 +169,7 @@ export const services: Service[] = [
           "2 looks",
           "Estúdio incluso",
           "25 fotos finalizadas",
+          "Ajuda na escolha de acessórios (joias, brincos, sapatos)",
           "Auxílio com cabelo",
           "Entrega em até 7 dias úteis",
         ],
@@ -182,6 +183,7 @@ export const services: Service[] = [
           "3 a 4 looks",
           "Estúdio incluso",
           "60 fotos finalizadas",
+          "Ajuda na escolha de acessórios (joias, brincos, sapatos)",
           "Auxílio com cabelo",
           "Vídeo de bastidores",
           "Entrega em até 7 dias úteis",
@@ -197,6 +199,7 @@ export const services: Service[] = [
     faqs: [
       { question: "Preciso ter experiência com fotos para fazer ensaio pessoal?", answer: "Não. A direção de poses é feita durante toda a sessão. Você não precisa saber posar: é exatamente para isso que estamos juntos." },
       { question: "Onde são feitos os ensaios em Goiânia?", answer: "Atendemos em estúdio ou locações externas em Goiânia (parques, centros comerciais, ambientes naturais). O estúdio já está incluso nos pacotes." },
+      { question: "A Darah fornece acessórios como joias, brincos e sapatos?", answer: "Não trabalhamos com acervo de acessórios: joias, brincos, sapatos e afins ficam por conta do cliente. A Darah te ajuda na escolha do que combina com o ensaio, mas os itens são trazidos por você." },
       { question: "Quanto tempo dura a sessão?", answer: "O Essencial tem 2 horas de duração. O Completo tem 4 horas, com mais tempo para troca de looks e explorar cenários diferentes." },
       { question: "Em quanto tempo recebo as fotos?", answer: "As fotos editadas são entregues em até 7 dias úteis após a sessão, via link do Drive. O material fica disponível por 1 mês — salve dentro desse prazo." },
       { question: "Como funciona o pagamento?", answer: "É feito um pagamento parcial até 24 horas antes do ensaio para confirmar o agendamento. O restante é combinado com a Darah no momento da sessão." },
