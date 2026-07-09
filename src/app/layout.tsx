@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://darahcoelhofotografia.com.br"),
   title: "Darah Coelho Fotografia | Fotógrafa em Goiânia",
   description:
-    "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante, newborn e fotografia para e-commerce. Atendimento personalizado com direção artística.",
+    "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante e fotografia para e-commerce. Atendimento personalizado com direção artística.",
   keywords: [
     "fotógrafa Goiânia",
     "fotografia Goiânia",
