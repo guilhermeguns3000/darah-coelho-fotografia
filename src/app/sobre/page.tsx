@@ -35,7 +35,7 @@ const schema = {
           addressCountry: "BR",
         },
       },
-      knowsAbout: ["Fotografia de Moda", "Fotografia de Casamento", "Ensaio Gestante", "Ensaio Newborn", "Fotografia para E-commerce"],
+      knowsAbout: ["Fotografia de Moda", "Fotografia de Casamento", "Ensaio Gestante", "Fotografia para E-commerce"],
     },
     {
       "@type": "BreadcrumbList",
@@ -73,7 +73,7 @@ export default function SobrePage() {
             <p className="text-neutral-400 text-lg leading-relaxed mb-6">
               Sou fotógrafa profissional baseada em Goiânia, GO, especializada em fotografia de moda
               há <span className="text-white font-medium">8 anos</span>. Atendo ensaios pessoais,
-              casamentos, gestante, newborn, produto para e-commerce e eventos corporativos.
+              casamentos, gestante, produto para e-commerce e eventos corporativos.
             </p>
             <p className="text-neutral-400 leading-relaxed mb-4">
               Sou também fundadora da{" "}
