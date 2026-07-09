@@ -17,7 +17,7 @@ const schema = {
       "@type": ["LocalBusiness", "Photographer"],
       "@id": "https://darahcoelhofotografia.com.br/#business",
       name: "Darah Coelho Fotografia",
-      description: "Fotógrafa profissional em Goiânia especializada em moda, casamento, ensaio pessoal, gestante, newborn, família e eventos.",
+      description: "Fotógrafa profissional em Goiânia especializada em moda, casamento, ensaio pessoal, gestante, família e eventos.",
       url: "https://darahcoelhofotografia.com.br",
       telephone: "+55-62-98293-3266",
       email: "contato@darahcoelhofotografia.com.br",
