@@ -10,7 +10,7 @@ export default function SchemaOrg() {
         telephone: "+55-62-98293-3266",
         email: "darahtrabalho@icloud.com",
         description:
-          "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante, newborn e fotografia para e-commerce.",
+          "Fotógrafa profissional em Goiânia especializada em ensaio de moda, casamento, gestante e fotografia para e-commerce.",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Goiânia",
@@ -58,7 +58,6 @@ export default function SchemaOrg() {
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ensaio Pessoal Goiânia" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fotografia de Casamento Goiânia" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ensaio de Gestante Goiânia" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ensaio Newborn Goiânia" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ensaio de Família Goiânia" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fotografia de Batismo Goiânia" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fotografia de Produto E-commerce Goiânia" } },
