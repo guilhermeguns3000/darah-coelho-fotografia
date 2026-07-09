@@ -74,7 +74,6 @@ export default function HomePage() {
           alt="Fotógrafa Darah Coelho, ensaio de moda em Goiânia"
           fill
           className="object-cover object-[50%_70%] hidden md:block"
-          priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-dark/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/40 to-transparent" />
