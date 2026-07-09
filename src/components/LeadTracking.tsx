@@ -3,10 +3,12 @@
 import { useEffect } from "react";
 
 /**
- * Rastreamento de leads para o GA4. Captura, no site inteiro, cliques em
- * qualquer link de WhatsApp (o principal canal de agendamento da Darah) e de
- * e-mail, disparando o evento recomendado `generate_lead`. Depois é só marcar
- * `generate_lead` como evento-chave/conversão no GA4.
+ * Rastreamento de leads. Captura, no site inteiro, cliques em qualquer link de
+ * WhatsApp (o principal canal de agendamento da Darah) e de e-mail, e registra
+ * o lead em DOIS lugares:
+ *  - Flora (first-party, fonte de verdade própria): custom_event com name
+ *    `lead_whatsapp`/`lead_email` — independe do GA e alimenta o painel.
+ *  - GA4: evento recomendado `generate_lead` (marque como evento-chave).
  */
 export default function LeadTracking() {
   useEffect(() => {
@@ -15,22 +17,29 @@ export default function LeadTracking() {
       const a = target?.closest?.("a");
       if (!a) return;
       const href = a.getAttribute("href") || "";
-      const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
-      if (!gtag) return;
 
-      if (/wa\.me|api\.whatsapp\.com|whatsapp/i.test(href)) {
+      let method: "whatsapp" | "email" | null = null;
+      if (/wa\.me|api\.whatsapp\.com|whatsapp/i.test(href)) method = "whatsapp";
+      else if (href.startsWith("mailto:")) method = "email";
+      if (!method) return;
+
+      const page = window.location.pathname;
+      const name = method === "whatsapp" ? "lead_whatsapp" : "lead_email";
+
+      // Flora (first-party): fonte de verdade própria, independe do GA.
+      const flora = (window as unknown as {
+        flora?: (type: string, props?: Record<string, unknown>) => void;
+      }).flora;
+      if (flora) flora("custom_event", { name, method, link_url: href, page });
+
+      // GA4 (evento recomendado), se o gtag estiver presente.
+      const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+      if (gtag)
         gtag("event", "generate_lead", {
-          method: "whatsapp",
+          method,
           link_url: href,
-          page_location: window.location.pathname,
+          page_location: page,
         });
-      } else if (href.startsWith("mailto:")) {
-        gtag("event", "generate_lead", {
-          method: "email",
-          link_url: href,
-          page_location: window.location.pathname,
-        });
-      }
     }
     // Fase de captura para disparar antes da navegação/abertura em nova aba.
     document.addEventListener("click", onClick, true);
