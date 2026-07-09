@@ -22,6 +22,17 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // Serviço de newborn removido (a Darah não faz) → /servicos
+      {
+        source: "/servicos/ensaio-newborn-goiania",
+        destination: "/servicos",
+        permanent: true,
+      },
+      {
+        source: "/servicos/ensaio-newborn-goiania/:bairro*",
+        destination: "/servicos",
+        permanent: true,
+      },
       // Posts genéricos em inglês do WordPress (template do tema, 2023) → /blog
       {
         source: "/nurturing-the-bond-between-humans-and-nature",
