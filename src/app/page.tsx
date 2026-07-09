@@ -113,8 +113,7 @@ export default function HomePage() {
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-4">
             Me chamo Darah Coelho e sou fotógrafa profissional baseada em Goiânia, GO.
-            Trabalho com fotografia de moda, ensaios pessoais, casamentos, gestantes,
-            newborn e fotografia de produto para e-commerce.
+            Trabalho com fotografia de moda, ensaios pessoais, casamentos, gestantes e fotografia de produto para e-commerce.
           </p>
           <p className="text-neutral-400 leading-relaxed mb-8">
             Meu diferencial está no atendimento personalizado e na direção artística
