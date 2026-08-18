@@ -1,6 +1,11 @@
 export interface FAQ {
   question: string;
   answer: string;
+  /**
+   * Versão da resposta sem citar valores. Usada automaticamente
+   * enquanto os preços estão ocultos (ver src/lib/pricing.ts).
+   */
+  answerSemPreco?: string;
 }
 
 export interface Package {
@@ -132,7 +137,7 @@ export const services: Service[] = [
       { step: "Entrega", description: "Fotos editadas em alta resolução em até 2 dias úteis, prontas para portfólio, agências e redes sociais." },
     ],
     faqs: [
-      { question: "Quanto custa um book de moda em Goiânia?", answer: "O investimento varia conforme o escopo do projeto. Por look: R$ 60 (4 fotos) ou R$ 75–90 com vídeo incluso, mínimo de 10 looks. Também trabalhamos com meia diária (R$ 1.750, até 20 looks, 4h) e diária completa (R$ 2.750, até 50 looks, 8h). Entre em contato para montar o pacote ideal." },
+      { question: "Quanto custa um book de moda em Goiânia?", answer: "O investimento varia conforme o escopo do projeto. Por look: R$ 60 (4 fotos) ou R$ 75–90 com vídeo incluso, mínimo de 10 looks. Também trabalhamos com meia diária (R$ 1.750, até 20 looks, 4h) e diária completa (R$ 2.750, até 50 looks, 8h). Entre em contato para montar o pacote ideal.", answerSemPreco: "O investimento varia conforme o escopo do projeto. Trabalhamos por look (mínimo de 10 looks, com ou sem vídeo), meia diária (até 20 looks, 4h) e diária completa (até 50 looks, 8h). Envie uma mensagem no WhatsApp com a sua ideia e a Darah monta o orçamento do pacote ideal para você." },
       { question: "O book de moda serve para quem não é modelo profissional?", answer: "Sim. Atendo tanto modelos profissionais quanto pessoas que querem um book pessoal, book artístico ou material para redes sociais com estética editorial." },
       { question: "A fotógrafa atende em outros estados além de Goiânia?", answer: "Sim, atendo em São Paulo e posso me deslocar para outros estados mediante consulta. Entre em contato para verificar disponibilidade." },
       { question: "Preciso contratar maquiador e stylist separado?", answer: "Não necessariamente. Posso indicar profissionais parceiros em Goiânia ou organizar a equipe completa conforme o pacote escolhido." },

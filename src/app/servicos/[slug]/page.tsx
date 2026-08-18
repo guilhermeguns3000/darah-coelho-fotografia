@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { services, getServiceBySlug, getAllServiceSlugs, toCardImage } from "@/lib/services";
+import { MOSTRAR_PRECOS, precoVisivel, respostaFaq } from "@/lib/pricing";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 interface Props {
@@ -74,7 +75,7 @@ export default async function ServicePage({ params }: Props) {
         mainEntity: service.faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          acceptedAnswer: { "@type": "Answer", text: respostaFaq(faq) },
         })),
       },
       {
@@ -145,6 +146,12 @@ export default async function ServicePage({ params }: Props) {
             <h2 className="font-serif text-2xl md:text-3xl text-white mb-8 md:mb-10">
               Pacotes de {service.shortTitle.toLowerCase()} em Goiânia
             </h2>
+            {!MOSTRAR_PRECOS && (
+              <p className="text-neutral-400 leading-relaxed -mt-4 mb-8 md:mb-10 max-w-2xl">
+                Cada projeto recebe um orçamento sob medida. Escolha o formato que combina com a
+                sua ideia e fale com a Darah pelo WhatsApp para receber os valores atualizados.
+              </p>
+            )}
             <div className={`grid gap-4 ${service.packages.length <= 2 ? "md:grid-cols-2" : service.packages.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2 lg:grid-cols-4"}`}>
               {service.packages.map((pkg, i) => (
                 <div
@@ -161,7 +168,9 @@ export default async function ServicePage({ params }: Props) {
                     </span>
                   )}
                   <p className="text-gold text-xs tracking-widest uppercase mb-2">{pkg.name}</p>
-                  <p className="font-serif text-3xl text-white mb-1">{pkg.price}</p>
+                  <p className={`font-serif text-white mb-1 ${MOSTRAR_PRECOS ? "text-3xl" : "text-xl text-neutral-300"}`}>
+                    {precoVisivel(pkg.price)}
+                  </p>
                   {pkg.duration && (
                     <p className="text-neutral-500 text-xs tracking-wide mb-5">{pkg.duration}</p>
                   )}
@@ -258,7 +267,7 @@ export default async function ServicePage({ params }: Props) {
           {service.faqs.map((faq, i) => (
             <div key={i} className="border-b border-dark-300 pb-8">
               <h3 className="text-white font-medium mb-3 text-lg">{faq.question}</h3>
-              <p className="text-neutral-400 leading-relaxed">{faq.answer}</p>
+              <p className="text-neutral-400 leading-relaxed">{respostaFaq(faq)}</p>
             </div>
           ))}
         </div>
