@@ -106,7 +106,7 @@ const posts: BlogPost[] = [
       },
       {
         heading: "Por que o preço varia tanto?",
-        body: "A principal variável é o nível de direção artística envolvido. Uma sessão técnica de registrar fotos é diferente de uma sessão onde a fotógrafa coordena o cenário, orienta postura, expressão e movimento, escolhe ângulos com intenção estética e entrega um resultado com identidade visual consistente. Outro fator é a edição: retoques superficiais são muito diferentes de um tratamento de cor cinematográfico que dá unidade ao conjunto. Locações externas exclusivas, estúdio próprio e acessórios de cena também entram no custo.",
+        body: "A principal variável é o nível de direção artística envolvido. Uma sessão técnica de registrar fotos é diferente de uma sessão onde a fotógrafa coordena o cenário, orienta postura, expressão e movimento, escolhe ângulos com intenção estética e entrega um resultado com identidade visual consistente. Outro fator é a edição: retoques superficiais são muito diferentes de um tratamento de cor cinematográfico que dá unidade ao conjunto. Locações externas exclusivas, locação de estúdio e acessórios de cena também entram no custo.",
       },
       {
         heading: "Número de looks e duração da sessão",

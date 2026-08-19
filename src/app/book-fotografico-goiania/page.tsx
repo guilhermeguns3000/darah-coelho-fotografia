@@ -180,7 +180,7 @@ export default function BookFotograficoPage() {
             Seja para portfólio profissional, material para agências de moda, redes sociais ou simplesmente para se ver de um ângulo diferente, o book fotográfico em Goiânia pode ser tão fashion ou tão intimista quanto você quiser. Atendemos modelos profissionais e iniciantes, marcas locais e pessoas que nunca fizeram uma sessão fotográfica na vida.
           </p>
           <p>
-            As sessões são realizadas em estúdio próprio em Goiânia, com iluminação controlada e cenários montados para cada proposta visual, ou em locações externas cuidadosamente selecionadas. Para projetos maiores ou de moda, também atendemos em São Paulo. A Darah dirige cada pose, cada expressão e cada enquadramento para que você não precise adivinhar o que fazer na frente da câmera.
+            As sessões acontecem nos estúdios de Goiânia que a Darah conhece de perto — ela indica qual deles tem a iluminação e o cenário certos para a sua proposta e cuida da reserva por você — ou em locações externas cuidadosamente selecionadas. Para projetos maiores ou de moda, também atendemos em São Paulo. A Darah dirige cada pose, cada expressão e cada enquadramento para que você não precise adivinhar o que fazer na frente da câmera.
           </p>
         </div>
         <div className="mt-10">

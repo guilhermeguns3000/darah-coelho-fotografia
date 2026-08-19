@@ -47,7 +47,7 @@ export const services: Service[] = [
     bodyText: [
       "Um book de moda em Goiânia é muito mais do que um conjunto de fotos bonitas: é a construção da sua identidade visual. A Darah Coelho traz para cada ensaio editorial uma abordagem de direção de arte completa: do briefing criativo ao moodboard, da escolha da locação à edição final. Cada detalhe é pensado para que as imagens comuniquem quem você é, o que você representa e para onde você vai.",
       "A fotografia de moda em Goiânia tem um mercado crescente, com marcas locais, agências emergentes e modelos que precisam de um portfólio que se destaque. Se você está iniciando carreira ou já atua profissionalmente, um book de moda bem produzido abre portas, para agências em Goiânia, São Paulo e em todo o Brasil. O ensaio editorial correto faz você ser lembrado nas seleções certas.",
-      "Trabalhamos com estúdio próprio em Goiânia e uma curadoria de locações externas, desde cenários urbanos nos bairros Setor Bueno e Jardim Goiás até ambientes naturais ao redor da cidade. Para projetos maiores, também atendemos em São Paulo. Seja um look minimalista, um editorial de alto impacto ou um book de moda para redes sociais, o resultado entregue pela Darah Coelho é sempre imagens com força visual e identidade própria.",
+      "A Darah fotografa nos principais estúdios de Goiânia e conhece cada um por dentro: qual tem a luz que combina com a sua proposta, qual cenário funciona para cada estilo, qual espaço comporta o número de looks que você quer. Em vez de você sair pesquisando e comparando preço de estúdio, ela indica o certo para o seu projeto e resolve a reserva. Some a isso uma curadoria de locações externas, de cenários urbanos no Setor Bueno e Jardim Goiás a ambientes naturais ao redor da cidade. Para projetos maiores, também atendemos em São Paulo. Seja um look minimalista, um editorial de alto impacto ou um book de moda para redes sociais, o resultado entregue pela Darah Coelho é sempre imagens com força visual e identidade própria.",
     ],
     metaTitle: "Book de Moda Goiânia | Fotógrafa Editorial – Darah Coelho",
     metaDescription:
@@ -605,6 +605,54 @@ export const services: Service[] = [
     schemaType: "Photographer",
     color: "from-indigo-950 to-stone-900",
     noPortfolio: true,
+  },
+  {
+    slug: "estudio-fotografico-goiania",
+    title: "Ensaio Fotográfico em Estúdio em Goiânia",
+    shortTitle: "Ensaio em Estúdio",
+    headline: "Ensaio em estúdio em Goiânia com a escolha do estúdio certo feita por quem conhece todos",
+    description:
+      "Ensaio fotográfico em estúdio em Goiânia sem você precisar procurar espaço. A Darah Coelho fotografa nos principais estúdios da cidade, indica qual combina com o seu projeto e cuida da reserva.",
+    bodyText: [
+      "Escolher um estúdio fotográfico em Goiânia é mais difícil do que parece. Cada espaço da cidade tem uma personalidade: uns têm luz natural entrando de um lado só e brilham no fim da tarde, outros trabalham com luz totalmente controlada e entregam aquele fundo limpo de catálogo. Uns têm pé-direito alto e cabem cenários grandes, outros são pequenos e aconchegantes, perfeitos para um retrato íntimo. Quem nunca fotografou nos dois não tem como saber a diferença antes de chegar lá — e aí já é tarde.",
+      "A Darah Coelho fotografa nos principais estúdios de Goiânia e conhece cada um por dentro. Quando você entra em contato, ela pergunta o que você quer transmitir com as imagens, quantos looks pretende levar e que estética te agrada, e então indica o estúdio que atende exatamente isso. Se a proposta pede luz suave e natural, ela sabe qual espaço tem a janela certa. Se pede fundo infinito para um catálogo, ela sabe onde está o melhor. E cuida da reserva junto ao estúdio escolhido, para você não ter que negociar horário e valor com ninguém.",
+      "Esse é o ponto que muda a experiência: você não sai atrás de estúdio, não compara preço de locação, não descobre no dia que a luz não era o que você imaginava. Chega no lugar certo, com a produção já alinhada e o tempo de sessão planejado. É o mesmo trabalho de direção que a Darah faz na frente da câmera — briefing, referência visual, escolha de cenário e direção de poses — começando antes, na escolha do espaço.",
+      "O ensaio em estúdio em Goiânia funciona para praticamente todo tipo de projeto: ensaio pessoal e de autoestima, book de moda e material para agências, retrato corporativo e de marca pessoal, gestante em ambiente controlado, fotografia de produto para loja e e-commerce. Em alguns pacotes o estúdio já entra no valor combinado; em outros, o espaço é contratado à parte e a Darah ajuda na negociação. Isso fica claro no orçamento, sem surpresa depois.",
+    ],
+    metaTitle: "Ensaio em Estúdio Fotográfico em Goiânia | Darah Coelho",
+    metaDescription:
+      "Ensaio em estúdio fotográfico em Goiânia sem procurar espaço: a Darah Coelho conhece os estúdios da cidade, indica o ideal para o seu projeto e cuida da reserva.",
+    keywords: [
+      "estúdio fotográfico Goiânia",
+      "ensaio em estúdio Goiânia",
+      "estúdio de fotografia Goiânia",
+      "estúdio fotográfico em Goiânia",
+      "fotógrafa estúdio Goiânia",
+    ],
+    heroImage: "https://res.cloudinary.com/djjacet57/image/upload/c_fill,g_face,ar_16:7,w_1920,f_auto,q_auto/darah/ensaio%20pessoal/img-0725",
+    deliverables: [
+      "Indicação do estúdio certo para a sua proposta",
+      "Reserva do espaço resolvida pela Darah",
+      "Briefing e definição da estética antes da sessão",
+      "Direção de poses e expressão durante todo o ensaio",
+      "Seleção e edição profissional das fotos",
+      "Entrega em alta resolução e versões para redes sociais",
+    ],
+    process: [
+      { step: "Conversa inicial", description: "Você conta o que quer transmitir, quantos looks pretende levar e que referências gosta." },
+      { step: "Escolha do estúdio", description: "A Darah indica, entre os estúdios de Goiânia que conhece, o que tem a luz e o cenário certos para a sua proposta." },
+      { step: "Reserva e produção", description: "Ela alinha data e horário com o estúdio escolhido e organiza o tempo de sessão para caber tudo o que foi combinado." },
+      { step: "Sessão e entrega", description: "Ensaio com direção do início ao fim e fotos editadas entregues no prazo do pacote escolhido." },
+    ],
+    faqs: [
+      { question: "A Darah tem estúdio próprio em Goiânia?", answer: "Não. Ela fotografa nos principais estúdios da cidade, e essa é justamente a vantagem: em vez de encaixar todo projeto no mesmo espaço, ela escolhe entre vários o que tem a luz, o cenário e o tamanho certos para o que você quer — e cuida da reserva." },
+      { question: "O valor do estúdio está incluso no ensaio?", answer: "Depende do pacote. Em alguns o espaço já entra no valor combinado; em outros ele é contratado à parte e a Darah ajuda na escolha e na negociação. Isso é informado no orçamento, antes de fechar." },
+      { question: "Como sei qual estúdio combina com o meu ensaio?", answer: "Você não precisa saber — é o trabalho dela. Na conversa inicial ela entende o objetivo do ensaio, o estilo que você gosta e a quantidade de looks, e indica o espaço que atende isso melhor." },
+      { question: "Dá para fazer o ensaio em estúdio e também em locação externa?", answer: "Sim. Muitos projetos combinam os dois: parte em estúdio, com luz controlada, e parte em locação externa. A Darah tem uma curadoria de locações em Goiânia e organiza os dois no mesmo dia quando o tempo de sessão permite." },
+      { question: "Que tipos de ensaio podem ser feitos em estúdio?", answer: "Ensaio pessoal, book de moda, retrato corporativo e de marca pessoal, gestante, família, moda masculina e fotografia de produto para loja e e-commerce." },
+    ],
+    schemaType: "Photographer",
+    color: "from-neutral-900 to-zinc-800",
   },
 ];
 
